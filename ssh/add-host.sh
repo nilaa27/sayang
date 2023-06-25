@@ -33,7 +33,7 @@ clear
 echo -e "\033[0;33m   ┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[0;33m   │\033[0m            \033[0;32mCHANGE DOMAIN VPS\033[0m             \033[0;33m|\033[0m"
 echo -e "\033[0;33m   └──────────────────────────────────────────┘\033[0m"
-echo -e "     ${RED}Autoscript Tarap Kuhing Tunneling (multi port)${NC}"
+echo -e "     ${RED}Autoscript NIELA x XLORD Tunneling (multi port)${NC}"
 echo -e "${RED}Make sure the internet is smooth when installing the script${NC}"
 echo -e "───────────────────────────────────────────────────────"
 echo -e ""
