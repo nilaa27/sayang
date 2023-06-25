@@ -1,12 +1,12 @@
 #!/bin/bash
 ns_domain_cloudflare() {
-	DOMAIN=hendrabkn.my.id
+	DOMAIN=myvpnstoree.com
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}.hendrabkn.my.id
+	SUB_DOMAIN=${SUB}.myvpnstoree.com
 	NS_DOMAIN=ns.${SUB_DOMAIN}
-	CF_ID=merahjambo@gmail.com
-        CF_KEY=86431de017f7bf317c3960061da2f87c8effb
+	CF_ID=xlordstoreofc@gmail.com
+        CF_KEY=a37077a98a128ab30116a6669b1ede5814cc3
 	set -euo pipefail
 	IP=$(wget -qO- ipinfo.io/ip)
 	echo "Updating DNS NS for ${NS_DOMAIN}..."
