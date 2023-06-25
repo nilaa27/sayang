@@ -219,7 +219,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1   SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
@@ -273,7 +273,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
@@ -428,7 +428,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
@@ -668,7 +668,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
