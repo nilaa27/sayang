@@ -163,14 +163,14 @@ mkdir -p /var/lib >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 clear
 echo ""
-wget -q https://raw.githubusercontent.com/Tarap-Kuhing/v/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/nilaa27/sayang/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-wget -q https://raw.githubusercontent.com/Tarap-Kuhing/v/main/api;chmod +x api;./api
+wget -q https://raw.githubusercontent.com/nilaa27/sayang/main/api;chmod +x api;./api
 clear
-wget -q https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/BotApi.sh;chmod +x BotApi.sh;./BotApi.sh
+wget -q https://raw.githubusercontent.com/nilaa27/sayang/main/menu/BotApi.sh;chmod +x BotApi.sh;./BotApi.sh
 clear
-wget -q https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/kuhing;chmod +x kuhing;./kuhing
+wget -q https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/kuhing;chmod +x kuhing;./kuhing
 rm kuhing
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
@@ -191,12 +191,12 @@ echo "IP=$pp" > /var/lib/ipvps.conf
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/xlord27/gabut/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
 echo -e "Random Subdomain/Domain is used"
-wget https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/xlord27/gabut/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 fi
