@@ -219,7 +219,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1   SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
@@ -273,10 +273,10 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
-echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
+echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
+echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -428,10 +428,10 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
-echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
+echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
+echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -538,7 +538,7 @@ echo -e ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 }
 function hapus(){
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/ssh")
@@ -554,7 +554,7 @@ echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• DELETE USERS •             ${NC}$COLOR1$NC"
@@ -582,7 +582,7 @@ else
         echo -e "Failure: User $Pengguna Not Exist."
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 }
 function cekconfig(){
 portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
@@ -617,7 +617,7 @@ echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• SELECT USERS •             ${NC}$COLOR1$NC"
@@ -637,7 +637,7 @@ fi
 done
 Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
-PW= $Pass"
+PW=$(grep -w $Pass /etc/xray/ssh | wc -l)
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
@@ -668,7 +668,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$LOGIN:$PW"
 echo -e "SSH-443     : $domen:443@$LOGIN:$PW"
@@ -895,7 +895,7 @@ $author
                echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 
                read -n 1 -s -r -p "Press any key to back on menu"
-               m-sshovpn
+               menu
 }
 function autokill(){
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -1059,5 +1059,5 @@ case $opt in
 00 | 0) clear ; menu ; exit ;;
 X  | 0) clear ; menu ;;
 x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
