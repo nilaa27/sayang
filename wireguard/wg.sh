@@ -18,7 +18,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://https://raw.githubusercontent.com/nilaa27/cinta/ip/main/ | grep $MYIP )
+IZIN=$( curl https://https://raw.githubusercontent.com/nilaa27/cinta/main/ | grep $MYIP )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
