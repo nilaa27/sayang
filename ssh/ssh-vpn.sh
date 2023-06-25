@@ -342,6 +342,7 @@ wget -O deltrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/delt
 wget -O renewtrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renewtrgo.sh"
 wget -O cektrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cektrgo.sh"
 wget -O tambahan "https://raw.githubusercontent.com/nilaa27/sayang/menu/tambahan.sh"
+wget -O up "https://raw.githubusercontent.com/nilaa27/sayang/main/tambahan.sh"
 chmod +x menu-update
 chmod +x update
 chmod +x menu
@@ -376,6 +377,7 @@ chmod +x about
 chmod +x auto-reboot
 chmod +x restart
 chmod +x bw
+chmod +x up
 chmod +x port-ssl
 chmod +x port-ovpn
 chmod +x xp
