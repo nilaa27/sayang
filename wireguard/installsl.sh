@@ -47,15 +47,15 @@ ns_domain_cloudflare() {
 setup_dnstt() {
 	cd
 	mkdir -p /etc/slowdns
-	wget -O dnstt-server "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/wireguard/dnstt-server" >/dev/null 2>&1
+	wget -O dnstt-server "https://raw.githubusercontent.com/nilaa27/sayang/main/wireguard/dnstt-server" >/dev/null 2>&1
 	chmod +x dnstt-server >/dev/null 2>&1
-	wget -O dnstt-client "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/wireguard/dnstt-client" >/dev/null 2>&1
+	wget -O dnstt-client "https://raw.githubusercontent.com/nilaa27/sayang/main/wireguard/dnstt-client" >/dev/null 2>&1
 	chmod +x dnstt-client >/dev/null 2>&1
 	./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
 	chmod +x *
 	mv * /etc/slowdns
-	wget -O /etc/systemd/system/client.service "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/wireguard/client" >/dev/null 2>&1
-	wget -O /etc/systemd/system/server.service "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/wireguard/server" >/dev/null 2>&1
+	wget -O /etc/systemd/system/client.service "https://raw.githubusercontent.com/nilaa27/sayang/main/wireguard/client" >/dev/null l 2>&1
+	wget -O /etc/systemd/system/server.service "https://raw.githubusercontent.com/nilaa27/sayang/main/wireguard/server" >/dev/null l 2>&1
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/client.service 
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/server.service 
 }
