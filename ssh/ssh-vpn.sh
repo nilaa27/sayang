@@ -341,7 +341,7 @@ wget -O trialtrojango "https://raw.githubusercontent.com/nielaa27/sayang/main/xr
 wget -O deltrgo "https://raw.githubusercontent.com/nielaa27/sayang/main/xray/deltrgo.sh"
 wget -O renewtrgo "https://raw.githubusercontent.com/nielaa27/sayang/main/xray/renewtrgo.sh"
 wget -O cektrgo "https://raw.githubusercontent.com/nielaa27/sayang/main/xray/cektrgo.sh"
-wget -O tambahan "https://raw.githubusercontent.com/nielaa27/v/menu/tambahan.sh"
+wget -O tambahan "https://raw.githubusercontent.com/nielaa27/sayang/menu/tambahan.sh"
 chmod +x menu-update
 chmod +x update
 chmod +x menu
