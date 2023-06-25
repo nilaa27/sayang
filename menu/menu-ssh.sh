@@ -118,7 +118,7 @@ CLIENT_EXISTS=$(grep -w $Login /etc/xray/ssh | wc -l)
     echo ""
     echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
     read -n 1 -s -r -p "Press any key to back on menu"
-    m-sshovpn
+    menu
   fi
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
@@ -478,7 +478,7 @@ echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• RENEW USERS •             ${NC}$COLOR1$NC"
@@ -637,14 +637,14 @@ fi
 done
 Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
-Pass="### $Login $expi $Pass" | /etc/xray/ssh"
+PW= $Pass"
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$PW" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
@@ -670,11 +670,11 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1    SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$PASSWD"
-echo -e "SSH-443     : $domen:443@$LOGIN:$PASSWD"
+echo -e "SSH-80      : $domen:80@$LOGIN:$PW"
+echo -e "SSH-443     : $domen:443@$LOGIN:$PW"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
+echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$PW"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1┌────────────────────┐${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1 ${NC}  ${WH}           Payload WSS                                       ${NC}" | tee -a /etc/log-create-user.log
@@ -735,7 +735,7 @@ else
 fi
 sed -i "/^### $Pengguna/d" /etc/xray/ssh
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 }
 function cek(){
 TIMES="10"
@@ -815,7 +815,7 @@ echo -e "$COLOR1${NC}${COLBG1}                       ${WH}• $author •       
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 }
 
 
@@ -847,7 +847,7 @@ echo "Account number: $JUMLAH user"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 
-m-sshovpn
+menu
 }
 function delete(){
 clear
@@ -1020,7 +1020,7 @@ echo " ";
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-m-sshovpn
+menu
 }
 clear
 author=$(cat /etc/profil)
@@ -1057,7 +1057,7 @@ case $opt in
 09 | 9) clear ; ceklim ; exit ;;
 10 | 10) clear ; add-wireguard ; exit ;;
 00 | 0) clear ; menu ; exit ;;
-X  | 0) clear ; m-sshovpn ;;
+X  | 0) clear ; menu ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
 esac
