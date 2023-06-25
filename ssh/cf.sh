@@ -3,9 +3,9 @@ MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 DOMAIN=hendra93.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.hendra93.my.id
-CF_ID=merahjambo@gmail.com
-CF_KEY=86431de017f7bf317c3960061da2f87c8effb
+dns=${sub}.myvpnstoree.com
+CF_ID=xlordstoreofc@gmail.com
+CF_KEY=a37077a98a128ab30116a6669b1ede5814cc3
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
