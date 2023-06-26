@@ -221,8 +221,8 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
-echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -275,8 +275,8 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
-echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -430,8 +430,8 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
-echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -484,8 +484,8 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
-echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
@@ -724,8 +724,8 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domen:80@$LOGIN:$Pass"
-echo -e "SSH-443     : $domen:443@$LOGIN:$Pass"
+echo -e "SSH-80      : $domen:80@$Login:$Pass"
+echo -e "SSH-443     : $domen:443@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
