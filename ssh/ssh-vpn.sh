@@ -346,6 +346,7 @@ wget -O renewtrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/re
 wget -O cektrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cektrgo.sh"
 wget -O tambahan "https://raw.githubusercontent.com/nilaa27/sayang/menu/tambahan.sh"
 wget -O up "https://raw.githubusercontent.com/nilaa27/sayang/main/up.sh"
+wget -O ganti "https://raw.githubusercontent.com/nilaa27/sayang/main/ganti.sh"
 chmod +x menu-update
 chmod +x update
 chmod +x menu
@@ -416,6 +417,7 @@ chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x tambahan
+chmod +x ganti
 cd
 
 
