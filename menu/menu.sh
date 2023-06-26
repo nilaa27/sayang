@@ -294,7 +294,7 @@ case $opt in
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
 5) clear ; menu-ssws ;;
-6) clear ; menu-trial ;;
+6) clear ; ganti ;;
 7) clear ; menu-backup ;;
 8) clear ; menu-set ;;
 9) clear ; running ;;
