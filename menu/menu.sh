@@ -261,7 +261,7 @@ echo -e "${BIRU}└────────────────────�
  echo -e "${BIRU}│${NC}${BIRU}${NC}   TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
 echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] TRIALL    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
+echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU} │"
 echo -e " ${BIRU}|    [${BIWhite}02${ZIL}] VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${ZIL}] BACKUP    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}03${ZIL}] VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${ZIL}] SETTING   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}04${ZIL}] TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${ZIL}] RUNNING            │"
@@ -298,7 +298,7 @@ case $opt in
 7) clear ; menu-backup ;;
 8) clear ; menu-set ;;
 9) clear ; running ;;
-10) clear ; exit;;
+10) exit ;;
 16) clear ; wget https://raw.githubusercontent.com/nilaa27/gabut/main/menu/updt.sh && chmod +x updt.sh && ./updt.sh && rm -f /root/updt.sh ;;
 0) clear ; menu ;;
 x) exit ;;
