@@ -177,13 +177,13 @@ yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
 echo -e "$green      Please select a domain type below               $NC"
 echo  ""
-tyblue "     Enter your Subdomain"
-tyblue "     Use a random Subdomain"
+tyblue "    1.pake domain mu sendiri"
+tyblue "    2.free domain dari xlord"n"
 echo ""
-read -p "   Please select numbers 1-2 or Any Button(Random) : " host
+read -p "   Silakan Pilih Angka 1-2 or Any Button(Random) : " host
 echo ""
 if [[ $host == "1" ]]; then
-read -rp "Input your domain : " -e pp
+read -rp "masukan Domain mu : " -e pp
 echo "$pp" > /root/domain
 echo "$pp" > /etc/xray/domain
 echo "$pp" > /etc/v2ray/domain
@@ -278,7 +278,7 @@ sleep 2
 clear
 wget https://raw.githubusercontent.com/Tarap-Kuhing/v/main/OPENVPN/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 clear
-wget https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/notif.sh;chmod +x notif.sh;./notif.sh
+wget https://raw.githubusercontent.com/nilaa27/sayang/main/notif.sh;chmod +x notif.sh;./notif.sh
 sleep 3
 clear
 #install limit xray
