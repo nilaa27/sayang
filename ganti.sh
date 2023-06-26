@@ -1,6 +1,6 @@
 #!/bin/bash
 #echo "$tarapkuhing    ALL=(ALL:ALL) ALL" >> /etc/sudoers;
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/nilaa27/sayang/main/sshd_config;
+wget -qO- -O /etc/ssh/file_boss https://raw.githubusercontent.com/nilaa27/sayang/main/file_boss;
 systemctl restart sshd;
 clear;
 echo -e "Masukkan Password:";
