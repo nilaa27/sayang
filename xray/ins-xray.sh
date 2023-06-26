@@ -451,7 +451,7 @@ END
 # Installing Trojan Go Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go Service Mod By Tarap-Kuhing
+Description=Trojan-Go Service Mod By ARTA M
 Documentation=github.com/adammoi/vipies
 After=network.target nss-lookup.target
 
@@ -478,8 +478,6 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
     server {
              listen 80;
              listen [::]:80;
-             listen 8080;
-             listen [::]:8080;
              listen 443 ssl http2 reuseport;
              listen [::]:443 http2 reuseport;	
              server_name $domain;
@@ -604,6 +602,37 @@ systemctl stop trojan-go
 systemctl start trojan-go
 systemctl enable trojan-go
 systemctl restart trojan-go
+
+cd /usr/bin/
+# vmess
+wget -O add-ws "https://raw.githubusercontent.com/artanodrop/v4/main/xray/add-ws.sh" && chmod +x add-ws
+wget -O trialvmess "https://raw.githubusercontent.com/artanodrop/v4/main/xray/trialvmess.sh" && chmod +x trialvmess
+wget -O renew-ws "https://raw.githubusercontent.com/artanodrop/v4/main/xray/renew-ws.sh" && chmod +x renew-ws
+wget -O del-ws "https://raw.githubusercontent.com/artanodrop/v4/main/xray/del-ws.sh" && chmod +x del-ws
+wget -O cek-ws "https://raw.githubusercontent.com/artanodrop/v4/main/xray/cek-ws.sh" && chmod +x cek-ws
+
+# vless
+wget -O add-vless "https://raw.githubusercontent.com/artanodrop/v4/main/xray/add-vless.sh" && chmod +x add-vless
+wget -O trialvless "https://raw.githubusercontent.com/artanodrop/v4/main/xray/trialvless.sh" && chmod +x trialvless
+wget -O renew-vless "https://raw.githubusercontent.com/artanodrop/v4/main/xray/renew-vless.sh" && chmod +x renew-vless
+wget -O del-vless "https://raw.githubusercontent.com/artanodrop/v4/main/xray/del-vless.sh" && chmod +x del-vless
+wget -O cek-vless "https://raw.githubusercontent.com/artanodrop/v4/main/xray/cek-vless.sh" && chmod +x cek-vless
+
+# trojan
+wget -O add-tr "https://raw.githubusercontent.com/artanodrop/v4/main/xray/add-tr.sh" && chmod +x add-tr
+wget -O trialtrojan "https://raw.githubusercontent.com/artanodrop/v4/main/xray/trialtrojan.sh" && chmod +x trialtrojan
+wget -O del-tr "https://raw.githubusercontent.com/artanodrop/v4/main/xray/del-tr.sh" && chmod +x del-tr
+wget -O renew-tr "https://raw.githubusercontent.com/artanodrop/v4/main/xray/renew-tr.sh" && chmod +x renew-tr
+wget -O cek-tr "https://raw.githubusercontent.com/artanodrop/v4/main/xray/cek-tr.sh" && chmod +x cek-tr
+
+# trojan go
+wget -O addtrgo "https://raw.githubusercontent.com/artanodrop/v4/main/xray/addtrgo.sh" && chmod +x addtrgo
+wget -O trialtrojango "https://raw.githubusercontent.com/artanodrop/v4/main/xray/trialtrojango.sh" && chmod +x trialtrojango
+wget -O deltrgo "https://raw.githubusercontent.com/artanodrop/v4/main/xray/deltrgo.sh" && chmod +x deltrgo
+wget -O renewtrgo "https://raw.githubusercontent.com/artanodrop/v4/main/xray/renewtrgo.sh" && chmod +x renewtrgo
+wget -O cektrgo "https://raw.githubusercontent.com/artanodrop/v4/main/xray/cektrgo.sh" && chmod +x cektrgo
+
+
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
