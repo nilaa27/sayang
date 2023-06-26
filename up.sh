@@ -91,9 +91,12 @@ wget -O xp "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/xp.sh"
 wget -O acs-set "https://raw.githubusercontent.com/nilaa27/sayang/main/acs-set.sh"
 wget -O sshws "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/nilaa27/sayang/main/status.sh"
-wget -O menu-bckp "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-bckp.sh"
-wget -O backup "https://raw.githubusercontent.com/nilaa27/sayang/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/nilaa27/sayang/main/backup/restore.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-backup.sh"
+wget -O backup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/xlord27/gabut/main/backup/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/xlord27/gabut/main/backup/strt.sh"
+wget -O limitspeed "https://raw.githubusercontent.com/xlord27/gabut/main/backup/limitspeed.sh"
+wget -O autobackup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/autobackup.sh"
 wget -O jam "https://raw.githubusercontent.com/nilaa27/sayang/main/jam.sh"
 wget -O add-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-ws.sh"
 wget -O trialvmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvmess.sh"
@@ -156,9 +159,12 @@ chmod +x xp
 chmod +x acs-set
 chmod +x sshws
 chmod +x status
-chmod +x menu-bckp
+chmod +x menu-backup
 chmod +x backup
 chmod +x restore
+chmod +x strt
+chmod +x limitspeed
+chmod +x autobackup
 chmod +x jam
 chmod +x add-ws
 chmod +x trialvmess
