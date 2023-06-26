@@ -178,7 +178,7 @@ echo " "
 echo -e "$green      Please select a domain type below               $NC"
 echo  ""
 tyblue "    1.pake domain mu sendiri"
-tyblue "    2.free domain dari xlord"n"
+tyblue "    2.free domain dari xlord"
 echo ""
 read -p "   Silakan Pilih Angka 1-2 or Any Button(Random) : " host
 echo ""
