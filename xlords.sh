@@ -235,9 +235,9 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-sleep 2
-clear
-wget https://raw.githubusercontent.com/xlord27/gabut/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+#sleep 2
+#clear
+#wget https://raw.githubusercontent.com/xlord27/gabut/main/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
 #install Backup
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install BACKUP           $NC"
