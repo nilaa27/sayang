@@ -326,17 +326,17 @@ wget -O limitspeed "https://raw.githubusercontent.com/xlord27/gabut/main/backup/
 wget -O autobackup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/autobackup.sh"
 wget -O jam "https://raw.githubusercontent.com/nilaa27/sayang/main/jam.sh"
 wget -O add-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-ws.sh"
-wget -O trialvmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvmess.sh"
+wget -O trial-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vmess.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-ws.sh"
 wget -O del-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-ws.sh"
 wget -O cek-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-vless.sh"
-wget -O trialvless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvless.sh"
+wget -O trial-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vless.sh"
 wget -O renew-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-vless.sh"
 wget -O del-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-vless.sh"
 wget -O cek-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-tr.sh"
-wget -O trialtrojan "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialtrojan.sh"
+wget -O trial-trojan "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-trojan.sh"
 wget -O del-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-tr.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-tr.sh"
 wget -O cek-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-tr.sh"
@@ -399,17 +399,17 @@ chmod +x autobackup
 chmod +x restore
 chmod +x jam
 chmod +x add-ws
-chmod +x trialvmess
+chmod +x trial-vmess
 chmod +x renew-ws
 chmod +x del-ws
 chmod +x cek-ws
 chmod +x add-vless
-chmod +x trialvless
+chmod +x trial-vless
 chmod +x renew-vless
 chmod +x del-vless
 chmod +x cek-vless
 chmod +x add-tr
-chmod +x trialtrojan
+chmod +x trial-trojan
 chmod +x del-tr
 chmod +x renew-tr
 chmod +x cek-tr
