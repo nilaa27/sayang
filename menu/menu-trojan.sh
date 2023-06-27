@@ -396,7 +396,6 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu
-fi
 }
 function renew-tr(){
 clear
