@@ -278,7 +278,16 @@ clear
 wget https://raw.githubusercontent.com/nilaa27/sayang/main/notif.sh;chmod +x notif.sh;./notif.sh
 sleep 3
 clear
-#install limit xray
+#install xlord
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green       Install XLORD               $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
+wget -q https://raw.githubusercontent.com/nilaa27/sayang/main/menu/xlord;chmod +x xlord;./xlord
+sleep 2
+clear
+#instaclearmit xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green       Install Limit Xray               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
