@@ -348,6 +348,10 @@ wget -O cektrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cekt
 wget -O tambahan "https://raw.githubusercontent.com/nilaa27/sayang/menu/tambahan.sh"
 wget -O up "https://raw.githubusercontent.com/nilaa27/sayang/main/up.sh"
 wget -O ganti "https://raw.githubusercontent.com/nilaa27/sayang/main/ganti.sh"
+wget -O vmess-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/vmess-usage.sh
+wget -O vless-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/vless-usage.sh
+wget -O trojan-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trojan-usage.sh
+wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-usage.sh
 chmod +x menu-update
 chmod +x update
 chmod +x menu
@@ -365,6 +369,10 @@ chmod +x menu-ssh
 chmod +x usernew
 chmod +x trial
 chmod +x renew
+chmod +x vmess-usage
+chmod +x vless-usage
+chmod +x trojan-usage
+chmod +x menu-usage
 chmod +x hapus
 chmod +x cek
 chmod +x member
