@@ -57,7 +57,7 @@ echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Setting Auto Reboot"
 echo -e "     ${BICyan}[${BIWhite}11${BICyan}] USAGE DATA [coming soon]"
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] Menu Bot"
 echo -e "     ${BICyan}[${BIWhite}13${BICyan}] Menu Registrasi Ipvps"
-echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Menu Lanjutan"
+echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Free Domain"
 echo -e "     ${BICyan}[${BIWhite}15${BICyan}] UP SOK ASIK"
 echo -e ""
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
@@ -79,7 +79,7 @@ case $opt in
 11) clear ; menu-usage ; exit ;;
 12) clear ; m-bot ; exit ;;
 13) clear ; m-ip ; exit ;;
-14) clear ; tambahan ; exit ;;
+14) clear ; fix ; exit ;;
 15) clear ; up ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
