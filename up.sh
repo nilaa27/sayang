@@ -115,6 +115,7 @@ wget -O trial-trojan "https://raw.githubusercontent.com/nilaa27/sayang/main/xray
 wget -O del-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-tr.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-tr.sh"
 wget -O cek-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-tr.sh"
+wget -O fix "https://raw.githubusercontent.com/xlord27/gabut/main/cf.sh"
 wget -O addtrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/addtrgo.sh"
 wget -O trialtrojango "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialtrojango.sh"
 wget -O deltrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/deltrgo.sh"
@@ -144,6 +145,7 @@ chmod +x menu-trojan
 chmod +x menu-ssh
 chmod +x usernew
 chmod +x trial
+chmod +x fix
 chmod +x renew
 chmod +x vmess-usage
 chmod +x vless-usage
