@@ -318,6 +318,7 @@ wget -O acs-set "https://raw.githubusercontent.com/nilaa27/sayang/main/acs-set.s
 wget -O sshws "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/nilaa27/sayang/main/status.sh"
 wget -O menu-backup "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-backup.sh"
+wget -O menu-ssws "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-ssws.sh"
 wget -O backup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/xlord27/gabut/main/backup/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/xlord27/gabut/main/backup/strt.sh"
@@ -355,6 +356,7 @@ chmod +x m-ip
 chmod +x menu-trial
 chmod +x menu-vmess
 chmod +x menu-vless
+chmod +x menu-ssws
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
