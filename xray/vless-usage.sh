@@ -48,4 +48,3 @@ print_sum "$DATA" "user" "$NC"
 echo -e ""
 read -n 1 -s -r -p "Press [enter] to back on menu vless"
 menu-vless
-fi
