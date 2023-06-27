@@ -92,98 +92,6 @@ wget -O acs-set "https://raw.githubusercontent.com/nilaa27/sayang/main/acs-set.s
 wget -O sshws "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/nilaa27/sayang/main/status.sh"
 wget -O menu-backup "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-backup.sh"
-wget -O backup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/xlord27/gabut/main/backup/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/xlord27/gabut/main/backup/strt.sh"
-wget -O limitspeed "https://raw.githubusercontent.com/xlord27/gabut/main/backup/limitspeed.sh"
-wget -O autobackup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/autobackup.sh"
-wget -O jam "https://raw.githubusercontent.com/nilaa27/sayang/main/jam.sh"
-wget -O add-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-ws.sh"
-wget -O trialvmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvmess.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-ws.sh"
-wget -O del-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-ws.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-vless.sh"
-wget -O trialvless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvless.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-vless.sh"
-wget -O del-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-vless.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-tr.sh"
-wget -O trialtrojan "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialtrojan.sh"
-wget -O del-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-tr.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-tr.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-tr.sh"
-wget -O addtrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/addtrgo.sh"
-wget -O trialtrojango "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialtrojango.sh"
-wget -O deltrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/deltrgo.sh"
-wget -O renewtrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renewtrgo.sh"
-wget -O cektrgo "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cektrgo.sh"
-wget -O tambahan "https://raw.githubusercontent.com/nilaa27/sayang/menu/tambahan.sh"
-chmod +x menu-update
-chmod +x update
-chmod +x menu
-chmod +x m-bot
-chmod +x m-ip
-chmod +x menu-trial
-chmod +x menu-vmess
-chmod +x menu-vless
-chmod +x running
-chmod +x clearcache
-chmod +x menu-trgo
-chmod +x menu-trojan
-chmod +x menu-ssh
-chmod +x usernew
-chmod +x trial
-chmod +x renew
-chmod +x hapus
-chmod +x cek
-chmod +x member
-chmod +x delete
-chmod +x autokill
-chmod +x ceklim
-chmod +x tendang
-chmod +x menu-set
-wget -O menu-update "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-update.sh"
-wget -O update "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/update.sh"
-wget -O menu "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu.sh"
-wget -O m-bot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-bot.sh"
-wget -O m-ip "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-ip.sh"
-wget -O menu-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trial.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vless.sh"
-wget -O running "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/running.sh"
-wget -O clearcache "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/clearcache.sh"
-wget -O menu-trgo "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trojan.sh"
-wget -O menu-ssh "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/tendang.sh"
-wget -O menu-set "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-set.sh"
-wget -O menu-domain "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/nilaa27/sayang/main/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-webmin.sh"
-wget -O speedtest "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/auto-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/bw.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/nilaa27/sayang/main/port/port-ssl.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/nilaa27/sayang/main/port/port-ovpn.sh"
-wget -O xp "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/nilaa27/sayang/main/acs-set.sh"
-wget -O sshws "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/sshws.sh"
-wget -O status "https://raw.githubusercontent.com/nilaa27/sayang/main/status.sh"
-wget -O menu-backup "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-backup.sh"
 wget -O menu-ssws "https://raw.githubusercontent.com/xlord27/gabut/main/menu/menu-ssws.sh"
 wget -O backup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/xlord27/gabut/main/backup/restore.sh"
@@ -296,6 +204,42 @@ chmod +x tambahan
 chmod +x ganti
 cd
 
-echo -e " [INFO] Update Successfully"
+echo -e ""
+echo -e "\e[0;32mDownloaded successfully!\e[0m"
+echo ""
+ver=$( curl sS https://raw.githubusercontent.com/nilaa27/sayang/main/versi )
+sleep 1
+echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
+echo ""
 sleep 2
-exit
+echo -e "\e[0;32mPatching... OK!\e[0m"
+sleep 1
+echo ""
+echo -e "\e[0;32mSucces Update Script For New Version\e[0m"
+cd
+echo "$ver" > /home/ver
+rm -f update.sh
+clear
+echo ""
+echo -e "\033[0;34m----------------------------------------\033[0m"
+echo -e "\E[44;1;39m            SCRIPT UPDATED              \E[0m"
+echo -e "\033[0;34m----------------------------------------\033[0m"
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
+;;
+x)
+clear
+update
+;;
+y)
+clear
+menu
+;;
+*)
+clear
+echo -e "\e[1;31mPlease Enter Option 1-2 or x & y Only..,Try again, Thank You..\e[0m"
+sleep 2
+menu
+;;
+esac
