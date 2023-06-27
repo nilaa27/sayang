@@ -229,7 +229,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "${BIRU}┌───────────────────────────────────────────────┐${NC}" 
-echo -e "${BIRU}│  ${NC}     $NC    \e[1;97;101m  << XLORD VPN STORE >>   \e[0m          ${BIRU}│ ${NC}"
+echo -e "${BIRU}│  ${NC}$NC \e[1;97;101m  << XLORD VPN STORE >>         \e[0m    ${BIRU}│ ${NC}"
 echo -e "${BIRU}└───────────────────────────────────────────────┘${NC}" 
 echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd OS NAME    : ${BIRU}$cname${NC}"
@@ -253,7 +253,7 @@ echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${ICyan} NGINX ${NC}: $res
 echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU}┌──────────────────────────────────────────┐${NC}" 
-echo -e "${BIRU}│  ${NC}   $NC  \e[1;97;101m  << LIST DAFTAR  MEMBER >>   \e[0m     ${BIRU}│ ${NC}"
+echo -e "${BIRU}│  ${NC}$NC\e[1;97;101m  << LIST DAFTAR  MEMBER >>   \e[0m ${BIRU}│ ${NC}"
 echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
  echo -e "${BIRU}│${NC}${BIRU}${NC}   SSH       : ${BIRed}{$ssh1}${NC} ${BIYellow}[MEMBER]${NC}"
  echo -e "${BIRU}│${NC}${BIRU}${NC}   VMESS       : ${BIRed}{$vmc}${NC} ${BIYellow}[MEMBER]${NC}"
@@ -261,7 +261,7 @@ echo -e "${BIRU}└────────────────────�
  echo -e "${BIRU}│${NC}${BIRU}${NC}   TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
 echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU} │"
+echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}│"
 echo -e " ${BIRU}|    [${BIWhite}02${ZIL}] VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${ZIL}] BACKUP    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}03${ZIL}] VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${ZIL}] SETTING   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}04${ZIL}] TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${ZIL}] RUNNING            │"
