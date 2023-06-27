@@ -303,6 +303,7 @@ wget -O ceklim "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/ceklim
 wget -O tendang "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/tendang.sh"
 wget -O menu-set "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-set.sh"
 wget -O menu-domain "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-domain.sh"
+wget -O fix "https://raw.githubusercontent.com/xlord27/gabut/main/cf.sh"
 wget -O add-host "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/add-host.sh"
 wget -O port-change "https://raw.githubusercontent.com/nilaa27/sayang/main/port/port-change.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/certv2ray.sh"
@@ -424,7 +425,8 @@ chmod +x del-tr
 chmod +x renew-tr
 chmod +x cek-tr
 chmod +x addtrgo
-chmod +x trialtrojango
+chmod +x trialtdel-tro
+chmod +x fix
 chmod +x deltrgo
 chmod +x renewtrgo
 chmod +x cektrgo
