@@ -229,7 +229,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "${BIRU}┌───────────────────────────────────────────────┐${NC}" 
-echo -e "${BIRU}│  ${NC}$NC \e[1;97;101m  << XLORD VPN STORE >>         \e[0m    ${BIRU}│ ${NC}"
+echo -e "${BIRU}│${NC}$NC \e[1;97;101m            << XLORD VPN STORE >>            \e[0m ${BIRU}│ ${NC}"
 echo -e "${BIRU}└───────────────────────────────────────────────┘${NC}" 
 echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd OS NAME    : ${BIRU}$cname${NC}"
@@ -249,23 +249,23 @@ echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW HARI INI ${NC}  : ${YELLOW} [$ttoda
 echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW BULANAN  ${NC}  : ${YELLOW} [$tmon]${NC} /MONTH   ${NC}          ${BIRU}│"
 echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}" 
 echo -e "${BIRU}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${ICyan} NGINX ${NC}: $resngx"" │ ${ICyan}  XRAY ${NC}: $resv2r"" │ ${BIGreen} 𝗚𝗢𝗢𝗗  ${BIRU}│"
+echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │ ${PUTIH}  XRAY ${NC}: $resv2r"" │ ${BIGreen} 𝗚𝗢𝗢𝗗  ${BIRU}│"
 echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU}┌──────────────────────────────────────────┐${NC}" 
-echo -e "${BIRU}│  ${NC}$NC\e[1;97;101m  << LIST DAFTAR  MEMBER >>   \e[0m ${BIRU}│ ${NC}"
-echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
+echo -e "${BIRU}│${NC}$NC \e[1;97;101m      << LIST MEMBER SERVER >>         \e[0m  ${BIRU}│ ${NC}"
+echo -e "${BIRU}└──────────────────────────────────────────┘${NC}" 
  echo -e "${BIRU}│${NC}${BIRU}${NC}   SSH       : ${BIRed}{$ssh1}${NC} ${BIYellow}[MEMBER]${NC}"
  echo -e "${BIRU}│${NC}${BIRU}${NC}   VMESS       : ${BIRed}{$vmc}${NC} ${BIYellow}[MEMBER]${NC}"
  echo -e "${BIRU}│${NC}${BIRU}${NC}   VLESS       : ${BIRed}{$vlx}${NC} ${BIYellow}[MEMBER]${NC}"
  echo -e "${BIRU}│${NC}${BIRU}${NC}   TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
 echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}│"
+echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Pro${BIRU}]${NC}" "${BIRU}│"
 echo -e " ${BIRU}|    [${BIWhite}02${ZIL}] VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${ZIL}] BACKUP    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}03${ZIL}] VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${ZIL}] SETTING   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}04${ZIL}] TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${ZIL}] RUNNING            │"
-echo -e " ${BIRU}|    [${BIWhite}05${ZIL}] SSWS    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}10${ZIL}] EXIT PANEL${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │${NC}"
+echo -e " ${BIRU}|    [${BIWhite}05${ZIL}] SSWS    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}xx${ZIL}]TELE ${BIRU}[${BIYellow}@xlordeuyy${BIRU}]${NC}" "${BIRU}  │${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
@@ -274,7 +274,7 @@ datediff() {
     echo -e " ${BIRU}│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days |$exp $NC"
 }
 mai="datediff "$Exp" "$DATE""
-echo -e " ${BIRU}┌─────────────────────────────────────┐${NC}"
+echo -e " ${BIRU}┌──────────────────────────────────────────┐${NC}"
 echo -e " ${BIRU}│${NC}   Version        : 4.0 Lite ${NC}"
 echo -e " ${BIRU}│${NC}   Client         :\033[1;36m $Name \e[0m"
 echo -e " ${BIRU}│${NC}   Order By       : ${BIRed}XLORD VPN${NC}"
@@ -284,7 +284,7 @@ echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
 else
     datediff "$Exp" "$DATE"
 fi;
-echo -e " ${BIRU}└─────────────────────────────────────┘${NC}"
+echo -e " ${BIRU}└──────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
