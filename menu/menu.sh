@@ -265,7 +265,7 @@ echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU
 echo -e " ${BIRU}|    [${BIWhite}02${ZIL}] VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${ZIL}] BACKUP    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}03${ZIL}] VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${ZIL}] SETTING   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  │"
 echo -e " ${BIRU}|    [${BIWhite}04${ZIL}] TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${ZIL}] RUNNING            │"
-echo -e " ${BIRU}|    [${BIWhite}05${ZIL}] SSWS    ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}xx${ZIL}]TELE ${BIRU}[${BIYellow}@xlordeuyy${BIRU}]${NC}" "${BIRU}  │${NC}"
+echo -e " ${BIRU}|    [${BIWhite}05${ZIL}] Trial Menu ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "   ${BIRU}[${BIWhite}xx${ZIL}]TELE ${BIRU}[${BIYellow}@xlordeuyy${BIRU}]${NC}" "${BIRU}  │${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
@@ -293,7 +293,7 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; menu-ssws ;;
+5) clear ; menu-trial ;;
 6) clear ; ganti ;;
 7) clear ; menu-backup ;;
 8) clear ; menu-set ;;
