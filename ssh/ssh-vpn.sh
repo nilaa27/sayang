@@ -280,6 +280,7 @@ cd /usr/bin
 wget -O menu-update "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-update.sh"
 wget -O update "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/update.sh"
 wget -O menu "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu.sh"
+wget -O xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/xlord"
 wget -O m-bot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-bot.sh"
 wget -O m-ip "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-ip.sh"
 wget -O menu-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trial.sh"
@@ -355,6 +356,7 @@ wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m
 chmod +x menu-update
 chmod +x update
 chmod +x menu
+chmod +x xlord
 chmod +x m-bot
 chmod +x m-ip
 chmod +x menu-trial
