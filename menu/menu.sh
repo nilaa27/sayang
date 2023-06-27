@@ -131,8 +131,8 @@ export NC='\033[0m'
 ###########- END COLOR CODE -##########
 tram=$( free -h | awk 'NR==2 {print $2}' )
 uram=$( free -h | awk 'NR==2 {print $3}' )
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
-CITY=$(curl -s ipinfo.io/city )
+pro=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+kota=$(curl -s ipinfo.io/city )
 
 # // Export Banner Status Information
 export EROR="[${RED} EROR ${NC}]"
@@ -239,14 +239,14 @@ echo -e "${BIRU} │${NC} 🔆$bd Usage Ram  : ${BIRU}$USAGERAM MB${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd IP VPS     : ${BIRU}$IPVPS${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd DATE       : ${BIRU}$DATEVPS${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd UPTIME     : ${BIRU}$SERONLINE${NC}"
-echo -e "${BIRU} │${NC} 🔆$bd CITY       : ${BIRU}$CITY${NC}"
-echo -e "${BIRU} │${NC} 🔆$bd ISP VPS    : ${BIRU}$ISP${NC}"  
+echo -e "${BIRU} │${NC} 🔆$bd CITY       : ${BIRU}$kota${NC}"
+echo -e "${BIRU} │${NC} 🔆$bd ISP VPS    : ${BIRU}$pro${NC}"  
 echo -e "${BIRU} │${NC} 🔆$bd DOMAIN MU  : ${BIRU}$domain${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd KATA KATA  : \033[31;1m𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗦𝗛𝗢𝗟𝗔𝗧${NC}"
 echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}"
 echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW HARI INI ${NC}  : ${YELLOW} [$ttoday]${NC} /DAYS      ${NC}        ${BIRU}│"
-echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW BULANAN  ${NC}  : ${YELLOW} [$tmon]${NC} /MONTH   ${NC}          ${BIRU}│"
+echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW HARI INI ${NC}  : ${YELLOW} [$ttoday]${NC} /DAYS      ${NC}       ${BIRU}│"
+echo -e "${BIRU} │${NC} ${ICyan}𖡛$bd BW BULANAN  ${NC}  : ${YELLOW} [$tmon]${NC} /MONTH   ${NC}         ${BIRU}│"
 echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}" 
 echo -e "${BIRU}┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │ ${PUTIH}  XRAY ${NC}: $resv2r"" │ ${BIGreen} 𝗚𝗢𝗢𝗗  ${BIRU}│"
