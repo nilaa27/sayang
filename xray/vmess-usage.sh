@@ -27,8 +27,8 @@ apidata () {
     }'
 }
 print_sum() {
-    local DATA="$1"
-    local PREFIX="$2"
+    local DATA=($(cat /etc/xray/config.json | grep '^#vm' | cut -d ' ' -f 2 | sort | uniq))
+    local PREFIX="^#vm"
     local SORTED=$(echo "$DATA" | grep "^${PREFIX}" | sort -r)
     local SUM=$(echo "$SORTED" | awk '
         /->up/{us+=$2}
@@ -40,7 +40,7 @@ print_sum() {
     | numfmt --field=2  --suffix=B --to=iec \
     | column -t
 }
-DATA=$(apidata $1)
+DATA=($(cat /etc/xray/config.json | grep '^#vm' | cut -d ' ' -f 2 | sort | uniq))
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;100;33m      • USAGE USER VMESS •          \E[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m$NC"
