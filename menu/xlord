@@ -247,8 +247,8 @@ echo -e "${BIRU} └────────────────────
 echo -e " ${BIRU}    ┌───────────────────────────────────────┐${NC}"
 echo -e  "            << LAPORAN PENGGUNAAN BW >> ${NC}"
 echo""
-          echo -e "${BIRU} ${NC}             ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC}       ${NC}        ${BIRU} "
-          echo -e "${BIRU} ${NC}             ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC}    ${NC}        ${BIRU}"
+          echo -e "${BIRU} ${NC}            ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC}       ${NC}        ${BIRU} "
+          echo -e "${BIRU} ${NC}            ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC}    ${NC}        ${BIRU}"
 echo""     
 echo -e "${BIRU}     └───────────────────────────────────────┘${NC}" 
                                    
