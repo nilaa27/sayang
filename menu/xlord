@@ -253,11 +253,11 @@ echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $res
 echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    ${putih}01${kun}) ☞ ${putih}[${BIYellow}SSH${BIRU}]${NC}"    "       ${putih}06${kun}) ☞ ${BIRU}[${BIYellow}GANTI PW VPS${BIRU}]${NC}"                                                                  "${BIRU}         |"
-echo -e " ${BIRU}|    ${putih}02${kun}) ☞ ${putih}[${BIYellow}VMESS${BIRU}]${NC}" "     ${putih}07${kun}) ☞ ${BIRU}[${BIYellow}BACKUP VPS${BIRU}]${NC}"                                                   "${BIRU}           |"
-echo -e " ${BIRU}|    ${putih}03${kun}) ☞ ${putih}[${BIYellow}VLESS${BIRU}]${NC}"  "     ${putih}08${kun}) ☞ ${BIRU}[${BIYellow}MENU SETTING${BIRU}]${NC}"                                                             "${BIRU}         |"
-echo -e " ${BIRU}|    ${putih}04${kun}) ☞ ${putih}[${BIYellow}TROJAN${BIRU}]${NC}" "    ${putih}09${kun}) ☞ ${BIRU}[${BIYellow}CEK RUNNING${BIRU}]${NC}"                                                           "${BIRU}          |"
-echo -e " ${BIRU}|    ${putih}05${kun}) ☞ ${putih}[${BIYellow}TRIAL${BIRU}]${NC}"  "  ${putih}XX${kun}) ☞ ${BIRU}[${BIYellow}SC BY XLORD VPN${BIRU}]${NC}"                    "${BIRU}         |${NC}"
+echo -e " ${BIRU}|    ${putih}01${kun}) ☞ ${putih}[${biru}SSH${BIRU}]${NC}"    "       ${putih}06${kun}) ☞ ${BIRU}[${BIYellow}GANTI PW VPS${BIRU}]${NC}"                                                                  "${BIRU}         |"
+echo -e " ${BIRU}|    ${putih}02${kun}) ☞ ${putih}[${biru}VMESS${BIRU}]${NC}" "     ${putih}07${kun}) ☞ ${BIRU}[${BIYellow}BACKUP VPS${BIRU}]${NC}"                                                   "${BIRU}           |"
+echo -e " ${BIRU}|    ${putih}03${kun}) ☞ ${putih}[${biru}VLESS${BIRU}]${NC}"  "     ${putih}08${kun}) ☞ ${BIRU}[${BIYellow}MENU SETTING${BIRU}]${NC}"                                                             "${BIRU}         |"
+echo -e " ${BIRU}|    ${putih}04${kun}) ☞ ${putih}[${biru}TROJAN${BIRU}]${NC}" "    ${putih}09${kun}) ☞ ${BIRU}[${BIYellow}CEK RUNNING${BIRU}]${NC}"                                                           "${BIRU}          |"
+echo -e " ${BIRU}|    ${putih}05${kun}) ☞ ${putih}[${biru}TRIAL${BIRU}]${NC}"  "  ${putih}XX${kun}) ☞ ${BIRU}[${BIYellow}SC BY XLORD VPN${BIRU}]${NC}"                    "${BIRU}         |${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
