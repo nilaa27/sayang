@@ -230,7 +230,7 @@ echo -e "\E[44;1;39m            SCRIPT UPDATED              \E[0m"
 echo -e "\033[0;34m----------------------------------------\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 ;;
 x)
 clear
@@ -238,12 +238,12 @@ update
 ;;
 y)
 clear
-menu
+xlord
 ;;
 *)
 clear
 echo -e "\e[1;31mPlease Enter Option 1-2 or x & y Only..,Try again, Thank You..\e[0m"
 sleep 2
-menu
+xlord
 ;;
 esac
