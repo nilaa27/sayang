@@ -79,7 +79,7 @@ On_IRed='\033[0;101m'
 IBlack='\033[0;90m'       # Black
 IRed='\033[0;91m'         # Red
 IGreen='\033[0;92m'       # Green
-IYellow='\033[0;93m'      # Yellow
+kun='\033[0;93m'      # Yellow
 IBlue='\033[0;94m'        # Blue
 NILA='\033[0;95m'      # Purple
 ZIL='\033[0;96m'        # Cyan
@@ -253,11 +253,11 @@ echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $res
 echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    [${BIWhite}01${ZIL}] SSH     ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${ZIL}] GANTI PW VPS ${BIRU}[${BIYellow}Pro${BIRU}]${NC}" "${BIRU}|"
-echo -e " ${BIRU}|    [${BIWhite}02${ZIL}] VMESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${ZIL}]  BACKUP  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}   |"
-echo -e " ${BIRU}|    [${BIWhite}03${ZIL}] VLESS   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${ZIL}] SETTING   ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "${BIRU}  |"
-echo -e " ${BIRU}|    [${BIWhite}04${ZIL}] TROJAN  ${BIRU}[${BIYellow}Menu${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${ZIL}]  RUNNING           |"
-echo -e " ${BIRU}|    [${BIWhite}05${ZIL}] Trial Menu ${BIRU}[${BIYellow}Menu${BIRU}]${NC}"  "  ${BIRU}[${BIWhite}xx${ZIL}]TELE ${BIRU}[${BIYellow}@xlordeuyy${BIRU}]${NC}" "${BIRU}  |${NC}"
+echo -e " ${BIRU}|    [${BIWhite}01${kun}] ☞ ${BIRU}[${BIYellow}SSH${BIRU}]${NC}"    "     ${BIRU}[${BIWhite}06${kun}] ☞ ${BIRU}[${BIYellow}GANTI PW${BIRU}]${NC}" "${BIRU}|"
+echo -e " ${BIRU}|    [${BIWhite}02${kun}] ☞ ${BIRU}[${BIYellow}VMESS${BIRU}]${NC}" "     ${BIRU}[${BIWhite}07${kun}] ☞  ${BIRU}[${BIYellow}BACKUP${BIRU}]${NC}" "${BIRU}   |"
+echo -e " ${BIRU}|    [${BIWhite}03${kun}] ☞ ${BIRU}[${BIYellow}VLESS${BIRU}]${NC}"  "     ${BIRU}[${BIWhite}08${kun}] ☞   ${BIRU}[${BIYellow}SETTING${BIRU}]${NC}" "${BIRU}  |"
+echo -e " ${BIRU}|    [${BIWhite}04${kun}] ☞ ${BIRU}[${BIYellow}TROJAN${BIRU}]${NC}" "     ${BIRU}[${BIWhite}09${kun}]  ☞   ${BIRU}[${BIYellow}RUNNING${BIRU}]${NC}" "${BIRU}   |"
+echo -e " ${BIRU}|    [${BIWhite}05${kun}] ☞ ${BIRU}[${BIYellow}TRIAL${BIRU}]${NC}"  "  ${BIRU}[${BIWhite}xx${kun}]TELE ${BIRU}[${BIYellow}@xlordeuyy${BIRU}]${NC}" "${BIRU}  |${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
