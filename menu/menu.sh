@@ -231,7 +231,7 @@ clear
 echo -e "${BIRU}┌───────────────────────────────────────────────┐${NC}" 
 echo -e "${BIRU}│${NC}$NC \e[1;97;101m            << XLORD VPN STORE >>            \e[0m ${BIRU}│ ${NC}"
 echo -e "${BIRU}└───────────────────────────────────────────────┘${NC}" 
-echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
+echo -e " ${BIRU}┌───────────────────────────────────────────────┐${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd OS NAME    : ${BIRU}$cname${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd Use Core   : ${BIRU}Multi Lite${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd RAM VPS    : ${BIRU}${totalram} MB${NC}"
@@ -244,39 +244,41 @@ echo -e "${BIRU} │${NC} 🔆$bd ISP VPS    : ${BIRU}$pro${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd DOMAIN MU  : ${BIRU}$domain${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd KATA KATA  : \033[31;1m𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗦𝗛𝗢𝗟𝗔𝗧${NC}"
 echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}"
-DATE=$(date +'%d %B %Y')
-datediff() {
-    d1=$(date -d "$1" +%s)
-    d2=$(date -d "$2" +%s)
-    echo -e " ${BIRU}│${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days |$exp $NC"
-}
-mai="datediff "$Exp" "$DATE""
-echo -e " ${BIRU}┌──────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}│${NC}   Version        : 4.0 Lite ${NC}"
-echo -e " ${BIRU}│${NC}   Client         :\033[1;36m $Name \e[0m"
-echo -e " ${BIRU}│${NC}   Order By       : ${BIRed}XLORD VPN${NC}"
-if [ $exp \< 1000 ];
-then
-echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
-else
-    datediff "$Exp" "$DATE"
-fi;
-echo -e " ${BIRU}└──────────────────────────────────────────┘${NC}"
-echo -e "${BIRU}┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIRU}│ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │ ${PUTIH}  XRAY ${NC}: $resv2r"" │ ${BIGreen} 𝗚𝗢𝗢𝗗  ${BIRU}│"
-echo -e "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
-  
-echo -e "${BIRU}┌──────────────────────────────────────────┐${NC}" 
-echo -e "${BIRU}│${NC}$NC \e[1;97;101m      << LIST MEMBER SERVER >>         \e[0m  ${BIRU}│ ${NC}"
-echo -e "${BIRU}└──────────────────────────────────────────┘${NC}" 
- echo -e "${BIRU}│${NC}${BIRU}${NC}   SSH       : ${BIRed}{$ssh1}${NC} ${BIYellow}[MEMBER]${NC}"
- echo -e "${BIRU}│${NC}${BIRU}${NC}   VMESS       : ${BIRed}{$vmc}${NC} ${BIYellow}[MEMBER]${NC}"
- echo -e "${BIRU}│${NC}${BIRU}${NC}   VLESS       : ${BIRed}{$vlx}${NC} ${BIYellow}[MEMBER]${NC}"
- echo -e "${BIRU}│${NC}${BIRU}${NC}   TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
-echo -e "${BIRU}└──────────────────────────────────────────┘${NC}"
+echo -e " ${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
+ echo -e "${BIRU}  │ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │   ${PUTIH}XRAY ${NC}: $resv2r"" │${BIGreen}  𝗚𝗢𝗢𝗗 ${BIRU} │"
+  echo -e    "${BIRU}  └─────────────────────────────────────────────────────┘${NC}"
+echo -e "${BIRU}     ┌──────────────────────────────────────────┐${NC}"
+echo -e    "            << LIST MEMBER ACCOUNT >> ${NC}"
+echo""
+     echo -e "${BIRU}${NC}${BIRU}${NC}          SSH         : ${BIRed}{$ssh1}${NC} ${BIYellow}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${BIRU}${NC}          VMESS        : ${BIRed}{$vmc}${NC} ${BIYellow}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${BIRU}${NC}          VLESS        : ${BIRed}{$vlx}${NC} ${BIYellow}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${BIRU}${NC}          TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
+      echo""
+ 
+echo -e "${BIRU}     └──────────────────────────────────────────┘${NC}"
 
+                           DATE=$(date +'%d %B %Y')
+   datediff() {
+       d1=$(date -d "$1" +%s)
+       d2=$(date -d "$2" +%s)
+       echo -e " ${BIRU}   │${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days |$exp $NC"
+   }
+   mai="datediff "$Exp" "$DATE""
+      echo -e " ${BIRU}   ┌──────────────────────────────────────────┐${NC}"
+      echo -e " ${BIRU}   │${NC}   Version        : 4.0 Lite ${NC}"
+      echo -e " ${BIRU}   │${NC}   Client         :\033[1;36m $Name \e[0m"
+      echo -e " ${BIRU}   │${NC}   Order By       : ${BIRed}XLORD VPN${NC}"
+      if [ $exp \< 1000 ];
+      then
+     echo -e "   $BICyan  │$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+      else
+          datediff "$Exp" "$DATE"
+      fi;
+      echo -e " ${BIRU}   └──────────────────────────────────────────┘${NC}"
+      echo -e                                                                                 
 echo ""
-echo -e "${ZIL} ───────────────────────────────   ${NC}"
-echo " KETIK "𝗫𝗟𝗢𝗥𝗗" UNTUK MEMUNCULKAN MENU"
-echo -e "${ZIL}  ─────────────────────────────── ${NC}"
+     echo -e "${BIRU}         ───────────────────────────────   ${NC}"
+     echo "       KETIK "𝗫𝗟𝗢𝗥𝗗" UNTUK MEMUNCULKAN MENU"
+     echo -e "${BIRU}         ─────────────────────────────── ${NC}"
 echo -e ""
