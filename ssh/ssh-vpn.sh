@@ -326,7 +326,7 @@ wget -O restore "https://raw.githubusercontent.com/xlord27/gabut/main/backup/res
 wget -O strt "https://raw.githubusercontent.com/xlord27/gabut/main/backup/strt.sh"
 wget -O limitspeed "https://raw.githubusercontent.com/xlord27/gabut/main/backup/limitspeed.sh"
 wget -O autobackup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/autobackup.sh"
-wget -O jam "https://raw.githubusercontent.com/nilaa27/sayang/main/jam.sh"
+wget -O waktu "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/waktu.sh"
 wget -O add-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-ws.sh"
 wget -O trial-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vmess.sh"
 wget -O renew-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-ws.sh"
@@ -408,7 +408,7 @@ chmod +x strt
 chmod +x limitspeed
 chmod +x autobackup
 chmod +x restore
-chmod +x jam
+chmod +x waktu
 chmod +x add-ws
 chmod +x trial-vmess
 chmod +x renew-ws
