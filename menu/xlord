@@ -68,19 +68,19 @@ ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 BIBlack='\033[1;90m'      # Black
 BIRed='\033[1;91m'        # Red
 BIGreen='\033[1;92m'      # Green
-BIYellow='\033[1;93m'     # Yellow
+ning='\033[1;93m'     # Yellow
 BIRU='\033[1;94m'       # Blue
 BAYS='\033[1;95m'     # Purple
 AYG='\033[1;96m'       # Cyan
-PUTIH='\033[1;97m'      # White
+putih='\033[1;97m'      # White
 UWhite='\033[4;37m'       # White
 On_FD='\033[0;105m'  #
 On_IRed='\033[0;101m'
 IBlack='\033[0;90m'       # Black
 IRed='\033[0;91m'         # Red
-IGreen='\033[0;92m'       # Green
-IYellow='\033[0;93m'      # Yellow
-IBlue='\033[0;94m'        # Blue
+ijo='\033[0;92m'       # Green
+kun='\033[0;93m'      # Yellow
+biru='\033[0;94m'        # Blue
 NILA='\033[0;95m'      # Purple
 ZIL='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
@@ -240,45 +240,38 @@ echo -e "${BIRU} │${NC} 🔆$bd IP VPS     : ${BIRU}$IPVPS${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd DATE       : ${BIRU}$DATEVPS${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd UPTIME     : ${BIRU}$SERONLINE${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd CITY       : ${BIRU}$kota${NC}"
-echo -e "${BIRU} │${NC} 🔆$bd ISP VPS    : ${BIRU}$pro${NC}"  
+echo -e "${BIRU} │${NC} 🔆$bd ISP VPS    : ${BIRU}$pro${NC}" 
 echo -e "${BIRU} │${NC} 🔆$bd DOMAIN MU  : ${BIRU}$domain${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd KATA KATA  : \033[31;1m𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗦𝗛𝗢𝗟𝗔𝗧${NC}"
-echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}"
-echo -e " ${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
- echo -e "${BIRU}  │ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │   ${PUTIH}XRAY ${NC}: $resv2r"" │${BIGreen}  𝗚𝗢𝗢𝗗 ${BIRU} │"
-  echo -e    "${BIRU}  └─────────────────────────────────────────────────────┘${NC}"
-echo -e "${BIRU}     ┌──────────────────────────────────────────┐${NC}"
-echo -e    "            << LIST MEMBER ACCOUNT >> ${NC}"
-echo""
-     echo -e "${BIRU}${NC}${BIRU}${NC}          SSH         : ${BIRed}{$ssh1}${NC} ${BIYellow}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${BIRU}${NC}          VMESS        : ${BIRed}{$vmc}${NC} ${BIYellow}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${BIRU}${NC}          VLESS        : ${BIRed}{$vlx}${NC} ${BIYellow}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${BIRU}${NC}          TROJAN       : ${BIRed}{$trx}${NC} ${BIYellow}[MEMBER]${NC}"
-      echo""
- 
-echo -e "${BIRU}     └──────────────────────────────────────────┘${NC}"
-
-                           DATE=$(date +'%d %B %Y')
-   datediff() {
-       d1=$(date -d "$1" +%s)
-       d2=$(date -d "$2" +%s)
-       echo -e " ${BIRU}   │${NC}   Expiry In      : $(( (d1 - d2) / 86400 )) Days |$exp $NC"
-   }
-   mai="datediff "$Exp" "$DATE""
-      echo -e " ${BIRU}   ┌──────────────────────────────────────────┐${NC}"
-      echo -e " ${BIRU}   │${NC}   Version        : 4.0 Lite ${NC}"
-      echo -e " ${BIRU}   │${NC}   Client         :\033[1;36m $Name \e[0m"
-      echo -e " ${BIRU}   │${NC}   Order By       : ${BIRed}XLORD VPN${NC}"
-      if [ $exp \< 1000 ];
-      then
-     echo -e "   $BICyan  │$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
-      else
-          datediff "$Exp" "$DATE"
-      fi;
-      echo -e " ${BIRU}   └──────────────────────────────────────────┘${NC}"
-      echo -e                                                                                 
+echo -e "${BIRU} └───────────────────────────────────────────────┘${NC}"
+echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
+echo -e "${BIRU} │${NC} ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC} /DAYS      ${NC}        ${BIRU} │"
+echo -e "${BIRU} │${NC} ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC} PEMAKAIAN   ${NC}        ${BIRU}│"
+echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}" 
+                                   
+echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e " ${BIRU}|    ${biru}01${kun}) ☞ ${BIRU}${ijo}SSH${BIRU}${NC}    "   "       ${biru}06${kun}) ☞ ${BIRU}${ijo}GANTI PW VPS${BIRU}${NC}"                                                                  "${BIRU}         |"
+echo -e " ${BIRU}|    ${biru}02${kun}) ☞ ${BIRU}${ijo}VMESS${BIRU}${NC} "   "        ${biru}07${kun}) ☞ ${BIRU}${ijo}BACKUP VPS${BIRU}${NC}"                                                   "${BIRU}           |"
+echo -e " ${BIRU}|    ${biru}03${kun}) ☞ ${BIRU}${ijo}VLESS${BIRU}${NC}  "   "       ${biru}08${kun}) ☞ ${BIRU}${ijo}MENU SETTING${BIRU}${NC}"                                                             "${BIRU}         |"
+echo -e " ${BIRU}|    ${biru}04${kun}) ☞ ${BIRU}${ijo}TROJAN${BIRU}${NC} "  "       ${biru}09${kun}) ☞ ${BIRU}${ijo}CEK RUNNING${BIRU}${NC}"                                                           "${BIRU}          |"
+echo -e " ${BIRU}|    ${biru}05${kun}) ☞ ${BIRU}${ijo}TRIAL${BIRU}${NC}  " "     ${biru}XX${kun}) ☞ ${BIRU}${ijo}SC BY XLORD VPN${BIRU}${NC}"                    "${BIRU}        |${NC}"
+echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
-     echo -e "${BIRU}         ───────────────────────────────   ${NC}"
-     echo "       KETIK "𝗫𝗟𝗢𝗥𝗗" UNTUK MEMUNCULKAN MENU"
-     echo -e "${BIRU}         ─────────────────────────────── ${NC}"
+read -p " Select menu : " opt
 echo -e ""
+case $opt in
+1) clear ; menu-ssh ;;
+2) clear ; menu-vmess ;;
+3) clear ; menu-vless ;;
+4) clear ; menu-trojan ;;
+5) clear ; menu-trial ;;
+6) clear ; ganti ;;
+7) clear ; menu-backup ;;
+8) clear ; menu-set ;;
+9) clear ; running ;;
+10) clear ; exit;;
+16) clear ; wget https://raw.githubusercontent.com/nilaa27/gabut/main/menu/updt.sh && chmod +x updt.sh && ./updt.sh && rm -f /root/updt.sh ;;
+0) clear ; xlord ;;
+x) exit ;;
+*) echo "Anda salah tekan " ; sleep 1 ; menu ;;
+esac
