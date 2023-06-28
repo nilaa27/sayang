@@ -95,8 +95,8 @@ KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
 wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | awk '{print $1}'`
-ISP=$(cat /etc/xray/isp)
-CITY=$(cat /etc/xray/city)
+#ISP=$(cat /etc/xray/isp)
+#CITY=$(cat /etc/xray/city)
 
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
@@ -217,13 +217,13 @@ echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$IP:89/tcp.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$IP:89/udp.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}⚡ SSH UDP ⚡${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
@@ -253,8 +253,8 @@ echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-c
 echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1 $NC  ${WH}Wildcard   ${COLOR1}: ${WH}(bug.com).$domen" | tee -a /etc/log-create-user.log
@@ -299,7 +299,7 @@ echo -e "$COLOR1—————————————————————�
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 function trial(){
 clear
@@ -320,9 +320,9 @@ KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
 wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | awk '{print $1}'`
-ISP=$(cat /etc/xray/isp)
-CITY=$(cat /etc/xray/city)
-author=$(cat /etc/profil)
+#ISP=$(cat /etc/xray/isp)
+#CITY=$(cat /etc/xray/city)
+author='XLORD VPN STORE'
 
 clear
 IP=$(curl -sS ifconfig.me);
@@ -408,8 +408,8 @@ echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-c
 echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1 $NC  ${WH}Wildcard   ${COLOR1}: ${WH}(bug.com).$domen" | tee -a /etc/log-create-user.log
@@ -508,7 +508,7 @@ echo -e "$COLOR1—————————————————————�
 fi
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 function renew(){
 clear
@@ -532,7 +532,7 @@ echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• RENEW USERS •             ${NC}$COLOR1$NC"
@@ -592,7 +592,7 @@ echo -e ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 function hapus(){
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/ssh")
@@ -636,7 +636,7 @@ else
         echo -e "Failure: User $Pengguna Not Exist."
 fi
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 function cekconfig(){
 portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
@@ -671,7 +671,7 @@ echo ""
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• SELECT USERS •             ${NC}$COLOR1$NC"
@@ -691,7 +691,7 @@ fi
 done
 Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
-Pass=$(grep -E "^#vmg " "/etc/xray/ssh" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
+Pass=$(grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${COLBG1}${WH}• SSH Account •              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
@@ -702,8 +702,8 @@ echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-c
 echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1 $NC  ${WH}Wildcard   ${COLOR1}: ${WH}(bug.com).$domen" | tee -a /etc/log-create-user.log
@@ -869,7 +869,7 @@ echo -e "$COLOR1${NC}${COLBG1}                       ${WH}• $author •       
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 
 
@@ -901,7 +901,7 @@ echo "Account number: $JUMLAH user"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 read -n 1 -s -r -p "Press any key to back on menu"
 
-menu
+xlord
 }
 function delete(){
 clear
@@ -949,7 +949,7 @@ $author
                echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 
                read -n 1 -s -r -p "Press any key to back on menu"
-               menu
+               xlord
 }
 function autokill(){
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -1050,7 +1050,7 @@ case $AutoKill in
                 ;;
         esac
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 function ceklim(){
 
@@ -1074,7 +1074,7 @@ echo " ";
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-menu
+xlord
 }
 clear
 author=$(cat /etc/profil)
@@ -1110,7 +1110,7 @@ case $opt in
 08 | 8) clear ; autokill ; exit ;;
 09 | 9) clear ; ceklim ; exit ;;
 10 | 10) clear ; add-wireguard ; exit ;;
-00 | 0) clear ; menu ; exit ;;
+00 | 0) clear ; xlord ; exit ;;
 X  | 0) clear ; menu ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
