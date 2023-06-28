@@ -75,7 +75,7 @@ case $opt in
 7) clear ; restart ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;;
 9) clear ; bw ; exit ;;
-10) clear ; jam ; exit ;;
+10) clear ; waktu ; exit ;;
 11) clear ; menu-usage ; exit ;;
 12) clear ; m-bot ; exit ;;
 13) clear ; m-ip ; exit ;;
