@@ -245,7 +245,7 @@ echo -e "${BIRU} │${NC} 🔆$bd DOMAIN MU  : ${BIRU}$domain${NC}"
 echo -e "${BIRU} │${NC} 🔆$bd KATA KATA  : \033[31;1m𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗦𝗛𝗢𝗟𝗔𝗧${NC}"
 echo -e "${BIRU} └───────────────────────────────────────────────┘${NC}"
 echo -e " ${BIRU}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${BIRU} │${NC} ${kun}𖡛${putih} BW HARI INI ${NC}  : ${YELLOW} [$ttoday]${NC} /DAYS      ${NC}       ${BIRU}│"
+echo -e "${BIRU} │${NC} ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC} /DAYS      ${NC}        ${BIRU}  │"
 echo -e "${BIRU} │${NC} ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC} PEMAKAIAN   ${NC}         ${BIRU}│"
 echo -e "${BIRU} └──────────────────────────────────────────────────┘${NC}" 
 echo -e "${BIRU}┌─────────────────────────────────────────────────────┐${NC}"
@@ -267,8 +267,8 @@ case $opt in
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
 4) clear ; menu-trojan ;;
-5) clear ; menu-ssws ;;
-6) clear ; menu-trial ;;
+5) clear ; menu-trial ;;
+6) clear ; ganti ;;
 7) clear ; menu-backup ;;
 8) clear ; menu-set ;;
 9) clear ; running ;;
