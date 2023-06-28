@@ -253,11 +253,11 @@ echo -e "${BIRU} └────────────────────
   echo -e    "${BIRU}└─────────────────────────────────────────────────────┘${NC}"
   
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    ${biru}01${kun}) ☞ ${BIRU}${ijo}SSH${BIRU}${NC}    "   "      ${biru}06${kun}) ☞ ${BIRU}${ijo}GANTI PW VPS${BIRU}${NC}"                                                                  "${BIRU}         |"
-echo -e " ${BIRU}|    ${biru}02${kun}) ☞ ${BIRU}${ijo}VMESS${BIRU}${NC} "   "       ${biru}07${kun}) ☞ ${BIRU}${ijo}BACKUP VPS${BIRU}${NC}"                                                   "${BIRU}           |"
-echo -e " ${BIRU}|    ${biru}03${kun}) ☞ ${BIRU}${ijo}VLESS${BIRU}${NC}  "   "      ${biru}08${kun}) ☞ ${BIRU}${ijo}MENU SETTING${BIRU}${NC}"                                                             "${BIRU}         |"
-echo -e " ${BIRU}|    ${biru}04${kun}) ☞ ${BIRU}${ijo}TROJAN${BIRU}${NC} "  "      ${biru}09${kun}) ☞ ${BIRU}${ijo}CEK RUNNING${BIRU}${NC}"                                                           "${BIRU}          |"
-echo -e " ${BIRU}|    ${biru}05${kun}) ☞ ${BIRU}${ijo}TRIAL${BIRU}${NC}  " " ${biru}XX${kun}) ☞ ${BIRU}${ijo}SC BY XLORD VPN${BIRU}${NC}"                    "${BIRU}        |${NC}"
+echo -e " ${BIRU}|    ${biru}01${kun}) ☞ ${BIRU}${ijo}SSH${BIRU}${NC}    "   "       ${biru}06${kun}) ☞ ${BIRU}${ijo}GANTI PW VPS${BIRU}${NC}"                                                                  "${BIRU}         |"
+echo -e " ${BIRU}|    ${biru}02${kun}) ☞ ${BIRU}${ijo}VMESS${BIRU}${NC} "   "        ${biru}07${kun}) ☞ ${BIRU}${ijo}BACKUP VPS${BIRU}${NC}"                                                   "${BIRU}           |"
+echo -e " ${BIRU}|    ${biru}03${kun}) ☞ ${BIRU}${ijo}VLESS${BIRU}${NC}  "   "       ${biru}08${kun}) ☞ ${BIRU}${ijo}MENU SETTING${BIRU}${NC}"                                                             "${BIRU}         |"
+echo -e " ${BIRU}|    ${biru}04${kun}) ☞ ${BIRU}${ijo}TROJAN${BIRU}${NC} "  "       ${biru}09${kun}) ☞ ${BIRU}${ijo}CEK RUNNING${BIRU}${NC}"                                                           "${BIRU}          |"
+echo -e " ${BIRU}|    ${biru}05${kun}) ☞ ${BIRU}${ijo}TRIAL${BIRU}${NC}  " "    ${biru}XX${kun}) ☞ ${BIRU}${ijo}SC BY XLORD VPN${BIRU}${NC}"                    "${BIRU}        |${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
