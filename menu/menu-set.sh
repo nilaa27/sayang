@@ -59,7 +59,11 @@ echo -e "     ${BICyan}[${BIWhite}12${BICyan}] Menu Bot"
 echo -e "     ${BICyan}[${BIWhite}13${BICyan}] Menu Registrasi Ipvps"
 echo -e "     ${BICyan}[${BIWhite}14${BICyan}] Free Domain"
 echo -e "     ${BICyan}[${BIWhite}15${BICyan}] UP SOK ASIK"
-echo -e ""
+echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "                      ${BIWhite}${UWhite}MENU ${NC}"
+echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e "     ${BICyan}[${BIWhite}16${BICyan}] ENC SCRIP"
+echo -e "     ${BICyan}[${BIWhite}17${BICyan}] HAPUS LOGG"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
@@ -81,6 +85,8 @@ case $opt in
 13) clear ; m-ip ; exit ;;
 14) clear ; fix ; exit ;;
 15) clear ; up ; exit ;;
+16) clear ; enc ; exit ;;
+17) clear ; logg ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
