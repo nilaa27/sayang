@@ -215,7 +215,6 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
-
 echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
@@ -257,7 +256,6 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
-
 echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
@@ -396,7 +394,6 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
-
 echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
@@ -438,7 +435,6 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
-
 echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
@@ -558,7 +554,7 @@ read -n 1 -s -r -p "Press any key to back on menu"
 xlord
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1${NC}${COLBG1}              ${WH}• DELETE USERS •             ${NC}$COLOR1$NC"
+echo -e "$COLOR1${NC}${COLBG1}              ${WH}• DELETE USER •             ${NC}$COLOR1$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo ""	
@@ -611,7 +607,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#ssh " "/etc/xray/ssh")
 if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1${NC}${COLBG1}              ${WH}• SELECT USERS •             ${NC}$COLOR1$NC"
+echo -e "$COLOR1${NC}${COLBG1}              ${WH}• DETAIL SSH ACCOUNT •             ${NC}$COLOR1$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo ""
@@ -623,20 +619,20 @@ read -n 1 -s -r -p "Press any key to back on menu"
 xlord
 fi
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1${NC}${COLBG1}              ${WH}• SELECT USERS •             ${NC}$COLOR1$NC"
+echo -e "$COLOR1${NC}${COLBG1}              ${WH}• DETAIL SSH ACCOUNT •             ${NC}$COLOR1$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo ""	
-echo "  Select the existing client you want to Delete"
-echo "  Press CTRL+C to return"
+echo "  KETIK NO LIST MEMBER UNTUK LIHAT DETAIL"
+echo "  Press CTRL+C UNTUK KEMBALI"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 2-3 | nl -s ') '
 grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 4 | nl -s ') '
 until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 if [[ ${CLIENT_NUMBER} == '1' ]]; then
 read -rp "Select one client [1]: " CLIENT_NUMBER
-else
-read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
+#else
+#read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 fi
 done
 harini=`date -d "0 days" +"%Y-%m-%d"`
@@ -711,7 +707,6 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
 echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
-
 echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
