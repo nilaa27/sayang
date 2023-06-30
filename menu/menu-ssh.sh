@@ -691,7 +691,7 @@ fi
 done
 Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
-Pass=$(grep -E "^###" "/etc/passwd >/dev/null"| cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
+Pass=$(grep -E "^###" "/etc/passwd" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${COLBG1}${WH}• SSH Account •              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
