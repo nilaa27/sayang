@@ -1,4 +1,3 @@
-echo -elomanecho -e "\e[32mloading...\e[0m0m0m"m""m"
 clear
 echo " "
 echo " "
@@ -32,4 +31,4 @@ echo " "
 echo -e "Username ${red}$username${NC} not found in your VPS"
 echo " "
 exit 0
-fi
+xlord
