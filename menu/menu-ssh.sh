@@ -207,7 +207,7 @@ echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}22" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Dropbear   ${COLOR1}: ${WH}143,109" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH-WS     ${COLOR1}: ${WH}80,8080" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}$wsssl" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSL/TLS    ${COLOR1}: ${WH}8443,8880" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}$ovpn" | tee -a /etc/log-create-user.log
@@ -219,7 +219,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/443"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
@@ -261,7 +261,7 @@ echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}22" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Dropbear   ${COLOR1}: ${WH}143,109" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH-WS     ${COLOR1}: ${WH}80,8080" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}$wsssl" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSL/TLS    ${COLOR1}: ${WH}8443,8880" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}$ovpn" | tee -a /etc/log-create-user.log
@@ -273,7 +273,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/443"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
@@ -294,8 +294,8 @@ echo -e "$COLOR1 ${NC}  ${WH}           Payload WSS                  ${NC}" | te
 echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -416,7 +416,7 @@ echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}22" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Dropbear   ${COLOR1}: ${WH}143,109" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH-WS     ${COLOR1}: ${WH}80,8080" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}$wsssl" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSL/TLS    ${COLOR1}: ${WH}8443,8880" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}$ovpn" | tee -a /etc/log-create-user.log
@@ -428,7 +428,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/443"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
@@ -449,8 +449,8 @@ echo -e "$COLOR1 ${NC}  ${WH}           Payload WSS                  ${NC}" | te
 echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 else
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
@@ -470,7 +470,7 @@ echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}$opensh" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Dropbear   ${COLOR1}: ${WH}$db" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH-WS     ${COLOR1}: ${WH}80,8080" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}$wsssl" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSL/TLS    ${COLOR1}: ${WH}8443,8880" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}$ovpn" | tee -a /etc/log-create-user.log
@@ -482,7 +482,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/443"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
@@ -502,9 +502,9 @@ echo -e "$COLOR1—————————————————————�
 echo -e "$COLOR1 ${NC}  ${WH}           Payload WSS                  ${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 fi
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -710,7 +710,7 @@ echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}22" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Dropbear   ${COLOR1}: ${WH}143,109" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH-WS     ${COLOR1}: ${WH}80,8080" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}$wsssl" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSL/TLS    ${COLOR1}: ${WH}8443,8880" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Ovpn Ws    ${COLOR1}: ${WH}2086" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Port TCP   ${COLOR1}: ${WH}$ovpn" | tee -a /etc/log-create-user.log
@@ -722,7 +722,7 @@ echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$IP:89/ssl.ovpn" | 
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1               SETTINGAN SSH PORT 80/444"
+echo -e "$COLOR1               SETTINGAN SSH PORT 80/443"
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "SSH-80      : $domen:80@$Login:$Pass"
 echo -e "SSH-443     : $domen:443@$Login:$Pass"
@@ -743,8 +743,8 @@ echo -e "$COLOR1 ${NC}  ${WH}           Payload WSS                  ${NC}" | te
 echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 #echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/log-create-user.log
+#echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "   Press any key to back on menu"
 xlord
 }
