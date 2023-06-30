@@ -55,7 +55,7 @@ echo -e "               ${WB}Detaill Ssh Account${NC}              "
 echo -e "${CYAN}————————————————————————————————————————————————————${NC}"
 echo -e " ${YB}User  Expired${NC}  "
 echo -e "${CYAN}————————————————————————————————————————————————————${NC}"
-grep -E "###! " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
+grep -E "^### " "/etc/xray/ssh | cut -d ' ' -f 2-3-4 | column -t | sort | uniq
 echo ""
 echo -e "${YB}tap enter to go back${NC}"
 echo -e "${CYAN}————————————————————————————————————————————————————${NC}"
