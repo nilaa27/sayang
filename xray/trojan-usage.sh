@@ -5,7 +5,7 @@ echo "Checking VPS"
 sleep 2
 clear
 _APISERVER=127.0.0.1:9000
-_XRAY=/usr/local/bin/xray
+_XRAY=/etc/xray/config.json
 apidata () {
     local ARGS=
     if [[ $1 == "reset" ]]; then
