@@ -191,18 +191,12 @@ curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$T
 if [[ ! -z "${PID}" ]]; then
 
 clear
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}         ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}    ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}$opensh" | tee -a /etc/log-create-user.log
@@ -218,36 +212,33 @@ echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$domen:81/tcp.ovpn"
 echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$domen:81/udp.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$domen:81/ssl.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
+echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
+
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
 echo -e "$COLOR1 $NC  ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}  ${WH}           Payload WS                   ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}  ${WH}          << Payload WS >>                 ${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}            ${WH}• XLORD VPN STORE •              $COLOR1 $NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo""
+echo -e "$COLOR1 ${NC}  ${WH}           << Payload WSS >>                  ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
+echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
 else
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}       ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}    ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}$opensh" | tee -a /etc/log-create-user.log
@@ -263,22 +254,25 @@ echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$domen:81/tcp.ovpn"
 echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$domen:81/udp.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$domen:81/ssl.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
+echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
+
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
 echo -e "$COLOR1 $NC  ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}  ${WH}           Payload WS                   ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}  ${WH}          << Payload WS >>                 ${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}            ${WH}• XLORD VPN STORE •              $COLOR1 $NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo""
+echo -e "$COLOR1 ${NC}  ${WH}           << Payload WSS >>                  ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
+echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -425,18 +419,12 @@ echo -e "$COLOR1 ${NC}            ${WH}• XLORD VPN STORE •              $COL
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 else
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}       ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}    ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}$opensh" | tee -a /etc/log-create-user.log
@@ -452,22 +440,25 @@ echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$domen:81/tcp.ovpn"
 echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$domen:81/udp.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$domen:81/ssl.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
+echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
+
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
 echo -e "$COLOR1 $NC  ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}  ${WH}           Payload WS                   ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}  ${WH}          << Payload WS >>                 ${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}            ${WH}• XLORD VPN STORE •              $COLOR1 $NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo""
+echo -e "$COLOR1 ${NC}  ${WH}           << Payload WSS >>                  ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
+echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
 fi
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -649,7 +640,8 @@ echo ""
 echo "  Select the existing client you want to Delete"
 echo "  Press CTRL+C to return"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
-grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 2-3-4 | nl -s ') '
+grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 2-3 | nl -s ') '
+grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 4 | nl -s ') '
 until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 if [[ ${CLIENT_NUMBER} == '1' ]]; then
 read -rp "Select one client [1]: " CLIENT_NUMBER
@@ -704,19 +696,12 @@ TEXT="
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
 clear
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC}    ${COLBG1}${WH}• SSH Account Premium•              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}ISP        ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 $NC  ${WH}City       ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}IP         ${COLOR1}: ${WH}$IP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}Host       ${COLOR1}: ${WH}$domen" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OpenSSH    ${COLOR1}: ${WH}$opensh" | tee -a /etc/log-create-user.log
@@ -732,22 +717,25 @@ echo -e "$COLOR1 $NC  ${WH}OVPN TCP   ${COLOR1}: ${WH}http://$domen:81/tcp.ovpn"
 echo -e "$COLOR1 $NC  ${WH}OVPN UDP   ${COLOR1}: ${WH}http://$domen:81/udp.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}OVPN SSL   ${COLOR1}: ${WH}http://$domen:81/ssl.ovpn" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}UDPGW      ${COLOR1}: ${WH}7100-7300" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}SSH UDP    ${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}SSH 80      ${COLOR1}: ${WH}$domen:80@$Login:$Pass"
+echo -e "$COLOR1 $NC  ${WH}SSH 443     ${COLOR1}: ${WH}$domen:443@$Login:$Pass"
+
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 $NC  ${WH}PORT SLWDNS${COLOR1}: ${WH}80,443,53"
 echo -e "$COLOR1 $NC  ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain"
 echo -e "$COLOR1 $NC  ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1 ${NC}  ${WH}           Payload WS                   ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC}  ${WH}          << Payload WS >>                 ${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC}            ${WH}• XLORD VPN STORE •              $COLOR1 $NC"
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo""
+echo -e "$COLOR1 ${NC}  ${WH}           << Payload WSS >>                  ${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1${NC}${WH}GET wss://$domen [protocol][crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
+echo -e "$COLOR1 $NC  ${WH}Created    ${COLOR1}: ${WH}$harini"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 $NC  ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/log-create-user.log
+echo -e "$COLOR1———————————————————————————————${NC}"
 read -n 1 -s -r -p "   Press any key to back on menu"
 xlord
 }
