@@ -630,8 +630,8 @@ grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 2-3 | nl -s ') '
 grep -E "^#ssh " "/etc/xray/ssh" | cut -d ' ' -f 4 | nl -s ') '
 until [[ ${CLIENT_NUMBER} -ge 1 ]]; do
 if [[ ${CLIENT_NUMBER} == '1' ]]; then
-read -rp "Select one client [1]: " CLIENT_NUMBER
-else
+#read -rp "Select one client [1]: " CLIENT_NUMBER
+#else
 read -rp "Pilih Salah Satu Member [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 fi
 done
