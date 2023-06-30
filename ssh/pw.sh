@@ -12,7 +12,7 @@ echo "Connecting to Server..."
 sleep 0.5
 echo "Generating New Password..."
 sleep 0.5
-  egrep "^ssh" /etc/passwd >/dev/null
+  egrep "###" /etc/passwd >/dev/null
   echo -e "$password\n$password" | passwd $username
   clear
   echo " "
