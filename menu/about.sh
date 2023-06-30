@@ -53,6 +53,10 @@ if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
 Exp=$(curl -sS https://raw.githubusercontent.com/nilaa27/cinta/main/vps| grep $MYIP | awk '{print $3}')
+#warna
+abang='\e[1;97;101m'        # Red
+NC='\e[0m'
+sc='\e[1;97;101m'        #y
 fi
 pro=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 kota=$(curl -s ipinfo.io/city )
@@ -65,7 +69,7 @@ echo "   $NC    \e[1;97;101m [INFORMASI SSH SERVICE PORT] \e[0m" | tee -a log-in
 echo "   - ——————————————————————————————————————"
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443"  | tee -a log-install.txt
-echo "   - Udp Custom              : 1-6555"  | tee -a log-install.txt
+echo "   - Udp Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - Websocket SSH(HTTP)     : 80, 8880"  | tee -a log-install.txt
 echo "   - Websocket SSL(HTTPS)    : 443"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -85,15 +89,15 @@ echo "   - Xray Vless Ws None Tls  : 80, 8080"  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
 echo "   -$NC    \e[1;97;101m [ALL SERVICE SC] \e[0m"  | tee -a log-install.txt
 echo""
-echo "   - ✅ BW MONITORING"  | tee -a log-install.txt
-echo "   - ✅ CHECK LOGIN USER"  | tee -a log-install.txt
-echo "   - ✅ CHECK LOG AKUN"  | tee -a log-install.txt
-echo "   - ✅ AUTO CLEAR"  | tee -a log-install.txt
-echo "   - ✅ REBOOT JAM 05:00"  | tee -a log-install.txt
-echo "   - ✅ BACKUP & RESTORE"  | tee -a log-install.txt
-echo "   - ✅ UDP & SLOW"  | tee -a log-install.txt
-echo "   - ✅ MENU TRIAL ALL SERVICE"  | tee -a log-install.txt
-echo "   - ✅ GANTI PW VPS"  | tee -a log-install.txt
+echo "   - ✅BW MONITORING"  | tee -a log-install.txt
+echo "   - ✅CHECK LOGIN USER"  | tee -a log-install.txt
+echo "   - ✅CHECK LOG AKUN"  | tee -a log-install.txt
+echo "   - ✅AUTO CLEAR"  | tee -a log-install.txt
+echo "   - ✅REBOOT JAM 05:00"  | tee -a log-install.txt
+echo "   - ✅BACKUP & RESTORE"  | tee -a log-install.txt
+echo "   - ✅UDP & SLOW"  | tee -a log-install.txt
+echo "   - ✅MENU TRIAL ALL SERVICE"  | tee -a log-install.txt
+echo "   - ✅GANTI PW VPS"  | tee -a log-install.txt
 echo""
 echo "   - ———————————————————————————————————"
 echo "      $NC    \e[1;97;101m     DETAIL CLIENTS     \e[0m"
