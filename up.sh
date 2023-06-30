@@ -128,8 +128,8 @@ wget -O vmess-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/
 wget -O vless-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/vless-usage.sh"
 wget -O trojan-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trojan-usage.sh"
 wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-usage.sh"
-wget -O pw "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/pw.sh"
-chmod +x pw
+wget -O enc "https://raw.githubusercontent.com/xlord27/gabut/main/ssh/enc.sh"
+chmod +x enc
 chmod +x menu-update
 chmod +x update
 chmod +x menu
