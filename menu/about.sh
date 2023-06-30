@@ -65,7 +65,7 @@ echo -e "\e[1;32m══════════════════ Autoscri
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   $NC    \e[1;97;101m [INFORMASI SSH SERVICE PORT] \e[0m" | tee -a log-install.txt
+echo "   $NC    ${sc}" [INFORMASI SSH SERVICE PORT] " | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443"  | tee -a log-install.txt
@@ -73,13 +73,13 @@ echo "   - Udp Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - Websocket SSH(HTTP)     : 80, 8880"  | tee -a log-install.txt
 echo "   - Websocket SSL(HTTPS)    : 443"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   $NC    \e[1;97;101m [INFORMASI Grpc, Bdvp, Ngnx] \e[0m" | tee -a log-install.txt
+echo "   $NC    ${sc}" [INFORMASI Grpc, Bdvp, Ngnx] " | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
 echo "   - Badvpn                  : 7200"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
 echo "   - Grpc                    : 443"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   $NC    \e[1;97;101m [INFORMASI XRAY] \e[0m"  | tee -a log-install.txt
+echo "   $NC    ${NC}" [INFORMASI XRAY] "  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
 echo "   - Xray Vmess Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Vless Ws Tls       : 443"  | tee -a log-install.txt
@@ -87,7 +87,7 @@ echo "   - Xray Trojan Ws Tls      : 443"  | tee -a log-install.txt
 echo "   - Xray Vmess Ws None Tls  : 80, 8080"  | tee -a log-install.txt
 echo "   - Xray Vless Ws None Tls  : 80, 8080"  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
-echo "   -$NC    \e[1;97;101m [ALL SERVICE SC] \e[0m"  | tee -a log-install.txt
+echo "   -$NC    ${NC}" [ALL SERVICE SC] "  | tee -a log-install.txt
 echo""
 echo "   - ✅BW MONITORING"  | tee -a log-install.txt
 echo "   - ✅CHECK LOGIN USER"  | tee -a log-install.txt
@@ -100,7 +100,7 @@ echo "   - ✅MENU TRIAL ALL SERVICE"  | tee -a log-install.txt
 echo "   - ✅GANTI PW VPS"  | tee -a log-install.txt
 echo""
 echo "   - ———————————————————————————————————"
-echo "      $NC    \e[1;97;101m     DETAIL CLIENTS     \e[0m"
+echo "      $NC    ${NC}"     DETAIL CLIENTS     \e[0m"
 echo "   - ———————————————————————————————————"
 echo "   - Clients:${Name}"
 echo "   - EXP:${Exp}"
