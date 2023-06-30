@@ -677,16 +677,17 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1${NC}${COLBG1}              ${WH}• SELECT USERS •             ${NC}$COLOR1$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}————————————————————————————————————————————————————${NC}"
-grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2-3 | column -t | sort | uniq
+grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2-3-4 | column -t | sort | uniq
 echo ""
 echo -e "${YB}tap enter to go back${NC}"
 echo -e "${CYAN}————————————————————————————————————————————————————${NC}"
-read -rp "Input Username : " user :"
+read -rp "Input Username : " user
+if [ -z $user ]; then
 fi
 done
-Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
-exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
-Pass=$(grep -E "^###" "/etc/xray/ssh" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
+Login=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 2 | sed -n "${user}"p)
+exp=$(grep -E "^### " "/etc/xray/ssh" | cut -d ' ' -f 3 | sed -n "${user}"p)
+Pass=$(grep -E "^###" "/etc/xray/ssh" | cut -d ' ' -f 4 | sed -n "${user}"p)
 
 echo -e "$COLOR1————————————————————————————————${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${COLBG1}${WH}• SSH Account •              ${NC} $COLOR1 $NC" | tee -a /etc/log-create-user.log
