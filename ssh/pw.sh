@@ -3,7 +3,7 @@ echo " "
 echo " "
 echo " "
 read -p "Input USERNAME to change password: " username
-egrep "^ssh" /etc/passwd >/dev/null
+egrep "^###" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 read -p "Input new PASSWORD for user $username: " password
 
