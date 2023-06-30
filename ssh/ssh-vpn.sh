@@ -355,6 +355,9 @@ wget -O vless-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/
 wget -O trojan-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trojan-usage.sh"
 wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-usage.sh"
 wget -O pw "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/pw.sh"
+wget -O logg "https://raw.githubusercontent.com/xlord27/gabut/main/logg.sh"
+chmod +x enc
+chmod +x logg
 chmod +x pw
 chmod +x menu-update
 chmod +x update
