@@ -221,13 +221,13 @@ install_speedtest() {
 }
 
 print_intro() {
-echo -e" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"     
-echo -e "\E[44;1;39m       INFO & DEATIL VPS              \E[0m"
-echo -e" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e"   << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
-echo -e"        << LAYANAN AUTO SCRIPT  >>" | lolcat
-echo -e"           << BY XLORD VPN >>" | lolcat
-echo -e" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"     
+echo"             INFO & DEATIL VPS"             
+echo"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo"    << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
+echo"         << LAYANAN AUTO SCRIPT  >>" | lolcat
+echo"            << BY XLORD VPN >>" | lolcat
+echo" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 }
 
 # Get System information
