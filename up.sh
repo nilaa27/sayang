@@ -233,6 +233,26 @@ echo -e "\033[0;34m----------------------------------------\033[0m"
 echo -e "\E[44;1;39m            SCRIPT UPDATED              \E[0m"
 echo -e "\033[0;34m----------------------------------------\033[0m"
 echo ""
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "  ${BG} >>> INFORMASI UPDATE SCRIP <<< ${NC}"
+
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "      •> PEMBARUAN SCRIPT <•" | lolcat
+
+echo -e "    •> PENAMBAHAN FILE  <•" | lolcat
+
+echo -e "      •> FIX BUG AND ERROR <•" | lolcat
+
+echo -e "     •> TRIMAKASIH TELAH MENGUNAKAN SCRIPT BY XLORD VPN <•" | lolcat
+
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "  ${BG} >>> THANKS TO Xlordvpn <<< ${NC}" 
+
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 xlord
 ;;
