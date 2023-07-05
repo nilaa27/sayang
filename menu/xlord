@@ -248,10 +248,10 @@ echo -e " ${BIRU} ┌───────────────────�
  echo -e "${BIRU}  │ ${PUTIH} SSH  ${NC}: $ressh"" │ ${PUTIH} NGINX ${NC}: $resngx"" │   ${PUTIH}XRAY ${NC}: $resv2r"" │${BIGreen}  𝗚𝗢𝗢𝗗 ${BIRU} │"
   echo -e    "${BIRU}  └─────────────────────────────────────────────────────┘${NC}"
 echo -e " ${BIRU}         ┌───────────────────────────────────────┐${NC}"
-echo -e  "${BIRU}               << LAPORAN PENGGUNAAN BW >> ${NC}" | lolcat
+echo -e  "${BIRU}                 << LAPORAN PENGGUNAAN BW >> ${NC}" | lolcat
 echo""
-          echo -e "${BIRU} ${NC}             ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC}       ${NC}        ${BIRU} "
-          echo -e "${BIRU} ${NC}             ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC}    ${NC}        ${BIRU}"
+          echo -e "${BIRU} ${NC}              ${kun}𖡛${putih} BW HARI INI ${NC}   : ${YELLOW} [$ttoday]${NC}       ${NC}        ${BIRU} "
+          echo -e "${BIRU} ${NC}              ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC}    ${NC}        ${BIRU}"
 echo""     
 echo -e "${BIRU}          └───────────────────────────────────────┘${NC}" 
 echo -e "${NILA}     —————————————————————————————————————————————————\033[95m" | lolcat
