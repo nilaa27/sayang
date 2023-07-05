@@ -224,14 +224,12 @@ print_intro() {
     echo -e "\033[0;34m----------------------------------------\033[0m" | lolcat
 echo -e "\E[44;1;39m            INFO VPS              \E[0m"
 echo -e "\033[0;34m----------------------------------------\033[0m" | lolcat
-sleep 2
 echo ""
 echo -e" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
 echo -e"     << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
 echo -e"           << LAYANAN AUTO SCRIPT  >>" | lolcat
 echo -e"               << BY XLORD VPN >>" | lolcat
 echo -e" ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
-sleep 2
 }
 
 # Get System information
