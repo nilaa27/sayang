@@ -222,11 +222,11 @@ install_speedtest() {
 
 print_intro() {
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"    
-echo "            INFO & DEATIL VPS" | lolcat            
+echo "          INFO & DEATIL VPS" | lolcat            
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "   << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
-echo "        << LAYANAN AUTO SCRIPT  >>" | lolcat
-echo "           << BY XLORD VPN >>" | lolcat
+echo " << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
+echo "    << LAYANAN AUTO SCRIPT  >>" | lolcat
+echo "      << BY XLORD VPN >>" | lolcat
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 }
 
