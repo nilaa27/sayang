@@ -249,10 +249,9 @@ echo -e " ${BIRU} ┌───────────────────�
   echo -e    "${BIRU}  └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BIRU}          ┌──────────────────────────────────┐${NC}"
 echo -e    "               << LIST MEMBER ACCOUNT >> ${NC}"
-echo -e "${NILA}          ———————————————————————————————— \033[95m" | lolcat
+echo -e "${NILA}            ———————————————————————————————— \033[95m" | lolcat
 echo ""
-echo""
-     echo -e "${BIRU}${NC}${PUTIH}               SSH          : ${kun}{$ssh1}${NC}${ijo}[MEMBER]${NC}"
+     echo -e "${BIRU}${NC}${PUTIH}               SSH          : ${kun}{$ssh1}${NC} ${ijo}[MEMBER]${NC}"
       echo -e "${BIRU}${NC}${PUTIH}               VMESS        : ${kun}{$vmc}${NC} ${ijo}[MEMBER]${NC}"
       echo -e "${BIRU}${NC}${PUTIH}               VLESS        : ${kun}{$vlx}${NC} ${ijo}[MEMBER]${NC}"
       echo -e "${BIRU}${NC}${PUTIH}               TROJAN       : ${kun}{$trx}${NC} ${ijo}[MEMBER]${NC}"
@@ -280,9 +279,8 @@ echo -e "${BIRU}          └─────────────────
       echo -e " ${BIRU}   └──────────────────────────────────────────┘${NC}"
       echo -e                                                                                 
 echo ""
-     echo -e "${NILA}    ———————————————————————————————— \033[95m" | lolcat
-echo ""
-     echo "       KETIK "𝗫𝗟𝗢𝗥𝗗 \033[0m | lolcat" UNTUK MEMUNCULKAN MENU"
-     echo -e "${NILA}    ———————————————————————————————— \033[95m" | lolcat
+     echo -e "${NILA}         ——————————————————————————————————————— \033[95m" | lolcat
+     echo "            KETIK "𝗫𝗟𝗢𝗥𝗗" UNTUK MEMUNCULKAN MENU"
+     echo -e "${NILA}         —————————————————————————————————————— \033[95m" | lolcat
 echo ""
 echo -e ""
