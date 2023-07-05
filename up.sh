@@ -130,7 +130,7 @@ wget -O trojan-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/xray
 wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-usage.sh"
 wget -O enc "https://raw.githubusercontent.com/xlord27/gabut/main/ssh/enc.sh"
 wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/logg.sh"
-wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/sc"
+wget -O sc "https://raw.githubusercontent.com/nilaa27/sayang/main/sc"
 chmod +x enc
 chmod +x logg
 chmod +x menu-update
