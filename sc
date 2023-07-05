@@ -225,7 +225,7 @@ echo " ━━━━━━━━━━━━━━━━━━━━━━━━�
 echo "        INFO & DETAIL VPS MU " | lolcat            
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "  << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
-echo "    << LAYANAN AUTO SCRIPT  >>" | lolcat
+echo "     << LAYANAN AUTO SCRIPT  >>" | lolcat
 echo "       << BY XLORD VPN >>" | lolcat
 echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 }
