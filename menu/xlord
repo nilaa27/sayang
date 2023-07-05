@@ -254,15 +254,15 @@ echo""
           echo -e "${BIRU} ${NC}           ${kun}𖡛${putih} SUBTOTAL BW  ${NC}  : ${YELLOW} [$tmon]${NC}    ${NC}        ${BIRU}"
 echo""     
 echo -e "${BIRU}      └───────────────────────────────────────┘${NC}" 
-echo -e "${NILA}        —————————————————————————————————————————————————\033[0m" | lolcat
+echo -e "${NILA}        —————————————————————————————————————————————————\033[95m" | lolcat
 echo -e "${BIRU} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e " ${BIRU}|    ${biru}1.${kun}) ☞ ${BIRU}${ijo}SSH${BIRU}${NC}    "   "       ${biru}6.${kun}) ☞ ${BIRU}${ijo}GANTI PW VPS${BIRU}${NC}"                                                                  "${BIRU}         |"
-echo -e " ${BIRU}     ${biru}2.${kun}) ☞ ${BIRU}${ijo}VMESS${BIRU}${NC} "   "        ${biru}7.${kun}) ☞ ${BIRU}${ijo}BACKUP VPS${BIRU}${NC}"                                                   "${BIRU}            "
-echo -e " ${BIRU}│    ${biru}3.${kun}) ☞ ${BIRU}${ijo}VLESS${BIRU}${NC}  "   "       ${biru}8.${kun}) ☞ ${BIRU}${ijo}MENU SETTING${BIRU}${NC}"                                                             "${BIRU}         │"
-echo -e " ${BIRU}     ${biru}4.${kun}) ☞ ${BIRU}${ijo}TROJAN${BIRU}${NC} "  "       ${biru}9.${kun}) ☞ ${BIRU}${ijo}CEK RUNNING${BIRU}${NC}"                                                           "${BIRU}           "
-echo -e " ${BIRU}|    ${biru}5.${kun}) ☞ ${BIRU}${ijo}TRIAL${BIRU}${NC}  " "       ${biru}XX${kun}) ☞ ${BIRU}${ijo}SC BY XLORD VPN${BIRU}${NC}"                  "${BIRU}      |${NC}"
+echo -e " ${BIRU}     ${biru}1.${kun}) ☞ ${BIRU}${ijo}SSH${BIRU}${NC}    "   "       ${biru}6.${kun}) ☞ ${BIRU}${ijo}GANTI PW VPS${BIRU}${NC}"                                                                  "${BIRU}          "
+echo -e " ${BIRU}│    ${biru}2.${kun}) ☞ ${BIRU}${ijo}VMESS${BIRU}${NC} "   "        ${biru}7.${kun}) ☞ ${BIRU}${ijo}BACKUP VPS${BIRU}${NC}"                                                   "${BIRU}           │"
+echo -e " ${BIRU}     ${biru}3.${kun}) ☞ ${BIRU}${ijo}VLESS${BIRU}${NC}  "   "       ${biru}8.${kun}) ☞ ${BIRU}${ijo}MENU SETTING${BIRU}${NC}"                                                             "${BIRU}          "
+echo -e " ${BIRU}│    ${biru}4.${kun}) ☞ ${BIRU}${ijo}TROJAN${BIRU}${NC} "  "       ${biru}9.${kun}) ☞ ${BIRU}${ijo}CEK RUNNING${BIRU}${NC}"                                                           "${BIRU}          │"
+echo -e " ${BIRU}     ${biru}5.${kun}) ☞ ${BIRU}${ijo}TRIAL${BIRU}${NC}  " "       ${biru}XX${kun}) ☞ ${BIRU}${ijo}SC BY XLORD VPN${BIRU}${NC}"                  "${BIRU}       ${NC}"
 echo -e " ${BIRU}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "${NILA}       ————————————————————————————————————————————————— \033[0m" | lolcat
+echo -e "${NILA}       ————————————————————————————————————————————————— \033[95m" | lolcat
 echo ""
 read -p " Select menu : " opt
 echo -e ""
