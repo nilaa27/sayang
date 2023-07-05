@@ -1,4 +1,377 @@
-#apasih dek
+#!/usr/bin/env bash
+#
+# Description: A Bench Script by Xlord
+trap _exit INT QUIT TERM
 
-EncBy="XlordVpn";krF=FoL;Gnr=Vl;QIy=Is;UOt=FC;kVE=Sk;KlM=gM;Xwe=TF;oTX=dD;Yox=Qa;wQx=mb;Kqb=Zy;xWU=twB;gTp=auw;hwZ=Ejp;tHg=iQZ;ojo=shb;jhw=FjF;IDL=klV;wOA=yFT;PZL=XfL;DRJ=DiE;bmJ=FCa;XGN=dOT;QCK=dkY;SOb=WJE;RJx=uAv;czJ=dts;VGB=oCy;TyO=xGj;yHU=bpq;Nfb=Wct;doQ=Ibf;XCL=rax;ZNH=Hhf;Eoh=yCU;ghd=hut;ooz=VKY;qMf=PrY;Ecf=Lke;BbJ=jie;QOI=lOT;oi=QkU;yM=iDO;rT=twI;wa=BEk;Lf=SGl;Sx=Kri;yL=RiF;Xf=iZT;iv=fpC;fW=nki;qX=FrL;ba=OUY;czP=Hdm;ecN=WKt;QMW=BnB;Nsq=jdC;nof=OZt;bhx=qNV;vVN=xaU;smp=Wta;ceY=GDh;AIB=juO;miA=Cso;zgz=Hka;Kea=YMq;hUp=SWY;zMP=ozk;WGK=JEt;pkF=jjF;FCq=pFs;ZrQ=VcQ;ZjS=do;BTP=Su;sly=xM;aZl=vF;iJn=bo;QCl=HB;SCO=xo;fUq=Jo;Epq=zc;wxq=Ev;ziJ=Gx;Kzo=JF;PDO=pJ;qhq=yp;OYk=rj;OGy=Cc;hSK=xR;lnD=um;UXi=pl;xBF=xP;qOD=iX;RVy=nl;mqe=JK;rQt=CA;qJD=FR;sPp=XZ;moh=DC;Fsj=GWh;NTx=Jnx;dwG=ncr;Ugd=mFV;ZTt=WjI;mFG=lms;YGK=bPI;UKs=ibv;hka=JFE;zpQ=Gxt;VlF=Jxk;AEJ=cuk;SUZ=YiV;Wfq=NhZ;xLp=ray;QmE=mqM;fkp=tHl;Sek=XvT;qbj=EKu;RfA=xSe;fPQ=Oll;cif=jtg;GYE=yei;Prw=RTD;sMB=pEL;sxA=APb;aRs=HgZ;SXm=VSI;lZA=UKc;YMw=Lct;bwO=XQI;OxQ=COX;bPh=KqP;GVr=hRx;eoA=eID;AZK=fFj;PGC=XPy;ieV=gly;AUO=yit;GjW=jaZ;tBB=HSO;vdV=efl;HiW=VHx;JaQ=RCo;cGr=fsk;eib=jty;TPK=rlb;dhM=oDt;tCL=muK;gAg=xQq;xWl=eMt;AtB=mbQ;UzS=lee;xjU=CPZ;qLS=iIg;dQw=NHN;Dum=qAc;aei=Whw;afz=OcR;NWZ=Txs;gzI=HsZ;YmH=IIm;kZc=Ppd;qnZ=vjw;sQw=BmF;PAB=rGe;gah=aHu;XfD=uJJ;LmJ=PUK;jCz=XpN;gTg=hRF;cpS=fhx;wFI=fih;pHM=aTH;GIm=Jtb;XDy=XGY;zMs=kPd;VtP=pbP;ALj=acU;HEZ=Tre;EPr=vOf;eSC=AIk;TXH=szR;nNa=bGD;lQt=Qod;Qvm=HGI;tkS=IOY;qmZ=tDf;xxx=xOS;pFg=XCd;aVR=xGh;ooR=AHX;JVj=laY;TvM=kEx;SYU=hol;ddj=khS;aPP=oiI;Edo="
-";DSi=WYX;LHA=Gfx;VgU=gJZ;Rxh=xYy;bXG=gvs;eLoP="e";u18="6";Yt="l";Yxgs="";qwt="Fu";ieC=HO;XcH=Rv;Ugs=LC;vD=xp;fy=oW;Zl=LhH;oP=Jm;sDA=kpY;GHn=TB;wzk=Da;oiO=Ei;NaM=hIf;fC=vjz;kT=rz;sV=bZz;CL=ARL;Wc=dA;gZG=tGI;vpk=cM;Aao=tgy;sU=ld;LZ=Pr;BE=wCX;iN=fQ;RCe=Dm;Rc=Fl;Njo=OMq;gtb=SKa;Wf=jMB;Dm=wHr;Nx=Wn;ANT=jAK;oFy=Bnc;IjZ=Xj;DQa=oK;ewZ=Vm;QPf=lz;Cwg=aS;KEM=jS;fkE=hM;nLw=ym;FWv=BC;aDC=Lw;tW=Rgn;kw=Hgf;tQ=eSh;Fi=iGb;Or=snM;ZG=xqx;xC=WJr;Bf=haC;pT=THr;By=jbu;tm=Hcy;eT=nTC;UT=KCa;dk=Pxy;vG=TvX;HX=MMB;Ow=ZoT;UJ=LvE;rx=oMF;EB=VZx;OC=IfU;dv=lTx;Nk=TNq;Ej=bKu;dl=ZZi;yzL=bJ;EiG=LJ;iqg=gK;fbd=vg;OPl=Ei;tnI=YS;yBV=DA;yxh=Ks;Nic=Ih;wMq=tD;iDs=AQ;Nhh=zy;JWe=Ry;gC=AnI;qWN=uq;hIc=OAL;UOm=Nq;Xj=ax;GW=utn;Fmc=CaI;zeK=eT;hI=sl;Ae=RK;XV=doy;Dpq=Eg;Mmr=MZg;CXd=Bao;RND=WUC;CGm=SRK;DJh=LZw;ym=Ah;xzv=IX;FYi=YUX;v6T=" ";RzE="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 gAiCpZGIgACIK4mc1RXZyBCIgACIgACIKIiIg8GajVGIgACIgACIgogblhGdgsDId1FIksSX50CM 0czM3ATM90WduBCIgACIgACIK4WZoRHI70FI0IDOxQzNzcDMxASZn1CIi03dhJ3ekICIbBiZpBCI 70FI2cTN4QDMxASZn1CIi03dhJ3ekICIbBiZpxWZgACIgogICRlI9QXauVHIgACIgACIgoANygTM kICIbBiZpxWZgACIgogICdkI9QXauVHIgACIgACIgogN3UDO0ATM90WduBCIgACIgACIK4WZoRHI C1kI9QXauVHIgACIgACIgoANyATM90WduBCIgACIgACIK4WZoRHI70FI0IDMxASZn1CIi03dhJ3e sFGdvR3ekICIvh2YlBCIgACIgACIK4WZoRHI70FIwAScl1CIi03dhJ3ekICIbBiZpxWZgACIgogI JdURCdCIrdXYggCJ9UmepN3XsFGdvRHIgACIKkmZgACIgogbyVHdlJHIgACIgACIgogI9VmepN3X pN3XsFGdvR3ekICIvh2YlBCIgAiCpAyJ9dSb15GJnAyLgcydhJHJnACLiYWMuUiIgYGdulmcwtnT 0JXa2BiJmAiInNXZtRmIgMHdzlGel9FIgACIKsXKoQncpZ3XrNWZoNmCK0nCi0Hdp5Wd7RCI9Vme 0ByOiUGZvNWZklWbkJCIzR3cphXZfBiZpBCIgAiCikCbsVnbvYXZk9iPyAyZzVWbkhCJi0DesFWd gIXZyVHdjFmZ15WYt1SblR3c5NHIz1CIlR2bjVGZp1GZoQiI9Unbh12Xzl3cgACIgACIgAiCuVGa t0WZ0NXezByctASZk92YlRWatRGKkISP0NWdk9mcw91c5NHIgACIgACIgogIpwGb152L2VGZv4jM tASZk92YlRWatRGKkISPyVmdfNXezBCIgACIgACIKISKsxWdu9idlR2L+IDIl1WYu1CdjVHZvJHc 9Unbh12Xzl3cgACIgACIgAiClNHblBCIgAiCikCbsVnbvYXZk9iPyAibvl2cyVmdt0WZ0NXezByc pBCIgAiCpZGIgACIKIiI9IXZ291c5NHIgACIgACIgogIi0DdjVHZvJHcfNXezBCIgACIgACIKIiI vRkI9QncpZHIgACIgACIgogblhGdgsDc19mcnN2Lx8yYvJHcvAiclt2YvRGIhFXLgAXZydGIgAiZ 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 gACIu9Wa0F2YvxEIiAyboNWZgACIgACIgAiCuVGa0ByOd1FIiknc05WdvNmIg4WLgYiJgISe0l2Y tAyWbBiZpBCIgAiCpZGIgACIKISKiknc05WdvNGJg8CI5RXajRiIgUWdsJ2XoQCI6ACIgACIgACI goDIgACIgACIgACIgACIu9WanVmUgICIvh2YlBCIgACIgACIK4WZoRHI70VXgIibvl2ZlJHJiAib uVGa0ByOd1FIicmcvRiIgoXLgs1WgYWagACIgoQamBCIgAiCikiIu9WanVmckICI39GbsVWefhCJ jVGdlRGIQNVSg8mTiACZlJ3XoQCI6ACIgACIgACIgACIgAibvl2ZlJFIiAyboNWZgACIgACIgAiC z9iLiASZtASIgsFImlGIgACIKsHIpgCdzVGdkVWZwN3XsxWY0NnbppgC9pQamBCIgAiCikiIkVGd gACIgACIKIiI9QXai91c5NHIgACIgACIgogblhGdgsTXgICdzVGdkVWZwN3Lpx2YtQ3clRHZlVGc 9AiI9h2YyF2c5N3ekICIbBiZpBCIgACIgACIKISKt1CIl1WYuVHKkISPoNmchNXezBCbhN2bsBCI sBCIgACIgACIgACIgogblhGdgsTXgIiIg0DIi0HajJXYzl3c7RiIgsFI8xHIdBiIud3butmb1JCI oNmchNXeztHJiAyWgYWagACIgACIgAiCpZGIgACIgACIgogIpg2YyFGKkISPoNmchNXezBCbhN2b gACIgACIKICN28lN4gnI9QXai91c5NHIgACIgACIgACIgAiCuVGa0ByOdBiI0YzX2gDeiASPgISf oNmchNXeztHJiAyWgwHfg0FIiYDOzkmIg0DIi0HajJXYzl3c7RiIgsFImlGIgACIgACIgoQamBCI pZGIgACIgACIgogI2gzMpJSP0lmYfNXezBCIgACIgACIgACIgogblhGdgsTXgIiN4YTaiASPgISf gISfoNmchNXeztHJiAyWgwHfg0FIigjdtJXYiASPgISfoNmchNXeztHJiAyWgYWagACIgACIgAiC hNXeztHJiAyWgwHfg0FIiQjNoNmchFmIg0DIi0HajJXYzl3c7RiIgsFI8xHIdBiIshjdtJXYiASP gACIKICN2g2YyFWYi0DdpJ2Xzl3cgACIgACIgACIgACIK4WZoRHI70FIiQjNtJXYiASPgISfoNmc zl3c7RiIgsFI8xHIdBiI3YXbyFmIg0DIi0HajJXYzl3c7RiIgsFImlGIgACIgACIgoQamBCIgACI gACIKIiZo1mchJSP0lmYfNXezBCIgACIgACIgACIgogblhGdgsTXgICb3YXbyFmIg0DIi0HajJXY gACIgAiCuVGa0ByOdBiI2YXbyFmIg0DIi0HajJXYzl3c7RiIgsFImlGIgACIgACIgoQamBCIgACI 0lmYfNXeztHJiAietAyWgACIgACIgAiCpZGIgACIgACIgogIsVWbyFmI9QXai91c5NHIgACIgACI ztHJoASZyVHdjVGdph2YyFGItVGdzl3cgQWZ0J3bwBXdz5WVgojcvJncFJCIkVmcfBiJmASXgISf lVGcz5CbsFGdz5Wav8iOzBHd0hmI9EDbyVHIgACIgACIgoQMgQXa4VGImYCIi4GXukSfoNmchNXe u0HdpJ2Xzl3c7RSL4VnbpxWLx4SMuETL0NXZ0RWZlB3ctEGbr92bvkGbj9CcwF2L0VmbuQ3clRHZ lRHZlVGcz1SYst2bv9yclxWam9Caz5CctFGbuwGZv8iOzBHd0hmI9IDbyVHIgACIgACIgogI6dGd lNWLrNWZoNWLv5WLtACdld2dgACIgACIgAiCio3Z05Sf0lmYfNXeztHJtgXdulGbtEjLx4SMtQ3c kAyWgYWagACIgACIgAiC9FDbyV3ekAienRnL0NXZ0RWZlB3cg8ULgATMU1CIx1CIlRXYjlmZpRnc tASZ0F2YpZWa0JXZj1yajVGaj1ybu1SLgQXZndHIgACIgACIgACIgAiCuVGa0ByOdBCMgUmbtAyP g0FIwASZu1CI/QCIbBCIgACIgACIgACIgoQfywmc1tHJgo3Z05CdzVGdkVWZwNHIP1CIwEDVtASc lBiJmAiIuxlLpx2YtQ3clRHZlVGczBCZh9Gbud3bkByb0BCZlxWahZEI6I3byJXRiACZlJ3XgYiJ 4pHIyFGdgYiJgkGbj1CdzVGdkVWZwNHIw1CIylGZr1GIgACIgACIgoQamBCIgACIgACIKEDI0lGe zVGdkVWZwN3LuACerACZv1GajBiJmASasNWL0NXZ0RWZlB3cv4CID1CI6dGduQ3clRHZlVGczBiZ yBHIgACIKkmZgACIgogenRnL0NXZ0RWZlB3cgYWLg0mcgACIgACIgAiC0NXZ0RWZlB3cvkGbj1Cd iQWZlB3UgQWYvxGcVJCIiUWbh5EIlR2bOBiIgIibcNnMx0SJzBjMtUyc4ETLlMHOx0SJiAiZ05Wa BSp4gICIvh2YlpwegkCKvJHdul2X05WayBnCK0nCik3YuVGdhxkIgICZlVGcTBCZh9Gbud3bEJCI BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 oNWZKACIgAiIBSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 g8GajVmCgACIgACIgACIgACI0F2Ys9GbgwHIiMFUWBCTJRVQFREImAyTG5USgACIgACIgACIiAyb iHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliDiI jVmCiEIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIliHIl iAyboNWZKQXYjx2bsBCfgIiP+AiTBtUQOV1RH5URNBCSBxURUBCSJNVQLFUTJJVRUBCP8AiIg8Ga gwDPgACIgACIgICIvh2YlpAdhNGbvxGI8BiI+4DIgQFUJJ1QTByTUVVQg4UQOFUWBxEI8wDIgACI BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4gICIvh2YlpAdhNGbvxGI8BiI+4DIOBlVgQkUPxEWgklQ BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 K42bpRXYtJ3bm5Wag0WZ0NXeTBCdldEIjogC9pgIBSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4BSp4 utHIvUWbh5GIsVGZv12LnAiOG1CIrdXYggCJ9UWbh52YgACIgowegkCKvZmbp9VblR3c5N3X0V2Z voSX0xFIb51LzdCIkV2cgwHIvZmbpVHcj9yYvJHcvAyJ9VWbh5GI05WayB3egQkTFBSfyQSPl1WY rUmcvN2eg8icvN3clN2byB3LnAiOG1CIrdXYggCJ9MXZy92YgACIgoQKgcyLvQiKdRHXgs1LztzL bdiRtAya3FGIoQSPxVmcmBCIgAiCpAybm5Wa1B3YvM2byB3LgcSflJ3bjBCdulmcwtHIE5URg03K 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 p1GIgACIgACIgogblhGdgsTXgAjNgQ3ZtASfl1Wa0tHJgsFImlGIgACIKkSKg0XZtlGdfRnchR3c gACIgAiCpAjNgUCIl1Wa0RCIyBHelhCJ9MWZzBCIgACIgACIKkCM2AyLgUWbpRHJgIHc4VGKk0jb gACIKIyYlNHI9NWZztHJg4WatBSfulWb7RCI6ACIgACIgACIulGIkVGazlmbpZEIiAyboNWZgACI gAiCiMWZzBSfl1Wa0tHJgoDIgACIgACIg4WagQWZoNXaulmRgICIvh2YlBCIgACIgACIKU2csVGI jVGIgACIKkyJaVCITViONViOIVCIkVSLtVSLZVyKnASZ0FGZoQSPl1Wa09VZ0FGZgACIgoQamBCI iQXZndnIgMHdzlGel9FIhogC9pgIl1Wa09VZ0FGZkAiOgACIgACIgACIgAXbhR3cl1WaUBiIg8Ga fBSIKEDI0lGelBiJmAiIuxlLk5WdvZGI09mbgQmbh1WbvNGI0V2Z3BiOy9mcyVkIgQWZy9FImYCI gIibc5CZuV3bmBCdv5GIk5WYt12bjBSZlJnZgojcvJncFJCIkVmcfBiJmAiIlVmcmJCIzR3cphXZ sVnbvYXZk9iPgwmc1NGI21CIk5WYt12bjpAdld2dvwmc1NGIy9mZgs2Ylh2YgMiCxACdphXZgYiJ 0BiZpBCdzVGdgMiCsJXdj9FbhN2bsBCdlNnb1BCf8BSZ1JHd9wmc1N2XsF2YvxGImYCIxYiPyACb g0HbyV3YfxWYj9Gb7RCI61CIhAyWbpQe0lmdpR3Yl5mbvNGI2YHUJ9CN2BVSgMXYoBCdz9GagUGa tACdld2di0DZtN2XrNWZoN2XwlGI8xHIiQDIt1CIz1CIsJXdjJSPk12Yft2Ylh2YfBXagYiJg0VX t92YuUGbn92bn5CN2BXagQDIX1CIxAyYtACNtAyZulGcogCJ9s2Ylh2YfRjdwlmCiQDIU1CIt8Uc uF2YpBCNtASfk12Yft2Ylh2YfBXa7RCI8xHIpUWdyRHIvh2YlBiJmASMm4jMgwGb152L2VGZv4DI pBCNgcVLgEDIj1CI20CIn5WawhCKk0zajVGaj9lN2BXaKkCbsVnbvYXZk9CI+IDIt92YuAXa6FGa jVGaj9FcptHJgwHfgkSZ1JHdg8GajVGImYCIxYiPyACbsVnbvYXZk9iPg02bj5SZsd2bvdmL2YHc lh2YfRjdwlGJiAietAyWbBiZppQKsxWdu9idlR2Lg4jMg02bj5CcppXYo5WYjlGI20CI9RWbj91a vJEI6cmbp5mchdlIgc3bsxWZ59FIgACIK4WZoRHI70VXgIyajVGaj9lN2BXakICI61CImYCIis2Y btlCpZmCi4GXuQWZ0NWZ0VGZgQ3buBSZyV2dgkHdpZXa0NWZu52bjBiN2BVSgQmbhBCN2BVSggGd s52bgwHfgISKiUmbpxmZm9kIgQWZy9FKkISPl5Was52bgYiJg0VXgIyajVGaj9FN2BXakICI61CI l5Was52bgYiJg0VXgIyajVGaj9lN2BXakICI61CIbtlCikiIl5Was52TiAiblVmcn9FKkISPl5Wa iUmbpxmbPJCIuVWZyd2XoQCIvAiI9sSZulGbu9GI8xHIikiIl5WasZmZPJCIkVmcfhCJg8CIi0zK hVGbjpAdylmdft2Ylh2YK8mZul2XtVGdzl3cfRXZnpQKzVyKgUGdhRGKk0TZtlGdfRnchR3cKISK 05WayBnC0hXZupwbm5WafRjdwlmCvZmbp9VblR3c5N3X05WayBnC0hXZupwbyRnbp9Fdulmcwpgc 0RWZlB3cgInZtASbyBiJmACZlVGczBiJmACdzVGdkVWZwN3XsxWY0NnbppAd4VmbKQ3clR3Xvl2X KQHel5mCl1Wa09FZuV2X05WayBnC0hXZupQasNWL0NXZ";Mll="ch";HTv=Yyu;cbY=cId;FwM=nUK;Neo=URi;Jrd=ZsO;ZzZ=gsI;AGg=Krt;KoC=Usx;ftb=Vzm;kuT=EVS;AUX=NGv;Aow=suL;uBc=hlq;OqT=ApZ;kSe=ZTL;aFt=FKz;yqF=lEj;ZII=uml;BwC=JPx;gWH=eyv;wWA=hWw;unn=Brn;hxs=DiR;nPo=iOr;Uuo=lUG;zxW=Nkd;MAi=aWZ;XcA=xIq;sZL=MLV;rwV=lNF;GYU=UPS;WeS=kTk;Aym=btt;rGW=IDI;Uhx=DhE;Kut=fsH;eGn=UyX;VNh=YtK;QWo=gEO;Byf=nvi;Ezb=oBV;uWP=JEl;Vsp=Lgc;EAF=Byk;PSz=HCg;pyP=bQL;Uxq=ehM;WdA=Uij;pWM=bsv;oXm=BKe;mtM=qkr;XEB=pua;XzD=SPa;Kng=JSY;bFL=Zud;xbc=GSY;neu=TQJ;Ttj=EdI;ZCG=HXS;NSP=aRL;UPz=CwR;edR=xrL;jQC=PQv;ESa=fXd;eKc=KZo;WEy=DoO;fQg=tcd;FCk=GMk;YgE=Nzd;FAs=AFH;gRJ=wZL;ffM=Jsb;Ixf=RQY;Gmk=ugg;GRa=CTs;UiO=Yer;etb=mgM;fex=MqF;Nll=vPC;KWd=yXb;Muu=Mzy;wHZ=jjp;SmF=EZc;ZqQ=lNR;CuE=Afy;weE=KKV;ggU=fdX;wbE=YVE;TEj=yAz;and=qKr;MVm=jME;jUo=PRn;lUm=BLo;IUT=oDE;BDY=lkB;oQp=FKc;YEa=bpY;qOb=Izx;MfR=ODo;JmY=Kia;weH=FVf;URv=vSO;Jdp=BJH;opM=fhP;NUx=Qpe;iDY=ZNQ;lAj=vuK;imh=QaU;Cdp=mgw;wAJ=IMc;ANx=UQv;CkG=nsS;tuB=Lfj;KFb=ACa;Znn=SPN;Izy=AKY;MCI=uEV;Vas=kJi;OVF=xhN;ocJ=mis;CCq=zoG;Uun=Bsu;Vet=cPB;PMj=gXU;Svx=qVt;ado=LSJ;zGv=aIv;jyW=gEB;KLw=yan;nqU=foW;mPS=Zhi;oRH=HzR;aTq=iAA;LFG=yTk;LhE=dvZ;Gmd=aBt;lDM=FUf;KkS=LUv;ODo=ifH;LIW=oRx;kbu=cPC;WgK=RfX;NoQ=OpS;VWA=MwS;bPe=cOh;drL=JXi;tuj=aeR;nlI=RgR;qog=uHu;zLA=FCa;INo=pXp;PaQ=yJV;kPu=dmu;EgN=Wek;MXp=PIc;YEF=xAk;Zvz=EGN;Feh=yij;sv=TmN;Gc=WAR;kw=XRs;dT=fhJ;ed=WAu;rq=OFi;ak=auS;zU=gWJ;QB=PyR;Ci=HYT;DR=HGU;nEl=izK;Yon=JKg;aRR=osG;BLG=nGa;fad=iUJ;FeM=Oph;NIf=nUq;AdK=IHM;pMr=KRX;GJr=sor;Yzr=JJM;zCc=jhW;iac=Znx;lPF=qCm;GHi="o";Re="-";LcV=" ";H2o="t";O2h="r";r="ev";Gi="ba";x="s";sfT="d";x64="4";CTh=Vu;sh=dMK;Pl=GnF;MQ=HQe;dG=hZi;Tv=TuJ;BP=PPf;nh=Edv;pY=vGA;io=bPH;Rr=tdy;MF=jZJ;my=zmB;Yd=mtW;XA=kqf;VR=qss;BP=enZ;re=dnQ;os=Xua;kA=hzB;aE=JKy;vG=pcw;SO=gBc;FO=XMq;kK=ZHi;DwX=sS;mNb=im;nv=Cn;yNI=Hb;Yt=FQ;Pl=PU;ko=DJA;UX=tv;XD=UYM;uz=hIa;YVD=cJM;Zde=fi;IF=hLs;JCM=Dg;Fdw=JL;ieQ=FAu;ZMh=TQB;qHK=EM;wVK=bxY;nMR=mC;UL=Lep;wJ=eM;yc=dch;rIX=Vb;bBO=eT;Zpx=Iz;ang=Ln;AYe=Qy;UiQ=IU;usu=Xy;rkj=Ce;eVp=OY;aFw=wR;uNw=cJ;DQb=Tn;ZLx=ec;ipH=hk;pcK=rd;lCz=Ce;jxG=nx;Gkd=Pl;yFz=zk;vow=Qm;QBs=gz;dXe=sQ;dJU=vr;urX=mj;IF=qGI;UoJ=hD;x=$(eval $eLoP$Mll$GHi$v6T$Re$eLoP$v6T$RzE$v6T|$v6T$H2o$O2h$LcV"$LcV"$LcV"$Edo"$LcV|$v6T$O2h$r$v6T|$v6T$Gi$x$eLoP$u18$x64$v6T$Re$sfT);eval "$x";GMZ=snx;llB=diL;pxn=skL;Syg=GFT;RaJ=zXK;ZKL=BSQ;XCH=tmb;eyL=TOc;Ime=EZW;TFM=mN;tUA=Ab;fnp=ch;FNp=pJ;JRk=Az;YXw=hu;Qde=tk;zmI=lH;MdB=kG;cRe=zm;ygE=Og;MrN=Wn;Rwc=UL;KRw=NX;AmN=nu;lUf=HN;HVY=od;pqW=bz;hzm=tv;vAz=ql;fVA=KK;WXS=HX;PRd=CDX;lwM=wEt;ZcX=rAB;Yta=Syw;hvo=gTx;mtU=YbQ;Ilo=unK;Ava=XiM;mET=pHp;fFk=Pno;XBK=taz;dtp=zbA;bMu=zKL;FPC=PwO;xXA=dwc;Alj=ylC;JQq=JPx;MUH=FcT;cvl=azu;HPj=sSJ;dsl=XvS;Hoq=nKA;AZD=sfK;JFc=NZK;eEE=DrT;ZhW=fMr;VBT=enR;poD=hwH;lLU=qkd;yTa=OEZ;ZpV=WQP;Jeg=Mwj;YGH=HdD;mKz=pLU;PNn=ako;scF=rtk;QTH=sHP;Eto=FIR;BlM=WAX;UHF=WBV;Fud=mEb;sGh=Zzy;lPW=SOK;mcu=ZDf;QdD=YZM;HcF=LzS;GNn=Hyn;cql=ioJ;LKm=DNv;TAH=FaF;VYt=ERc;vhF=xvU;tNq=Uzi;JaE=bgV;bpG=opJ;CsA=UQX;pGD=TXG;AZk=bTy;bId=bNE;yql=fVT;Xcy=BmA;UHz=jRf;UNz=KZk;PXl=Vsy;Stv=Sed;cyB=zLX;gGz=JJP;IyT=xSZ;Zdj=nVJ;yQZ=vVc;sHL=Vfg;Zro=zth;XPf=sFS;nQQ=dnd;SNh=eWO;fOZ=Xjc;fgB=rQS;UjE=cpS;xYk=qWB;koB=ZFE;oQQ=hSL;ufm=zwQ;mzC=UfF;gQl=SLT;wwc=Jcb;tDN=SNI;ZFg=atH;UlF=ajb;DaK=zqX;KFL=uPP;mjy=zbB;ofO=nbM;vfl=vdB;SDM=yQQ;AfY=mzE;IHi=AeT;oVK=WsK;XhO=hRC;pOA=ScU;bCh=FOX;rgF=qzX;zyy=hXg;utq=MGT;Lkd=CTs;Vlb=XYZ;Ziu=aFC;dgF=qOn;Bpe=yss;Xoc=NXh;dGV=AjA;Zux=APj;diU=LZO;Vzp=lBl;xDW=otu;wxh=LmE;jsJ=xnu;AuO=OCw;iZA=dLf;pmj=lwe;RIo=tLO;TcY=glu;EVQ=Bxb;hkK=RTP;GcY=FoO;TDT=VhE;iZG=wyh;FNH=Bmj;BJh=mAj;SCs=hOS;kkj=Dgb;une=TET;DWN=wEf;JZr=EEn;eev=vSC;Gcg=IFa;jkQ=FDn;uiO=zBO;JIM=vwW;GtR=lZX;WoV=mWR;bZm=gDj;XgT=spD;dfG=pHI;IjF=XxS;pWp=hMH;Ul=fIj;dD=mht;yw=cOO;Vw=kik;Zo=RGl;XT=hQB;CB=Ofi;mM=Dun;cN=Uyp;rL=yIY;eD=qYt;jB=nnI;Wf=not;Yv=Rqc;Yu=OgM;xZ=FzE;ec=jKM;gB=qoM;rZ=lDg;HY=BTw;LB=TJn;Tk=qDl;HY=nSN;kp=iUS;ThankYou="HaveNiceDay";
+_red() {
+    printf '\033[0;31;31m%b\033[0m' "$1"
+}
+
+_green() {
+    printf '\033[0;31;32m%b\033[0m' "$1"
+}
+
+_yellow() {
+    printf '\033[0;31;33m%b\033[0m' "$1"
+}
+
+_blue() {
+    printf '\033[0;31;36m%b\033[0m' "$1"
+}
+
+_exists() {
+    local cmd="$1"
+    if eval type type > /dev/null 2>&1; then
+        eval type "$cmd" > /dev/null 2>&1
+    elif command > /dev/null 2>&1; then
+        command -v "$cmd" > /dev/null 2>&1
+    else
+        which "$cmd" > /dev/null 2>&1
+    fi
+    local rt=$?
+    return ${rt}
+}
+
+_exit() {
+    _red "\nThe script has been terminated. Cleaning up files...\n"
+    # clean up
+    rm -fr speedtest.tgz speedtest-cli benchtest_*
+    exit 1
+}
+
+get_opsy() {
+    [ -f /etc/redhat-release ] && awk '{print $0}' /etc/redhat-release && return
+    [ -f /etc/os-release ] && awk -F'[= "]' '/PRETTY_NAME/{print $3,$4,$5}' /etc/os-release && return
+    [ -f /etc/lsb-release ] && awk -F'[="]+' '/DESCRIPTION/{print $2}' /etc/lsb-release && return
+}
+
+next() {
+    printf "%-70s\n" "-" | sed 's/\s/-/g'
+}
+
+speed_test() {
+    local nodeName="$2"
+    [ -z "$1" ] && ./speedtest-cli/speedtest --progress=no --accept-license --accept-gdpr > ./speedtest-cli/speedtest.log 2>&1 || \
+    ./speedtest-cli/speedtest --progress=no --server-id=$1 --accept-license --accept-gdpr > ./speedtest-cli/speedtest.log 2>&1
+    if [ $? -eq 0 ]; then
+        local dl_speed=$(awk '/Download/{print $3" "$4}' ./speedtest-cli/speedtest.log)
+        local up_speed=$(awk '/Upload/{print $3" "$4}' ./speedtest-cli/speedtest.log)
+        local latency=$(awk '/Latency/{print $2" "$3}' ./speedtest-cli/speedtest.log)
+        if [[ -n "${dl_speed}" && -n "${up_speed}" && -n "${latency}" ]]; then
+            printf "\033[0;33m%-18s\033[0;32m%-18s\033[0;31m%-20s\033[0;36m%-12s\033[0m\n" " ${nodeName}" "${up_speed}" "${dl_speed}" "${latency}"
+        fi
+    fi
+}
+
+speed() {
+    speed_test '' 'Speedtest.net'
+    speed_test '21541' 'Los Angeles, US'
+    speed_test '43860' 'Dallas, US'
+    speed_test '40879' 'Montreal, CA'
+    speed_test '24215' 'Paris, FR'
+    speed_test '28922' 'Amsterdam, NL'
+    speed_test '24447' 'Shanghai, CN'
+    speed_test '26352' 'Nanjing, CN'
+    speed_test '27594' 'Guangzhou, CN'
+    speed_test '32155' 'Hongkong, CN'
+    speed_test '6527'  'Seoul, KR'
+    speed_test '7311'  'Singapore, SG'
+    speed_test '21569' 'Tokyo, JP'
+}
+
+io_test() {
+    (LANG=C dd if=/dev/zero of=benchtest_$$ bs=512k count=$1 conv=fdatasync && rm -f benchtest_$$ ) 2>&1 | awk -F, '{io=$NF} END { print io}' | sed 's/^[ \t]*//;s/[ \t]*$//'
+}
+
+calc_size() {
+    local raw=$1
+    local total_size=0
+    local num=1
+    local unit="KB"
+    if ! [[ ${raw} =~ ^[0-9]+$ ]] ; then
+        echo ""
+        return
+    fi
+    if [ "${raw}" -ge 1073741824 ]; then
+        num=1073741824
+        unit="TB"
+    elif [ "${raw}" -ge 1048576 ]; then
+        num=1048576
+        unit="GB"
+    elif [ "${raw}" -ge 1024 ]; then
+        num=1024
+        unit="MB"
+    elif [ "${raw}" -eq 0 ]; then
+        echo "${total_size}"
+        return
+    fi
+    total_size=$( awk 'BEGIN{printf "%.1f", '$raw' / '$num'}' )
+    echo "${total_size} ${unit}"
+}
+
+check_virt(){
+    _exists "dmesg" && virtualx="$(dmesg 2>/dev/null)"
+    if _exists "dmidecode"; then
+        sys_manu="$(dmidecode -s system-manufacturer 2>/dev/null)"
+        sys_product="$(dmidecode -s system-product-name 2>/dev/null)"
+        sys_ver="$(dmidecode -s system-version 2>/dev/null)"
+    else
+        sys_manu=""
+        sys_product=""
+        sys_ver=""
+    fi
+    if   grep -qa docker /proc/1/cgroup; then
+        virt="Docker"
+    elif grep -qa lxc /proc/1/cgroup; then
+        virt="LXC"
+    elif grep -qa container=lxc /proc/1/environ; then
+        virt="LXC"
+    elif [[ -f /proc/user_beancounters ]]; then
+        virt="OpenVZ"
+    elif [[ "${virtualx}" == *kvm-clock* ]]; then
+        virt="KVM"
+    elif [[ "${sys_product}" == *KVM* ]]; then
+        virt="KVM"
+    elif [[ "${cname}" == *KVM* ]]; then
+        virt="KVM"
+    elif [[ "${cname}" == *QEMU* ]]; then
+        virt="KVM"
+    elif [[ "${virtualx}" == *"VMware Virtual Platform"* ]]; then
+        virt="VMware"
+    elif [[ "${sys_product}" == *"VMware Virtual Platform"* ]]; then
+        virt="VMware"
+    elif [[ "${virtualx}" == *"Parallels Software International"* ]]; then
+        virt="Parallels"
+    elif [[ "${virtualx}" == *VirtualBox* ]]; then
+        virt="VirtualBox"
+    elif [[ -e /proc/xen ]]; then
+        if grep -q "control_d" "/proc/xen/capabilities" 2>/dev/null; then
+            virt="Xen-Dom0"
+        else
+            virt="Xen-DomU"
+        fi
+    elif [ -f "/sys/hypervisor/type" ] && grep -q "xen" "/sys/hypervisor/type"; then
+        virt="Xen"
+    elif [[ "${sys_manu}" == *"Microsoft Corporation"* ]]; then
+        if [[ "${sys_product}" == *"Virtual Machine"* ]]; then
+            if [[ "${sys_ver}" == *"7.0"* || "${sys_ver}" == *"Hyper-V" ]]; then
+                virt="Hyper-V"
+            else
+                virt="Microsoft Virtual Machine"
+            fi
+        fi
+    else
+        virt="Dedicated"
+    fi
+}
+
+ipv4_info() {
+    local org="$(wget -q -T10 -O- ipinfo.io/org)"
+    local city="$(wget -q -T10 -O- ipinfo.io/city)"
+    local country="$(wget -q -T10 -O- ipinfo.io/country)"
+    local region="$(wget -q -T10 -O- ipinfo.io/region)"
+    if [[ -n "$org" ]]; then
+        echo " Organization       : $(_blue "$org")"
+    fi
+    if [[ -n "$city" && -n "country" ]]; then
+        echo " Location           : $(_blue "$city / $country")"
+    fi
+    if [[ -n "$region" ]]; then
+        echo " Region             : $(_yellow "$region")"
+    fi
+    if [[ -z "$org" ]]; then
+        echo " Region             : $(_red "No ISP detected")"
+    fi
+}
+
+install_speedtest() {
+    if [ ! -e "./speedtest-cli/speedtest" ]; then
+        sys_bit=""
+        local sysarch="$(uname -m)"
+        if [ "${sysarch}" = "unknown" ] || [ "${sysarch}" = "" ]; then
+            local sysarch="$(arch)"
+        fi
+        if [ "${sysarch}" = "x86_64" ]; then
+            sys_bit="x86_64"
+        fi
+        if [ "${sysarch}" = "i386" ] || [ "${sysarch}" = "i686" ]; then
+            sys_bit="i386"
+        fi
+        if [ "${sysarch}" = "armv8" ] || [ "${sysarch}" = "armv8l" ] || [ "${sysarch}" = "aarch64" ] || [ "${sysarch}" = "arm64" ]; then
+            sys_bit="aarch64"
+        fi
+        if [ "${sysarch}" = "armv7" ] || [ "${sysarch}" = "armv7l" ]; then
+            sys_bit="armhf"
+        fi
+        if [ "${sysarch}" = "armv6" ]; then
+            sys_bit="armel"
+        fi
+        [ -z "${sys_bit}" ] && _red "Error: Unsupported system architecture (${sysarch}).\n" && exit 1
+        url1="https://install.speedtest.net/app/cli/ookla-speedtest-1.1.1-linux-${sys_bit}.tgz"
+        url2="https://dl.lamp.sh/files/ookla-speedtest-1.1.1-linux-${sys_bit}.tgz"
+        wget --no-check-certificate -q -T10 -O speedtest.tgz ${url1}
+        if [ $? -ne 0 ]; then
+            wget --no-check-certificate -q -T10 -O speedtest.tgz ${url2}
+            [ $? -ne 0 ] && _red "Error: Failed to download speedtest-cli.\n" && exit 1
+        fi
+        mkdir -p speedtest-cli && tar zxf speedtest.tgz -C ./speedtest-cli && chmod +x ./speedtest-cli/speedtest
+        rm -f speedtest.tgz
+    fi
+    printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency"
+}
+
+print_intro() {
+echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"    
+echo "            INFO & DETAIL VPS MU " | lolcat            
+echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "  << TERIMAKASIH TELAH MENGGUNAKAN >>" | lolcat
+echo "        << LAYANAN AUTO SCRIPT  >>" | lolcat
+echo "            << BY XLORD VPN >>" | lolcat
+echo " ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+}
+
+# Get System information
+get_system_info() {
+    cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo | sed 's/^[ \t]*//;s/[ \t]*$//' )
+    cores=$( awk -F: '/processor/ {core++} END {print core}' /proc/cpuinfo )
+    freq=$( awk -F'[ :]' '/cpu MHz/ {print $4;exit}' /proc/cpuinfo )
+    ccache=$( awk -F: '/cache size/ {cache=$2} END {print cache}' /proc/cpuinfo | sed 's/^[ \t]*//;s/[ \t]*$//' )
+    cpu_aes=$( grep -i 'aes' /proc/cpuinfo )
+    cpu_virt=$( grep -Ei 'vmx|svm' /proc/cpuinfo )
+    tram=$( LANG=C; free | awk '/Mem/ {print $2}' )
+    tram=$( calc_size $tram )
+    uram=$( LANG=C; free | awk '/Mem/ {print $3}' )
+    uram=$( calc_size $uram )
+    swap=$( LANG=C; free | awk '/Swap/ {print $2}' )
+    swap=$( calc_size $swap )
+    uswap=$( LANG=C; free | awk '/Swap/ {print $3}' )
+    uswap=$( calc_size $uswap )
+    up=$( awk '{a=$1/86400;b=($1%86400)/3600;c=($1%3600)/60} {printf("%d days, %d hour %d min\n",a,b,c)}' /proc/uptime )
+    if _exists "w"; then
+        load=$( LANG=C; w | head -1 | awk -F'load average:' '{print $2}' | sed 's/^[ \t]*//;s/[ \t]*$//' )
+    elif _exists "uptime"; then
+        load=$( LANG=C; uptime | head -1 | awk -F'load average:' '{print $2}' | sed 's/^[ \t]*//;s/[ \t]*$//' )
+    fi
+    opsy=$( get_opsy )
+    arch=$( uname -m )
+    if _exists "getconf"; then
+        lbit=$( getconf LONG_BIT )
+    else
+        echo ${arch} | grep -q "64" && lbit="64" || lbit="32"
+    fi
+    kern=$( uname -r )
+    disk_total_size=$( LANG=C; df -t simfs -t ext2 -t ext3 -t ext4 -t btrfs -t xfs -t vfat -t ntfs -t swap --total 2>/dev/null | grep total | awk '{ print $2 }' )
+    disk_total_size=$( calc_size $disk_total_size )
+    disk_used_size=$( LANG=C; df -t simfs -t ext2 -t ext3 -t ext4 -t btrfs -t xfs -t vfat -t ntfs -t swap --total 2>/dev/null | grep total | awk '{ print $3 }' )
+    disk_used_size=$( calc_size $disk_used_size )
+    tcpctrl=$( sysctl net.ipv4.tcp_congestion_control | awk -F ' ' '{print $3}' )
+}
+# Print System information
+print_system_info() {
+    if [ -n "$cname" ]; then
+        echo " CPU Model          : $(_blue "$cname")"
+    else
+        echo " CPU Model          : $(_blue "CPU model not detected")"
+    fi
+    if [ -n "$freq" ]; then
+        echo " CPU Cores          : $(_blue "$cores @ $freq MHz")"
+    else
+        echo " CPU Cores          : $(_blue "$cores")"
+    fi
+    if [ -n "$ccache" ]; then
+        echo " CPU Cache          : $(_blue "$ccache")"
+    fi
+    if [ -n "$cpu_aes" ]; then
+        echo " AES-NI             : $(_green "Enabled")"
+    else
+        echo " AES-NI             : $(_red "Disabled")"
+    fi
+    if [ -n "$cpu_virt" ]; then
+        echo " VM-x/AMD-V         : $(_green "Enabled")"
+    else
+        echo " VM-x/AMD-V         : $(_red "Disabled")"
+    fi
+    echo " Total Disk         : $(_yellow "$disk_total_size") $(_blue "($disk_used_size Used)")"
+    echo " Total Mem          : $(_yellow "$tram") $(_blue "($uram Used)")"
+    if [ "$swap" != "0" ]; then
+        echo " Total Swap         : $(_blue "$swap ($uswap Used)")"
+    fi
+    echo " System uptime      : $(_blue "$up")"
+    echo " Load average       : $(_blue "$load")"
+    echo " OS                 : $(_blue "$opsy")"
+    echo " Arch               : $(_blue "$arch ($lbit Bit)")"
+    echo " Kernel             : $(_blue "$kern")"
+    echo " TCP CC             : $(_yellow "$tcpctrl")"
+    echo " Virtualization     : $(_blue "$virt")"
+    echo " IPv4/IPv6          : $online"
+}
+
+print_io_test() {
+    freespace=$( df -m . | awk 'NR==2 {print $4}' )
+    if [ -z "${freespace}" ]; then
+        freespace=$( df -m . | awk 'NR==3 {print $3}' )
+    fi
+    if [ ${freespace} -gt 1024 ]; then
+        writemb=2048
+        io1=$( io_test ${writemb} )
+        echo " I/O Speed(1st run) : $(_yellow "$io1")"
+        io2=$( io_test ${writemb} )
+        echo " I/O Speed(2nd run) : $(_yellow "$io2")"
+        io3=$( io_test ${writemb} )
+        echo " I/O Speed(3rd run) : $(_yellow "$io3")"
+        ioraw1=$( echo $io1 | awk 'NR==1 {print $1}' )
+        [ "`echo $io1 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw1=$( awk 'BEGIN{print '$ioraw1' * 1024}' )
+        ioraw2=$( echo $io2 | awk 'NR==1 {print $1}' )
+        [ "`echo $io2 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw2=$( awk 'BEGIN{print '$ioraw2' * 1024}' )
+        ioraw3=$( echo $io3 | awk 'NR==1 {print $1}' )
+        [ "`echo $io3 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw3=$( awk 'BEGIN{print '$ioraw3' * 1024}' )
+        ioall=$( awk 'BEGIN{print '$ioraw1' + '$ioraw2' + '$ioraw3'}' )
+        ioavg=$( awk 'BEGIN{printf "%.1f", '$ioall' / 3}' )
+        echo " I/O Speed(average) : $(_yellow "$ioavg MB/s")"
+    else
+        echo " $(_red "Not enough space for I/O Speed test!")"
+    fi
+}
+
+print_end_time() {
+    end_time=$(date +%s)
+    time=$(( ${end_time} - ${start_time} ))
+    if [ ${time} -gt 60 ]; then
+        min=$(expr $time / 60)
+        sec=$(expr $time % 60)
+        echo " Finished in        : ${min} min ${sec} sec"
+    else
+        echo " Finished in        : ${time} sec"
+    fi
+    date_time=$(date '+%Y-%m-%d %H:%M:%S %Z')
+    echo " Timestamp          : $date_time"
+}
+
+! _exists "wget" && _red "Error: wget command not found.\n" && exit 1
+! _exists "free" && _red "Error: free command not found.\n" && exit 1
+# check for curl/wget
+command -v curl >/dev/null 2>&1 && local_curl=true || unset local_curl
+# test if the host has IPv4/IPv6 connectivity
+[[ ! -z ${local_curl} ]] && ip_check_cmd="curl -s -m 4" || ip_check_cmd="wget -qO- -T 4"
+ipv4_check=$((ping -4 -c 1 -W 4 ipv4.google.com >/dev/null 2>&1 && echo true) || ${ip_check_cmd} -4 icanhazip.com 2> /dev/null)
+ipv6_check=$((ping -6 -c 1 -W 4 ipv6.google.com >/dev/null 2>&1 && echo true) || ${ip_check_cmd} -6 icanhazip.com 2> /dev/null)
+if [[ -z "$ipv4_check" && -z "$ipv6_check" ]]; then
+    _yellow "Warning: Both IPv4 and IPv6 connectivity were not detected.\n"
+fi
+[[ -z "$ipv4_check" ]] && online="$(_red "Offline")" || online="$(_green "Online")"
+[[ -z "$ipv6_check" ]] && online+=" / $(_red "Offline")" || online+=" / $(_green "Online")"
+start_time=$(date +%s)
+get_system_info
+check_virt
+clear
+print_intro
+next
+print_system_info
+ipv4_info
+next
+print_io_test
+next
+install_speedtest && speed && rm -fr speedtest-cli
+next
+print_end_time
+next
