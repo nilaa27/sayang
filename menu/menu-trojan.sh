@@ -120,8 +120,8 @@ sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
-xlord1="$(echo $trojanlink1 | base64 -w 0)"
-xlord2="$(echo $trojanlink | base64 -w 0)"
+xlord1="$(echo 'trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}' | base64 -w 0)"
+xlord2="$(echo 'trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}' | base64 -w 0)"
 
 
 TEXT="
@@ -222,8 +222,8 @@ sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
-xlord1="$(echo $trojanlink1 | base64 -w 0)"
-xlord2="$(echo $trojanlink | base64 -w 0)"
+xlord1="$(echo 'trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}' | base64 -w 0)"
+xlord2="$(echo 'trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}' | base64 -w 0)"
 
 
 TEXT="
