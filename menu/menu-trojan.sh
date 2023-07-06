@@ -124,7 +124,6 @@ xlord1="$( $trojanlink1 | base64 -w 0)"
 xlord2="$( $trojanlink | base64 -w 0)"
 
 
-
 TEXT="
 <code>──────────────────────</code>
 <code>    Xray TROJAN Account</code>
@@ -224,6 +223,10 @@ sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
+xlord1="$( $trojanlink1 | base64 -w 0)"
+xlord2="$( $trojanlink | base64 -w 0)"
+
+
 TEXT="
 <code>──────────────────────</code>
 <code>    Xray TROJAN Account</code>
@@ -243,16 +246,17 @@ TEXT="
 <code>Path GRPC    : </code> <code>/trojan-grpc</code>
 <code>──────────────────────</code>
 <code>Link TLS     :</code> 
-<code>${trojanlink}</code>
+<code>${xlord2}</code>
 <code>──────────────────────</code>
 <code>Link GRPC    :</code> 
-<code>${trojanlink1}</code>
+<code>${xlord1}</code>
 <code>──────────────────────</code>
 <code>Created      : $harini</code>
 <code>──────────────────────</code>
 <code>Expired On   : $exp</code>
 <code>──────────────────────</code>
 "
+
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
 clear
