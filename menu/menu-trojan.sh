@@ -117,13 +117,8 @@ sed -i '/#trojanws$/a\#tr '"$user $exp $uuid"'\
 sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 
-trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
-trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
-trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
-
-trojan1="$(echo $trojanlink1 | base64 -w 0)"
-trojan2="$(echo $trojanlink | base64 -w 0)"
-
+trojan1="trojan://$uuid@$domain:443?path=/trojan&security=tls&host=$domain&type=ws&sni=$domain#$user"
+trojan2="trojan://${uuid}@$domain:443?security=tls&encryption=none&type=grpc&serviceName=trojan-grpc&sni=$domain#$user"
 TEXT="
 <code>──────────────────────</code>
 <code>    Xray TROJAN Account</code>
@@ -143,10 +138,10 @@ TEXT="
 <code>Path GRPC    : </code> <code>/trojan-grpc</code>
 <code>──────────────────────</code>
 <code>Link TLS     :</code> 
-<code>${trojan2}</code>
+<code>${trojan1}</code>
 <code>──────────────────────</code>
 <code>Link GRPC    :</code> 
-<code>${trojan1}</code>
+<code>${trojan2}</code>
 <code>──────────────────────</code>
 <code>Created      : $harini</code>
 <code>──────────────────────</code>
@@ -220,13 +215,8 @@ sed -i '/#trojanws$/a\#tr '"$user $exp $uuid"'\
 sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 
-trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
-trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
-
-
-trojan1="$(echo $trojanlink1 | base64 -w 0)"
-trojan2="$(echo $trojanlink | base64 -w 0)"
-
+trojan1="trojan://$uuid@$domain:443?path=/trojan&security=tls&host=$domain&type=ws&sni=$domain#$user"
+trojan2="trojan://${uuid}@$domain:443?security=tls&encryption=none&type=grpc&serviceName=trojan-grpc&sni=$domain#$user"
 TEXT="
 <code>──────────────────────</code>
 <code>    Xray TROJAN Account</code>
@@ -246,11 +236,10 @@ TEXT="
 <code>Path GRPC    : </code> <code>/trojan-grpc</code>
 <code>──────────────────────</code>
 <code>Link TLS     :</code> 
-<code>${trojan2}</code>
-<code>──────────────────────</code>
-<code>Link GRPC    :</code> 
 <code>${trojan1}</code>
 <code>──────────────────────</code>
+<code>Link GRPC    :</code> 
+<code>${trojan2}</code>
 <code>──────────────────────</code>
 <code>Created      : $harini</code>
 <code>──────────────────────</code>
