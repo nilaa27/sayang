@@ -120,8 +120,8 @@ sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
-xlord1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}' | base64 -w 0)"
-xlord2="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}' | base64 -w 0)"
+xlord="trojan://$(echo $trojanlink1 | base64 -w 0)"
+xlord="trojan://$(echo $trojanlink | base64 -w 0)"
 
 
 TEXT="
@@ -131,6 +131,7 @@ TEXT="
 <code>Remarks      : </code> <code>${user}</code>
 <code>Domain       : </code> <code>${domain}</code>
 <code>City         : </code> <code>${CITY}</code>
+<code>ISP          : </code> <code>${ISP}</code>
 <code>Port TLS     : </code> <code>443</code>
 <code>Port none TLS: </code> <code>80,8080</code>
 <code>Port GRPC    : </code> <code>443</code>
@@ -145,7 +146,7 @@ TEXT="
 <code>${xlord2}</code>
 <code>──────────────────────</code>
 <code>Link GRPC    :</code> 
-<code>${xlord1}</code>
+<code>${xlord}</code>
 <code>──────────────────────</code>
 <code>Created      : $harini</code>
 <code>──────────────────────</code>
@@ -166,7 +167,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1 ${NC} "
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Remarks      ${COLOR1}: ${WH}${user}" | tee -a /etc/log-create-user.log
-#echo -e "$COLOR1 ${NC} ${WH}ISP          ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC} ${WH}ISP          ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}City         ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Host/IP      ${COLOR1}: ${WH}${domain}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Port TLS     ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
@@ -222,8 +223,8 @@ sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
-xlord1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user} | base64 -w 0)"
-xlord2="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user} | base64 -w 0)"
+xlord="trojan://$(echo $trojanlink1 | base64 -w 0)"
+xlord="trojan://$(echo $trojanlink | base64 -w 0)"
 
 
 TEXT="
@@ -233,6 +234,7 @@ TEXT="
 <code>Remarks      : </code> <code>${user}</code>
 <code>Domain       : </code> <code>${domain}</code>
 <code>City         : </code> <code>${CITY}</code>
+<code>ISP          : </code> <code>${ISP}</code>
 <code>Port TLS     : </code> <code>443</code>
 <code>Port none TLS: </code> <code>80,8080</code>
 <code>Port GRPC    : </code> <code>443</code>
@@ -247,7 +249,7 @@ TEXT="
 <code>${xlord2}</code>
 <code>──────────────────────</code>
 <code>Link GRPC    :</code> 
-<code>${xlord1}</code>
+<code>${xlord}</code>
 <code>──────────────────────</code>
 <code>Created      : $harini</code>
 <code>──────────────────────</code>
@@ -269,7 +271,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1 ${NC} "
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Remarks      ${COLOR1}: ${WH}${user}" | tee -a /etc/log-create-user.log
-#echo -e "$COLOR1 ${NC} ${WH}ISP          ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1 ${NC} ${WH}ISP          ${COLOR1}: ${WH}$ISP" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}City         ${COLOR1}: ${WH}$CITY" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Host/IP      ${COLOR1}: ${WH}${domain}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1 ${NC} ${WH}Port TLS     ${COLOR1}: ${WH}443" | tee -a /etc/log-create-user.log
