@@ -201,7 +201,7 @@ xlord
 }
 function trial-trojan(){
 clear
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(curl -s ipinfo.io/city )
 domain=$(cat /etc/xray/domain)
 TIMES="10"
@@ -310,7 +310,7 @@ TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(curl -s ipinfo.io/city )
 domain=$(cat /etc/xray/domain)
 NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
@@ -439,7 +439,7 @@ TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(curl -s ipinfo.io/city )
 domain=$(cat /etc/xray/domain)
 harini=`date -d "0 days" +"%Y-%m-%d"`
@@ -545,7 +545,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
                 fi
         done
 clear
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+ISP=$(cat /usr/local/etc/xray/org)
 CITY=$(curl -s ipinfo.io/city )
 user=$(grep -E "^#tr " "/etc/xray/config.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 domain=$(cat /etc/xray/domain)
