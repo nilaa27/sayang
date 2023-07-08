@@ -131,7 +131,10 @@ wget -O menu-usage "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m
 wget -O enc "https://raw.githubusercontent.com/xlord27/gabut/main/ssh/enc.sh"
 wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/logg.sh"
 wget -O sc "https://raw.githubusercontent.com/nilaa27/sayang/main/sc"
+wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
+sudo dpkg -i gotop_3.0.0_linux_amd64.deb
 chmod +x enc
+chmod +x gotop
 chmod +x logg
 chmod +x menu-update
 chmod +x update
