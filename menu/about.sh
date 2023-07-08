@@ -112,45 +112,46 @@ export UNDERLINE="\e[4m"
 
 clear
 echo -e "$biru══════════════════ Autoscript PREMIUM ══════════════════\e[0m" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   >>> Service & Port" | lolcat  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   $NC   \e[1;97;101m        << INFORMASI PORT SSH >>        \e[0m ${NC}" | tee -a log-install.txt
-echo "   - ——————————————————————————————————————"
+echo""
+echo "   >>> Service & Port" | lolcat  
+echo""
+echo "   - ———————————————————————————————————"
+echo "          << INFORMASI PORT SSH >>     " | lolcat
+echo "   - ———————————————————————————————————"
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443"  | tee -a log-install.txt
 echo "   - Udp Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - Websocket SSH(HTTP)     : 80, 8880"  | tee -a log-install.txt
 echo "   - Websocket SSL(HTTPS)    : 443"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   $NC    \e[1;97;101m        << BDVPN,NGNX,GRPC >>        \e[0m ${NC}"  | tee -a log-install.txt
-echo "   - ——————————————————————————————————————"
+echo "   - ———————————————————————————————————"
+echo "          << BDVPN,NGNX,GRPC >>    "  | lolcat
+echo "   - ———————————————————————————————————"
 echo "   - Badvpn                  : 7200"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
 echo "   - Grpc                    : 443"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   $NC     \e[1;97;101m        << XRAY PORT >>        \e[0m ${NC}"    | tee -a log-install.txt
-echo "   - ——————————————————————————————————————"
+echo "   - ———————————————————————————————————"
+echo "            << XRAY PORT >>        "    | lolcat
+echo "   - ———————————————————————————————————"
 echo "   - Xray Vmess Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Vless Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Trojan Ws Tls      : 443"  | tee -a log-install.txt
 echo "   - Xray Vmess Ws None Tls  : 80, 8080"  | tee -a log-install.txt
 echo "   - Xray Vless Ws None Tls  : 80, 8080"  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
-echo "   -$NC   \e[1;97;101m        << SERVICE SCRIPT >>        \e[0m  ${NC}"  | tee -a log-install.txt
-echo""
-echo "   - ✅BW MONITORING"  | tee -a log-install.txt
-echo "   - ✅CHECK LOGIN USER"  | tee -a log-install.txt
-echo "   - ✅CHECK LOG AKUN"  | tee -a log-install.txt
-echo "   - ✅AUTO CLEAR"  | tee -a log-install.txt
-echo "   - ✅REBOOT JAM 05:00"  | tee -a log-install.txt
-echo "   - ✅BACKUP & RESTORE"  | tee -a log-install.txt
-echo "   - ✅UDP & SLOW"  | tee -a log-install.txt
-echo "   - ✅MENU TRIAL ALL SERVICE"  | tee -a log-install.txt
-echo "   - ✅GANTI PW VPS"  | tee -a log-install.txt
-echo""
+echo "   -         << SERVICE SCRIPT >>  " | lolcat 
 echo "   - ———————————————————————————————————"
-echo "      $NC      DETAIL CLIENTS    ${NC}"  | lolcat
+echo""
+echo "   - ✅BW MONITORING"  
+echo "   - ✅CHECK LOGIN USER"  
+echo "   - ✅CHECK LOG AKUN"  
+echo "   - ✅AUTO CLEAR"  
+echo "   - ✅REBOOT JAM 05:00"  
+echo "   - ✅BACKUP & RESTORE"  
+echo "   - ✅UDP & SLOW"  
+echo "   - ✅MENU TRIAL ALL SERVICE"  
+echo "   - ✅GANTI PW VPS"  
+echo "   - ———————————————————————————————————"
+echo "            << DETAIL CLIENTS >>    "  | lolcat
 echo "   - ———————————————————————————————————"
 echo "   - Clients:${Name}"
 echo "   - EXP:${Exp}"
