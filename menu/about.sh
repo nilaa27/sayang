@@ -158,8 +158,7 @@ echo "   - ${putih} Clients${NC}": ${Name}"
 echo "   - ${putih} EXP${NC}": ${Exp}"
 echo "   - ${putih} ISP${NC}": ${pro}"
 echo "   - ${putih} CITY${NC}": ${kota}"
-      echo -e                                                                           
-echo ""  | tee -a log-install.txt
+echo""
 echo -e "$biru══════════════════ Autoscript By XlordVpn ══════════════════\e[0m" | tee -a log-install.txt
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
