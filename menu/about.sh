@@ -119,7 +119,7 @@ echo "   - ———————————————————————
 echo "          << INFORMASI PORT SSH >>     " | lolcat
 echo "   - ———————————————————————————————————"
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
-echo "   - Dropbear                : 109,143"  | tee -a log-install.txt
+echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443"  | tee -a log-install.txt
 echo "   - Udp Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - Websocket SSH(HTTP)     : 80, 8880"  | tee -a log-install.txt
@@ -154,10 +154,10 @@ echo "   - ✅GANTI PW VPS"
 echo "   - ———————————————————————————————————"
 echo "            << DETAIL CLIENTS >>    "  | lolcat
 echo "   - ———————————————————————————————————"
-echo "   - $putih Clients${NC}": ${Name}"
-echo "   - $putih EXP${NC}": ${Exp}"
-echo "   - $putih ISP${NC}": ${pro}"
-echo "   - $putih CITY${NC}": ${kota}"
+echo "   - ${putih} Clients${NC}": ${Name}"
+echo "   - ${putih} EXP${NC}": ${Exp}"
+echo "   - ${putih} ISP${NC}": ${pro}"
+echo "   - ${putih} CITY${NC}": ${kota}"
       echo -e                                                                           
 echo ""  | tee -a log-install.txt
 echo -e "$biru══════════════════ Autoscript By XlordVpn ══════════════════\e[0m" | tee -a log-install.txt
