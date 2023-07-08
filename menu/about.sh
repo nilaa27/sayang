@@ -139,7 +139,7 @@ echo "   - Xray Trojan Ws Tls      : 443"  | tee -a log-install.txt
 echo "   - Xray Vmess Ws None Tls  : 80"  | tee -a log-install.txt
 echo "   - Xray Vless Ws None Tls  : 80"  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
-echo "   -         << SERVICE SCRIPT >>  " | lolcat 
+echo "             << SERVICE SCRIPT >>  " | lolcat 
 echo "   - ———————————————————————————————————"
 echo""
 echo "   - ✅BW MONITORING"  
@@ -154,10 +154,10 @@ echo "   - ✅GANTI PW VPS"
 echo "   - ———————————————————————————————————"
 echo "            << DETAIL CLIENTS >>    "  | lolcat
 echo "   - ———————————————————————————————————"
-echo "   - ${putih} Clients${NC}": ${Name}"
-echo "   - ${putih} EXP${NC}": ${Exp}"
-echo "   - ${putih} ISP${NC}": ${pro}"
-echo "   - ${putih} CITY${NC}": ${kota}"
+echo "   - Clients: ${Name}"
+echo "   - EXP: ${Exp}"
+echo "   - ISP: ${pro}"
+echo "   - CITY: ${kota}"
 echo""
 echo -e "$biru══════════════════ Autoscript By XlordVpn ══════════════════\e[0m" | tee -a log-install.txt
 echo ""
