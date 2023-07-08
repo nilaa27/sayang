@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 # Getting
 
 # Download File Ohp
-https://raw.githubusercontent.com/nilaa26/sayang/main/OPENVPN/ohpserver-linux32.zip
+https://raw.githubusercontent.com/nilaa27/sayang/main/OPENVPN/ohpserver-linux32.zip
 unzip ohpserver-linux32.zip
 chmod +x ohpserver
 cp ohpserver /usr/local/bin/ohpserver
