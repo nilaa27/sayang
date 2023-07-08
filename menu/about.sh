@@ -71,7 +71,7 @@ BIYellow='\033[1;93m'     # Yellow
 BIBlue='\033[1;94m'       # Blue
 BIPurple='\033[1;95m'     # Purple
 BICyan='\033[1;96m'       # Cyan
-BIWhite='\033[1;97m'      # White
+putih='\033[1;97m'      # White
 UWhite='\033[4;37m'       # White
 On_IPurple='\033[0;105m'  #
 On_IRed='\033[0;101m'
@@ -119,6 +119,7 @@ echo "   - ———————————————————————
 echo "          << INFORMASI PORT SSH >>     " | lolcat
 echo "   - ———————————————————————————————————"
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
+echo "   - Dropbear                : 109,143"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443"  | tee -a log-install.txt
 echo "   - Udp Custom              : 1-65535"  | tee -a log-install.txt
 echo "   - Websocket SSH(HTTP)     : 80, 8880"  | tee -a log-install.txt
@@ -135,8 +136,8 @@ echo "   - ———————————————————————
 echo "   - Xray Vmess Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Vless Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Trojan Ws Tls      : 443"  | tee -a log-install.txt
-echo "   - Xray Vmess Ws None Tls  : 80, 8080"  | tee -a log-install.txt
-echo "   - Xray Vless Ws None Tls  : 80, 8080"  | tee -a log-install.txt
+echo "   - Xray Vmess Ws None Tls  : 80"  | tee -a log-install.txt
+echo "   - Xray Vless Ws None Tls  : 80"  | tee -a log-install.txt
 echo "   - ——————————————————————————————————————"
 echo "   -         << SERVICE SCRIPT >>  " | lolcat 
 echo "   - ———————————————————————————————————"
@@ -153,10 +154,10 @@ echo "   - ✅GANTI PW VPS"
 echo "   - ———————————————————————————————————"
 echo "            << DETAIL CLIENTS >>    "  | lolcat
 echo "   - ———————————————————————————————————"
-echo "   - Clients:${Name}"
-echo "   - EXP:${Exp}"
-echo "   - ISP:${pro}"
-echo "   - CITY:${kota}"
+echo "   - $putih Clients${NC}": ${Name}"
+echo "   - $putih EXP${NC}": ${Exp}"
+echo "   - $putih ISP${NC}": ${pro}"
+echo "   - $putih CITY${NC}": ${kota}"
       echo -e                                                                           
 echo ""  | tee -a log-install.txt
 echo -e "$biru══════════════════ Autoscript By XlordVpn ══════════════════\e[0m" | tee -a log-install.txt
