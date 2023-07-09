@@ -99,7 +99,7 @@ case $menu in
 6)
     trialtr
     ;;
-*)
-    menu
+0)
+    xlord
     ;;
 esac
