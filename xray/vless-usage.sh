@@ -4,8 +4,8 @@ clear
 echo "Checking VPS"
 sleep 2
 clear
-_APISERVER=127.0.0.1:9000
-_XRAY=/usr/local/bin/xray
+_APISERVER=127.0.0.1:10085
+_XRAY=/etc/xray/limit.vless
 apidata () {
     local ARGS=
     if [[ $1 == "reset" ]]; then
