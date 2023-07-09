@@ -27,8 +27,8 @@ apidata () {
     }'
 }
 print_sum() {
-    local DATA=($(cat /etc/xray/config.json | grep '^#vm' | cut -d ' ' -f 2 | sort | uniq))
-    local PREFIX="^#vm"
+    local DATA=( `cat /etc/xray/config.json | grep '^#vm' | cut -d ' ' -f 2 | sort | uniq`);
+    local PREFIX="vm"
     local SORTED=$(echo "$DATA" | grep "^${PREFIX}" | sort -r)
     local SUM=$(echo "$SORTED" | awk '
         /->up/{us+=$2}
