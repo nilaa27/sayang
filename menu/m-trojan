@@ -75,7 +75,8 @@ echo -e "  ${ORANGE}1.${NC} \033[0;36m Create Account XRAY Trojan WS/GRPC${NC}"
 echo -e "  ${ORANGE}2.${NC} \033[0;36m Delete Account XRAY Trojan WS/GRPC${NC}"
 echo -e "  ${ORANGE}3.${NC} \033[0;36m Renew Trojan Account${NC}"
 echo -e "  ${ORANGE}4.${NC} \033[0;36m Check Trojan login Account${NC}"
-echo -e "  ${ORANGE}5.${NC} \033[0;36m Config Trojan akun Account${NC}"
+echo -e "  ${ORANGE}5.${NC} \033[0;36m Config Trojan Account${NC}"
+echo -e "  ${ORANGE}6.${NC} \033[0;36m Trial Trojan Account${NC}"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p "Select From Options [ 1 - 4 ] : " menu
@@ -94,6 +95,9 @@ case $menu in
     ;;
 5)
     conf-xlord
+    ;;
+6)
+    trialtr
     ;;
 *)
     menu
