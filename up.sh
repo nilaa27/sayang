@@ -144,7 +144,7 @@ chmod +x menu
 chmod +x xlord
 chmod +x m-bot
 chmod +x m-ip
-chmod +x menu-trial
+chmod +x m-trial
 chmod +x menu-vmess
 chmod +x menu-vless
 chmod +x menu-ssws
