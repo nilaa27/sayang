@@ -205,11 +205,12 @@ chmod +x trial-vless
 chmod +x renew-vless
 chmod +x del-vless
 chmod +x cek-vless
-chmod +x add-tr
-chmod +x trial-trojan
-chmod +x del-tr
-chmod +x renew-tr
-chmod +x cek-tr
+chmod +x addtr-xlord
+chmod +x trialtr
+chmod +x deltr-xlord
+chmod +x rentr-xlord
+chmod +x cektr-xlord
+chmod +x conf-xlord
 chmod +x addtrgo
 chmod +x trialtrojango
 chmod +x deltrgo
