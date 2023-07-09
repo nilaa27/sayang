@@ -123,51 +123,6 @@ sed -i '/#trojanws$/a\#tr# '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#trojangrpc$/a\#tr# '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-cat >/var/www/html/trojan-$user.txt 
-=============================
-          P R O J E C T
-=============================
-Owner: t.me/xlordeuyy
-=============================
- Format Trojan GO/WS (CDN)
-=============================
-
-- name: Trojan-$user-GO/WS (CDN)
-  server: ${domain}
-  port: 443
-  type: trojan
-  password: ${uuid}
-  network: ws
-  sni: ${domain}
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: ${domain}
-_______________________________
-  Format Trojan gRPC
-_______________________________
-
-- name: Trojan-$user-gRPC (SNI)
-  type: trojan
-  server: ${domain}
-  port: 443
-  password: ${uuid}
-  udp: true
-  sni: ${domain}
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-_______________________________
-Link Trojan Account
-_______________________________
-Link WS : trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}
-_______________________________
-Link GRPC : trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}
-_______________________________
 
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
@@ -224,7 +179,6 @@ if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/xray/config.json
 fi
 echo "#tr# ${user} ${exp} ${uuid} ${Quota}" >>/etc/xray/config.json"
-curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[1;97;101m            SUCCES CREAT TROJAN ACCOUNT               \e[0m"
@@ -278,52 +232,6 @@ sed -i '/#trojanws$/a\#tr# '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#trojangrpc$/a\#tr# '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-cat >/var/www/html/trojan-$user.txt
-=============================
-         P R O J E C T
-=============================
- Owner: t.me/xlordeuyy
-=============================
- Format Trojan GO/WS (CDN)
-=============================
-
-- name: Trojan-$user-GO/WS (CDN)
-  server: ${domain}
-  port: 443
-  type: trojan
-  password: ${uuid}
-  network: ws
-  sni: ${domain}
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: ${domain}
-_______________________________
-  Format Trojan gRPC
-_______________________________
-
-- name: Trojan-$user-gRPC (SNI)
-  type: trojan
-  server: ${domain}
-  port: 443
-  password: ${uuid}
-  udp: true
-  sni: ${domain}
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-_______________________________
-Link Trojan Triall Account
-_______________________________
-Link WS : trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}
-_______________________________
-Link GRPC : trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}
-_______________________________
-
 
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
@@ -380,8 +288,6 @@ if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/xray/config.json
 fi
 echo "#tr# ${user} ${exp} ${uuid} ${Quota}" >>/etc/xray/config.json"
-
-curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e " \e[1;97;101m   SUCCES TRIALL TROJAN ACCOUNT      \e[0m"
@@ -484,7 +390,7 @@ systemctl restart xray > /dev/null 2>&1
     echo ""
     echo " Client Name : $user"
     echo " Created     : $harini"
-    echo " Expired On  : $exp4"
+    echo " Expired On  : $exp"
     echo ""
     echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo ""
@@ -648,52 +554,6 @@ uuid=$(grep -E "^#tr# " "/etc/xray/config.json" | cut -d ' ' -f 4 | sed -n "${CL
 Quota=$(grep -E "^#tr# " "/etc/xray/config.json" | cut -d ' ' -f 5 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^#tr# " "/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 hariini=`date -d "0 days" +"%Y-%m-%d"`
-cat >/var/www/html/trojan-$user.txt
-=============================
-          P R O J E C T
-=============================
-Owner: t.me/xlordeuyy
-=============================
- Format Trojan GO/WS (CDN)
-=============================
-
-- name: Trojan-$user-GO/WS (CDN)
-  server: ${domain}
-  port: 443
-  type: trojan
-  password: ${uuid}
-  network: ws
-  sni: ${domain}
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-ws
-    headers:
-        Host: ${domain}
-_______________________________
-  Format Trojan gRPC
-_______________________________
-
-- name: Trojan-$user-gRPC (SNI)
-  type: trojan
-  server: ${domain}
-  port: 443
-  password: ${uuid}
-  udp: true
-  sni: ${domain}
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-
-_______________________________
-Link Trojan Account
-_______________________________
-Link WS   : trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}
-_______________________________
-Link GRPC : trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}
-_______________________________
-
 
 trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
