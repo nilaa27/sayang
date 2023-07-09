@@ -80,16 +80,16 @@ echo -e ""
 read -p "Select From Options [ 1 - 4 ] : " menu
 case $menu in
 1)
-    addtr
+    addtr-xlord
     ;;
 2)
-    deltr
+    deltr-xlord
     ;;
 3)
-    renewtr
+    rentr-xlord
     ;;
 4)
-    cektr
+    cektr-xlord
     ;;
 *)
     menu
