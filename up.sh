@@ -57,7 +57,7 @@ wget -O menu "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu.sh
 wget -O xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/xlord"
 wget -O m-bot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-bot.sh"
 wget -O m-ip "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-ip.sh"
-wget -O menu-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trial.sh"
+wget -O m-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-trial"
 wget -O menu-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/running.sh"
