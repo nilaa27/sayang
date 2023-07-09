@@ -59,7 +59,7 @@ wget -O m-bot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-bot.
 wget -O m-ip "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-ip.sh"
 wget -O m-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-trial"
 wget -O m-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-vmess"
-wget -O menu-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vless.sh"
+wget -O m-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-vless"
 wget -O running "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trgo.sh"
@@ -106,11 +106,12 @@ wget -O renvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/
 wget -O delvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/delvm-xlord"
 wget -O cekvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cekvm-xlord"
 wget -O confvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/confvm-xlord"
-wget -O add-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-vless.sh"
-wget -O trial-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vless.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-vless.sh"
-wget -O del-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-vless.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-vless.sh"
+wget -O addvl-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/addvl-xlord"
+wget -O trialvl "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvl"
+wget -O renvl-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renvl-xlord"
+wget -O delvl-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/delvl-xlord"
+wget -O cekvl-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cekvl-xlord"
+wget -O confvl-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/confvl-xlord"
 wget -O addtr-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/addtr-xlord"
 wget -O trialtr "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialtr"
 wget -O deltr-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/deltr-xlord"
@@ -146,8 +147,8 @@ chmod +x xlord
 chmod +x m-bot
 chmod +x m-ip
 chmod +x m-trial
-chmod +x menu-vmess
-chmod +x menu-vless
+chmod +x m-vless
+chmod +x m-vmess
 chmod +x menu-ssws
 chmod +x running
 chmod +x clearcache
@@ -202,11 +203,12 @@ chmod +x renvm-xlord
 chmod +x delvm-xlord
 chmod +x cekvm-xlord
 chmod +x confvm-xlord
-chmod +x add-vless
-chmod +x trial-vless
-chmod +x renew-vless
-chmod +x del-vless
-chmod +x cek-vless
+chmod +x addvl-xlord
+chmod +x trialvl
+chmod +x renvl-xlord
+chmod +x delvl-xlord
+chmod +x cekvl-xlord
+chmod +x confvl-xlord 
 chmod +x addtr-xlord
 chmod +x trialtr
 chmod +x deltr-xlord
