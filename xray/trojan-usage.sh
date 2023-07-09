@@ -5,7 +5,7 @@ echo "Checking VPS"
 sleep 2
 clear
 _APISERVER=127.0.0.1:10085
-_XRAY=/etc/xray/config.json
+_XRAY=/etc/xray/limit.trojan
 apidata () {
     local ARGS=
     if [[ $1 == "reset" ]]; then
