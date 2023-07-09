@@ -58,12 +58,12 @@ wget -O xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/xlord"
 wget -O m-bot "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-bot.sh"
 wget -O m-ip "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-ip.sh"
 wget -O m-trial "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-trial"
-wget -O menu-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vmess.sh"
+wget -O m-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-vmess"
 wget -O menu-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-trojan.sh"
+wget -O m-trojan "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/m-trojan"
 wget -O menu-ssh "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/menu-ssh.sh"
 wget -O usernew "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/nilaa27/sayang/main/ssh/trial.sh"
@@ -100,11 +100,12 @@ wget -O strt "https://raw.githubusercontent.com/xlord27/gabut/main/backup/strt.s
 wget -O limitspeed "https://raw.githubusercontent.com/xlord27/gabut/main/backup/limitspeed.sh"
 wget -O autobackup "https://raw.githubusercontent.com/xlord27/gabut/main/backup/autobackup.sh"
 wget -O waktu "https://raw.githubusercontent.com/nilaa27/sayang/main/menu/waktu.sh"
-wget -O add-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-ws.sh"
-wget -O trial-vmess "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vmess.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-ws.sh"
-wget -O del-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/del-ws.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cek-ws.sh"
+wget -O addvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/addvm-xlord"
+wget -O trialvm "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trialvm"
+wget -O renvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renvm-xlord"
+wget -O delvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/delvm-xlord"
+wget -O cekvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/cekvm-xlord"
+wget -O confvm-xlord "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/confvm-xlord"
 wget -O add-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/add-vless.sh"
 wget -O trial-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/trial-vless.sh"
 wget -O renew-vless "https://raw.githubusercontent.com/nilaa27/sayang/main/xray/renew-vless.sh"
@@ -151,7 +152,7 @@ chmod +x menu-ssws
 chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
-chmod +x menu-trojan
+chmod +x m-trojan
 chmod +x menu-ssh
 chmod +x usernew
 chmod +x trial
@@ -195,11 +196,12 @@ chmod +x limitspeed
 chmod +x autobackup
 chmod +x restore
 chmod +x waktu
-chmod +x add-ws
-chmod +x trial-vmess
-chmod +x renew-ws
-chmod +x del-ws
-chmod +x cek-ws
+chmod +x addvm-xlord
+chmod +x trialvm
+chmod +x renvm-xlord
+chmod +x delvm-xlord
+chmod +x cekvm-xlord
+chmod +x confvm-xlord
 chmod +x add-vless
 chmod +x trial-vless
 chmod +x renew-vless
