@@ -257,7 +257,7 @@ DATADB=$(cat /etc/vmess/.vmess.db | grep "^#vma " | grep -w "${user}" | awk '{pr
 if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/vmess/.vmess.db
 fi
-echo "#vma ${user} ${exp} ${uuid} ${Quota}" >>/etc/vmess/.vmess.db
+echo "#vma# ${user} ${exp} ${uuid} ${Quota}" >>/etc/vmess/.vmess.db
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
