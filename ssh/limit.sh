@@ -1,13 +1,12 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/nilaa27/main/"
-wget -q -O /etc/systemd/system/limitvmess.service "${REPO}ssh/limitvmess.service" && chmod +x limitvmess.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limitvless.service "${REPO}ssh/limitvless.service" && chmod +x limitvless.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limittrojan.service "${REPO}ssh/limittrojan.service" && chmod +x limittrojan.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limitshadowsocks.service "${REPO}ssh/limitshadowsocks.service" && chmod +x limitshadowsocks.service >/dev/null 2>&1
-wget -q -O /etc/limit/vmess/ "${REPO}ssh/vmess" >/dev/null 2>&1
-wget -q -O /etc/limit/vless/ "${REPO}ssh/vless" >/dev/null 2>&1
-wget -q -O /etc/limit/trojan/ "${REPO}ssh/trojan" >/dev/null 2>&1
-wget -q -O /etc/xray/limit.shadowsocks "${REPO}ssh/shadowsocks" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limitvmess.service "https://raw.githubusercontent.com/nilaa27/main/ssh/limitvmess.service" && chmod +x limitvmess.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limitvless.service "https://raw.githubusercontent.com/nilaa27/main/ssh/limitvless.service" && chmod +x limitvless.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limittrojan.service "https://raw.githubusercontent.com/nilaa27/main/ssh/limittrojan.service" && chmod +x limittrojan.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limitshadowsocks.service "https://raw.githubusercontent.com/nilaa27/main/ssh/limitshadowsocks.service" && chmod +x limitshadowsocks.service >/dev/null 2>&1
+wget -q -O /etc/limit/vmess/ "https://raw.githubusercontent.com/nilaa27/main/ssh/vmess" >/dev/null 2>&1
+wget -q -O /etc/limit/vless/ "https://raw.githubusercontent.com/nilaa27/main/ssh/vless" >/dev/null 2>&1
+wget -q -O /etc/limit/trojan/ "https://raw.githubusercontent.com/nilaa27/main/ssh/trojan" >/dev/null 2>&1
+wget -q -O /etc/xray/limit.shadowsocks "https://raw.githubusercontent.com/nilaa27/main/ssh/shadowsocks" >/dev/null 2>&1
 chmod +x /etc/limit/vmess/
 chmod +x /etc/limit/vless/
 chmod +x /etc/limit/trojan/
