@@ -67,7 +67,6 @@ checking_sc() {
 checking_sc
 echo -e "\e[32mloading...\e[0m"
 clear
-source /var/lib/kyt/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
@@ -187,11 +186,11 @@ d=$((${c} * 1024 * 1024 * 1024))
 if [[ ${c} != "0" ]]; then
   echo "${d}" >/etc/trojan/${user}
 fi
-DATADB=$(cat /etc/trojan/.trojan.db | grep "^###" | grep -w "${user}" | awk '{print $2}')
+DATADB=$(cat /etc/trojan/.trojan.db | grep "^trb" | grep -w "${user}" | awk '{print $2}')
 if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/trojan/.trojan.db
 fi
-echo "### ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
+echo "#trb ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\033[1;93m———————————————————————————————\033[0m"
