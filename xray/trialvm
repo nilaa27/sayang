@@ -231,11 +231,11 @@ d=$(( ${c} * 1024*1024*1024 ));
 if [[ ${c} != "0" ]]; then
 echo "${d}" > /etc/vmess/${user}
 fi
-DATADB=$(cat /etc/vmess/.vmess.db | grep "^#vma#" | grep -w "${user}" | awk '{print $2}')
+DATADB=$(cat /etc/vmess/.vmess.db | grep "^#vma " | grep -w "${user}" | awk '{print $2}')
 if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/vmess/.vmess.db
 fi
-echo "#vma# ${user} ${exp} ${uuid}" >>/etc/vmess/.vmess.db
+echo "#vma ${user} ${exp} ${uuid}" >>/etc/vmess/.vmess.db
 clear
 CHATID="$CHATID"
 KEY="$KEY"
