@@ -56,15 +56,13 @@ else
 Exp=$(curl -sS https://raw.githubusercontent.com/nilaa27/cinta/main/vps| grep $MYIP | awk '{print $3}')
 fi
 # =========================================
-vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
-let vla=$vlx/2
-vmc=$(grep -c -E "^### " "/etc/xray/config.json")
-let vma=$vmc/2
+vmc=$(grep -c -E "^#vmg " "/etc/xray/config.json")
+# TOTAL ACC CREATE  VLESS WS
+vlx=$(grep -c -E "^#vlg " "/etc/xray/config.json")
+# TOTAL ACC CREATE  TROJAN
+trx=$(grep -c -E "^#tr " "/etc/xray/config.json")
+# TOTAL ACC CREATE OVPN SSH
 ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-trx=$(grep -c -E "^#! " "/etc/xray/config.json")
-let trb=$trx/2
-ssx=$(grep -c -E "^#ss# " "/etc/xray/config.json")
-let ssa=$ssx/2
 # // Exporting Language to UTF-8
 BIBlack='\033[1;90m'      # Black
 BIRed='\033[1;91m'        # Red
@@ -253,9 +251,9 @@ echo -e    "               << LIST MEMBER ACCOUNT >> ${NC}"
 echo -e "${NILA}            ———————————————————————————————— \033[95m" | lolcat
 echo ""
      echo -e "${BIRU}${NC}${PUTIH}               SSH          : ${kun}{$ssh1}${NC} ${ijo}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${PUTIH}               VMESS        : ${kun}{$vma}${NC} ${ijo}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${PUTIH}               VLESS        : ${kun}{$vla}${NC} ${ijo}[MEMBER]${NC}"
-      echo -e "${BIRU}${NC}${PUTIH}               TROJAN       : ${kun}{$trb}${NC} ${ijo}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${PUTIH}               VMESS        : ${kun}{$vmc}${NC} ${ijo}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${PUTIH}               VLESS        : ${kun}{$vlx}${NC} ${ijo}[MEMBER]${NC}"
+      echo -e "${BIRU}${NC}${PUTIH}               TROJAN       : ${kun}{$trx}${NC} ${ijo}[MEMBER]${NC}"
       echo""
  
 echo -e "${BIRU}          └─────────────────────────────────┘${NC}"
