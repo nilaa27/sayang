@@ -190,7 +190,7 @@ DATADB=$(cat /etc/trojan/.trojan.db | grep "^tr" | grep -w "${user}" | awk '{pri
 if [[ "${DATADB}" != '' ]]; then
   sed -i "/\b${user}\b/d" /etc/trojan/.trojan.db
 fi
-echo "#tr ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
+echo "#tr# ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\033[1;93m———————————————————————————————\033[0m"
