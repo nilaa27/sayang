@@ -29,7 +29,7 @@ PUB=$(cat /etc/slowdns/server.pub)
 NS=$(cat /etc/xray/dns)
 CITY=$(cat /etc/xray/city)
 clear
-NUMBER_OF_CLIENTS=$(grep -c -E "^#vl# " "/etc/vless/.vless.db")
+NUMBER_OF_CLIENTS=$(grep -c -E "^#vla# " "/etc/vless/.vless.db")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
     echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo -e " \e[1;97;101m                CONFIG VLESS ACCOUNT                   \e[0m"
@@ -54,11 +54,11 @@ fi
                         read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
                 fi
         done
-user=$(grep -E "^#vl# " "/etc/vless/.vless.db" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "^#vla# " "/etc/vless/.vless.db" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 domain=$(cat /etc/xray/domain)
-uuid=$(grep -E "^#vl# " "/etc/vless/.vless.db" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
-Quota=$(grep -E "^#vl# " "/etc/vless/.vless.db" | cut -d ' ' -f 5 | sed -n "${CLIENT_NUMBER}"p)
-exp=$(grep -E "^#vl# " "/etc/vless/.vless.db" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+uuid=$(grep -E "^#vla# " "/etc/vless/.vless.db" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
+Quota=$(grep -E "^#vla# " "/etc/vless/.vless.db" | cut -d ' ' -f 5 | sed -n "${CLIENT_NUMBER}"p)
+exp=$(grep -E "^#vla# " "/etc/vless/.vless.db" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 cat >/var/www/html/vless-$user.txt <<-END
 =======================
