@@ -70,26 +70,19 @@ clear
 domain=$(cat /etc/xray/domain)
 masaaktif=1
 Quota=5
-user=Trial-TR`</dev/urandom tr -dc 0-9 | head -c3`
+user=trial`</dev/urandom tr -dc X-Z-0-9 | head -c4`
 clear
 uuid=$(cat /proc/sys/kernel/random/uuid)
-exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
-tgl=$(date -d "$masaaktif days" +"%d")
-bln=$(date -d "$masaaktif days" +"%b")
-thn=$(date -d "$masaaktif days" +"%Y")
-expe="$tgl $bln, $thn"
-tgl2=$(date +"%d")
-bln2=$(date +"%b")
-thn2=$(date +"%Y")
-tnggl="$tgl2 $bln2, $thn2"
-sed -i '/#trojanws$/a\#! '"$user $exp"'\
+masaaktif=1
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+harini=`date -d "0 days" +"%Y-%m-%d"`
+sed -i '/#trojanws$/a\#tr '"$user $exp $uuid"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-sed -i '/#trojangrpc$/a\#! '"$user $exp"'\
+sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-# Link Trojan Akun
-systemctl restart xray
-trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
-trojanlink="trojan://${uuid}@bugkamu.com:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
+#trojan link
+trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=${domain}#${user}"
+trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=$sni&type=ws&sni=${domain}#${user}"
 
 cat >/var/www/html/trojan-$user.txt <<-END
 ———————————————————————————————
