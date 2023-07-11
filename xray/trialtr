@@ -147,11 +147,11 @@ d=$((${c} * 1024 * 1024 * 1024))
 if [[ ${c} != "0" ]]; then
   echo "${d}" >/etc/trojan/${user}
 fi
-DATADB=$(cat /etc/trojan/.trojan.db | grep "^#tr " | grep -w "${user}" | awk '{print $2}')
-if [[ "${DATADB}" != '' ]]; then
-  sed -i "/\b${user}\b/d" /etc/trojan/.trojan.db
+DATA=$(cat sed -i /etc/xray/config.json | grep "^#tr " | grep -w "${user}" | awk '{print $2}')
+if [[ "${DATA}" != '' ]]; then
+  sed -i "/\b${user}\b/d" /etc/xray/config.json
 fi
-echo "#tr# ${user} ${exp} ${uuid}" >>/etc/trojan/.trojan.db
+echo "^#tr ${user} ${exp} ${uuid}" >>//etc/xray/config.json
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\033[1;93m———————————————————————————————\033[0m"
