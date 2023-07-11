@@ -335,7 +335,6 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 xlord
 }
-
 function cek-tr(){
 clear
 function con() {
@@ -415,8 +414,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#tr " "/etc/xray/config.json")
     echo ""
     echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     read -n 1 -s -r -p "Press [ Enter ] to back on menu trojan"
-    trojan
-fi
+    xlord
+
 
   echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
   echo -e " \e[1;97;101m                CONFIG TROJAN ACCOUNT                 \E[0m"
