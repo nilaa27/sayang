@@ -271,9 +271,9 @@ read -n 1 -s -r -p "Press any key to back on menu"
 m-trial
 }
 clear
-function xlord-vm(){
-ISP=$(cat /etc/lokasi/isp)
-CITY=$(cat /etc/lokasi/city)
+function xlord-vl(){
+#ISP=$(cat /etc/lokasi/isp)
+$CITY=$(cat /etc/lokasi/city)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
