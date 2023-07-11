@@ -67,6 +67,452 @@ checking_sc() {
 checking_sc
 echo -e "\e[32mloading...\e[0m"
 clear
+function xlord-ssh(){
+cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
+if [ "$cekray" = "XRAY" ]; then
+domen=`cat /etc/xray/domain`
+else
+domen=`cat /etc/v2ray/domain`
+fi
+sldomain=`cat /etc/xray/dns`
+slkey=`cat /etc/slowdns/server.pub`
+portsshws=`cat ~/log-install.txt | grep -w "SSH Websocket" | cut -d: -f2 | awk '{print $1}'`
+wsssl=`cat /root/log-install.txt | grep -w "SSH SSL Websocket" | cut -d: -f2 | awk '{print $1}'`
+
+clear
+IP=$(curl -sS ifconfig.me);
+ossl=`cat /root/log-install.txt | grep -w "OpenVPN" | cut -f2 -d: | awk '{print $6}'`
+opensh=`cat /root/log-install.txt | grep -w "OpenSSH" | cut -f2 -d: | awk '{print $1}'`
+db=`cat /root/log-install.txt | grep -w "Dropbear" | cut -f2 -d: | awk '{print $1,$2}'`
+ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
+sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
+ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+
+OhpSSH=`cat /root/log-install.txt | grep -w "OHP SSH" | cut -d: -f2 | awk '{print $1}'`
+OhpDB=`cat /root/log-install.txt | grep -w "OHP DBear" | cut -d: -f2 | awk '{print $1}'`
+OhpOVPN=`cat /root/log-install.txt | grep -w "OHP OpenVPN" | cut -d: -f2 | awk '{print $1}'`
+
+Login=Xlord-Ssh`</dev/urandom tr -dc X-Z0-9 | head -c4`
+hari="1"
+Pass=1
+echo Ping Host
+echo Create Akun: $Login
+sleep 0.5
+echo Setting Password: $Pass
+sleep 0.5
+clear
+useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
+exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
+echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
+PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
+
+if [[ ! -z "${PID}" ]]; then
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m            SSH Account            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
+echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
+echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "SSHUDP    : $domen:1-65535@$Login:$Pass" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "PORT SLWDNS    : 443,80,53" | tee -a /etc/log-create-user.log
+echo -e "NS DOMAIN       : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "SERVER PUB      : $slkey" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Payload WSS" | tee -a /etc/log-create-user.log
+echo -e "
+GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "Payload WS" | tee -a /etc/log-create-user.log
+echo -e "
+GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+
+else
+
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m            SSH Account            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
+echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
+echo -e "Host        : $domen" | tee -a /etc/log-create-user.log
+echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
+echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "SSHUDP    : $domen:1-65535@$Login:$Pass" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "PORT SLWDNS    : 443,80,53" | tee -a /etc/log-create-user.log
+echo -e "NS DOMAIN       : $sldomain" | tee -a /etc/log-create-user.log
+echo -e "SERVER PUB      : $slkey" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Payload WSS" | tee -a /etc/log-create-user.log
+echo -e "
+GET wss://isi_bug_disini [protocol][crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "Payload WS" | tee -a /etc/log-create-user.log
+echo -e "
+GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+fi
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+m-trial
+}
+clear
+function xlord-tr(){
+ISP=$(cat /etc/lokasi/isp)
+CITY=$(cat /etc/lokasi/city)
+domain=$(cat /etc/xray/domain)
+TIMES="10"
+CHATID=$(cat /etc/per/id)
+KEY=$(cat /etc/per/token)
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+tls="$(cat ~/log-install.txt | grep -w "Trojan WS TLS" | cut -d: -f2|sed 's/ //g')"
+ntls="$(cat ~/log-install.txt | grep -w "Trojan WS none TLS" | cut -d: -f2|sed 's/ //g')"
+user=Xlord-Tr`</dev/urandom tr -dc X-Z-0-9 | head -c4`
+uuid=$(cat /proc/sys/kernel/random/uuid)
+masaaktif=1
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+harini=`date -d "0 days" +"%Y-%m-%d"`
+sed -i '/#trojanws$/a\#tr '"$user $exp $uuid"'\
+},{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
+sed -i '/#trojangrpc$/a\#trg '"$user $exp"'\
+},{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
+
+trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
+trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
+
+
+trojan1="$(echo $trojanlink1 | base64 -w 0)"
+trojan2="$(echo $trojanlink | base64 -w 0)"
+
+TEXT="
+<code>──────────────────────</code>
+<code>    Xray TROJAN Account</code>
+<code>──────────────────────</code>
+<code>Remarks      : </code> <code>${user}</code>
+<code>Domain       : </code> <code>${domain}</code>
+<code>City         : </code> <code>${CITY}</code>
+<code>ISP          : </code> <code>${ISP}</code>
+<code>Port TLS     : </code> <code>443</code>
+<code>Port none TLS: </code> <code>80,8080</code>
+<code>Port GRPC    : </code> <code>443</code>
+<code>User ID      : </code> <code>${uuid}</code>
+<code>AlterId      : 0</code>
+<code>Security     : auto</code>
+<code>Network      : WS or gRPC</code>
+<code>Path WS      : </code> <code>/trojan-ws</code>
+<code>Path GRPC    : </code> <code>/trojan-grpc</code>
+<code>──────────────────────</code>
+<code>Link TLS     :</code> 
+<code>${trojan2}</code>
+<code>──────────────────────</code>
+<code>Link GRPC    :</code> 
+<code>${trojan1}</code>
+<code>──────────────────────</code>
+<code>──────────────────────</code>
+<code>Created      : $harini</code>
+<code>──────────────────────</code>
+<code>Expired On   : $exp</code>
+<code>──────────────────────</code>
+"
+
+curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+
+clear
+clear
+clear
+clear
+clear
+systemctl restart xray > /dev/null 2>&1
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e " CREATE TROJAN ACCOUNT          "
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Remarks          : ${user}" 
+echo -e "Host/IP          : ${domain}"
+#echo -e "User Quota       : ${Quota} GB"
+echo -e "port             : 400-900" 
+echo -e "Key              : ${uuid}" 
+echo -e "Path             : /trojan-ws" 
+echo -e "ServiceName      : trojan-grpc" 
+echo -e "\033[0;34m———————————————————————————————\033[0m" 
+echo -e "Link WS          : ${trojanlink}" 
+echo -e "\033[0;34m———————————————————————————————\033[0m" 
+echo -e "Link GRPC        : ${trojanlink1}" 
+echo -e "\033[0;34m———————————————————————————————\033[0m" 
+#echo -e "Format OpenClash : https://${domain}:81/trojan-$user.txt" 
+#echo -e "\033[0;34m———————————————————————————————\033[0m" 
+#echo -e "Aktif Selama     : $masaaktif Hari"
+echo -e "Dibuat Pada      : $harini"
+echo -e "Berakhir Pada    : $exp"
+echo -e "\033[0;34m———————————————————————————————\033[0m" 
+echo "" 
+read -n 1 -s -r -p "Press any key to back on menu"
+m-trial
+}
+function xlord-vl(){
+clear
+ISP=$(cat /etc/lokasi/isp)
+CITY=$(cat /etc/lokasi/city)
+TIMES="10"
+CHATID=$(cat /etc/per/id)
+KEY=$(cat /etc/per/token)
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+domain=$(cat /etc/xray/domain)
+tls="$(cat ~/log-install.txt | grep -w "Vless WS TLS" | cut -d: -f2|sed 's/ //g')"
+none="$(cat ~/log-install.txt | grep -w "Vless WS none TLS" | cut -d: -f2|sed 's/ //g')"
+user=Xlord-Vm`</dev/urandom tr -dc X-Z0-9 | head -c4`
+uuid=$(cat /proc/sys/kernel/random/uuid)
+masaaktif=1
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+harini=`date -d "0 days" +"%Y-%m-%d"`
+sed -i '/#vless$/a\#vl '"$user $exp $uuid"'\
+},{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
+sed -i '/#vlessgrpc$/a\#vlg '"$user $exp"'\
+},{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
+vlesslink1="vless://${uuid}@${domain}:$tls?path=/vless&security=tls&encryption=none&host=$sni&type=ws&sni=bug.mu#${user}"
+vlesslink2="vless://${uuid}@${domain}:80?path=/vless&security=none&encryption=none&host=$sni&type=ws#${user}"
+vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=$sni#${user}"
+
+vless1="$(echo $vlesslink1 | base64 -w 0)"
+vless2="$(echo $vlesslink2 | base64 -w 0)"
+vless3="$(echo $vlesslink3 | base64 -w 0)"
+
+TEXT="
+<code>──────────────────────</code>
+<code>    Xray/Vless Account</code>
+<code>──────────────────────</code>
+<code>Remarks      : </code> <code>${user}</code>
+<code>Domain       : </code> <code>${domain}</code>
+<code>City         : </code> <code>${CITY}</code>
+<code>ISP          : </code> <code>${ISP}</code>
+<code>Port TLS     : 443</code>
+<code>Port NTLS    : 80, 8080</code>
+<code>Port GRPC    : 443</code>
+<code>User ID      : </code> <code>${uuid}</code>
+<code>AlterId      : 0</code>
+<code>Security     : auto</code>
+<code>Network      : WS or gRPC</code>
+<code>Path vless   : </code> <code>/vless</code>
+<code>ServiceName  : </code> <code>/vless-grpc</code>
+<code>──────────────────────</code>
+<code>Link TLS     :</code> 
+<code>${vless1}</code>
+<code>──────────────────────</code>
+<code>Link NTLS    :</code> 
+<code>${vless2}</code>
+<code>──────────────────────</code>
+<code>Link GRPC    :</code> 
+<code>${vless3}</code>
+<code>──────────────────────</code>
+<code>Created      : $harini</code>
+<code>Expired On   : $exp</code>
+<code>──────────────────────</code>
+"
+
+curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+
+clear
+systemctl restart xray > /dev/null 2>&1
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e " CREATE VLESS ACCOUNT           "
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Remarks     : ${user}"
+echo -e "Domain      : ${domain}"
+#echo -e "User Quota  : ${Quota} GB"
+echo -e "port TLS    : 443"
+#echo -e "Port DNS    : 443"
+echo -e "Port NTLS   : 80"
+echo -e "User ID     : ${uuid}"
+echo -e "Encryption  : none"
+echo -e "Path TLS    : /vless "
+echo -e "ServiceName : vless-grpc"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Link TLS    : ${vlesslink1}"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Link NTLS   : ${vlesslink2}"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Link GRPC   : ${vlesslink3}"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e "Format OpenClash : https://${domain}:81/vless-$user.txt"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+#echo -e "Aktif Selama     : $masaaktif Hari"
+echo -e "Dibuat Pada      : $harini"
+echo -e "Berakhir Pada    : $exp"
+echo -e "\033[1;93m———————————————————————————————\033[0m"
+echo -e ""
+read -n 1 -s -r -p "Press any key to back on menu"
+m-trial
+function xlord-vm(){
+clear
+ISP=$(cat /etc/lokasi/isp)
+CITY=$(cat /etc/lokasi/city)
+TIMES="10"
+CHATID=$(cat /etc/per/id)
+KEY=$(cat /etc/per/token)
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+domain=$(cat /etc/xray/domain)
+tls="$(cat ~/log-install.txt | grep -w "Vmess WS TLS" | cut -d: -f2|sed 's/ //g')"
+none="$(cat ~/log-install.txt | grep -w "Vmess WS none TLS" | cut -d: -f2|sed 's/ //g')"
+user=Xlord-Vm`</dev/urandom tr -dc X-Z0-9 | head -c4`
+uuid=$(cat /proc/sys/kernel/random/uuid)
+masaaktif=1
+harini=`date -d "0 days" +"%Y-%m-%d"`
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+sed -i '/#vmess$/a\#vm '"$user $exp"'\
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+sed -i '/#vmessgrpc$/a\#vmg '"$user $exp $uuid"'\
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
+asu=`cat<<EOF
+      {
+      "v": "2",
+      "ps": "${user}",
+      "add": "${domain}",
+      "port": "443",
+      "id": "${uuid}",
+      "aid": "0",
+      "net": "ws",
+      "path": "/vmess",
+      "type": "none",
+      "host": "",
+      "tls": "tls"
+}
+EOF`
+ask=`cat<<EOF
+      {
+      "v": "2",
+      "ps": "${user}",
+      "add": "${domain}",
+      "port": "80",
+      "id": "${uuid}",
+      "aid": "0",
+      "net": "ws",
+      "path": "/vmess",
+      "type": "none",
+      "host": "",
+      "tls": "none"
+}
+EOF`
+grpc=`cat<<EOF
+      {
+      "v": "2",
+      "ps": "${user}",
+      "add": "${domain}",
+      "port": "443",
+      "id": "${uuid}",
+      "aid": "0",
+      "net": "grpc",
+      "path": "vmess-grpc",
+      "type": "none",
+      "host": "",
+      "tls": "tls"
+}
+EOF`
+vmess_base641=$( base64 -w 0 <<< $vmess_json1)
+vmess_base642=$( base64 -w 0 <<< $vmess_json2)
+vmess_base643=$( base64 -w 0 <<< $vmess_json3)
+vmesslink1="vmess://$(echo $asu | base64 -w 0)"
+vmesslink2="vmess://$(echo $ask | base64 -w 0)"
+vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
+
+TEXT="
+<code>───────────────────────</code>
+<code>    XRAY/VMESS TRIAL ACCOUNT </code>
+<code>───────────────────────</code>
+<code>Remarks      : </code> <code>${user}</code>
+<code>Domain       : </code> <code>${domain}</code>
+<code>ISP           : </code> <code>${ISP}</code>
+<code>CITY         : </code> <code>${CITY}</code>
+<code>Port TLS     : </code> <code>443</code>
+<code>Port NTLS    : </code> <code>80, 8080</code>
+<code>Port GRPC    : </code> <code>443</code>
+<code>User ID      : </code> <code>${uuid}</code>
+<code>AlterId      : 0</code>
+<code>Security     : auto</code>
+<code>Network      : WS or gRPC</code>
+<code>Path         : </code> <code>/vmess</code>
+<code>Path Support : </code> <code>/https://bug.com/worryfree</code>
+<code>ServiceName  : </code> <code>vmess-grpc</code>
+<code>──────────────────────</code>
+<code>Link TLS     :</code> 
+<code>${vmesslink1}</code>
+<code>──────────────────────</code>
+<code>Link NTLS    :</code> 
+<code>${vmesslink2}</code>
+<code>──────────────────────</code>
+<code>Link GRPC    :</code> 
+<code>${vmesslink3}</code>
+<code>──────────────────────</code>
+<code>Created      : $harini</code>
+<code>──────────────────────</code>
+<code>Expired On   : $exp</code>
+<code>──────────────────────</code>
+"
+
+curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+
+clear
+clear
+clear
+clear
+clear
+systemctl restart xray > /dev/null 2>&1
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+  echo -e " \e[1;97;101m          SUCCES CREAT AKUN VMESS       \e[0m"
+  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Remarks      : ${user}"
+echo -e "Domain       : ${domain}"
+#echo -e "Location     : $CITY"
+#echo -e "User Quota   : ${Quota} GB"
+echo -e "Port TLS     : 443"
+echo -e "Port NTLS    : 80,"
+echo -e "Port DNS     : 443, 53 "
+echo -e "Port GRPC    : 443"
+echo -e "User ID      : ${uuid}"
+echo -e "AlterId      : 0"
+echo -e "Security     : auto"
+echo -e "Network      : WS or gRPC"
+echo -e "Path TLS     : /vmess - /multipath"
+echo -e "Path Dynamic : CF-XRAY:http://bug.com "
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Link TLS     : ${vmesslink1}"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Link NTLS    : ${vmesslink2}"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Link GRPC    : ${vmesslink3}"
+#echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e "Format OpenClash : https://${domain}:81/vmess-$user.txt"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e "Aktif Selama   : $masaaktif Hari"
+echo -e "Dibuat Pada    : $harini"
+echo -e "Berakhir Pada  : $exp"
+echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+read -n 1 -s -r -p "Press [ Enter ] to back menu vmess"
+m-trial
+}
+clear
 echo -e "\033[1;93m┌──────────────────────────────────────────┐\033[0m"
 echo -e "                 MENU TRIAL              $NC"
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
@@ -81,16 +527,16 @@ echo -e ""
 read -p "Select From Options [ 1 - 5 ] : " menu
 case $menu in
 1)
-    trial
+    xlord-ssh
     ;;
 2)
-    trialtr
+    xlord-tr
     ;;
 3)
-    trialvl
+    xlord-vl
     ;;
 4)
-    trialvm
+    xlord-vm
     ;;
 0)
     xlord
