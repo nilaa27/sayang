@@ -125,11 +125,11 @@ d=$((${c} * 1024 * 1024 * 1024))
 if [[ ${c} != "0" ]]; then
   echo "${d}" >/etc/vless/${user}
 fi
-DATADB=$(cat /etc/vless/.vless.db | grep "^#vl" | grep -w "${user}" | awk '{print $2}')
-if [[ "${DATADB}" != '' ]]; then
-  sed -i "/\b${user}\b/d" /etc/vless/.vless.db
+DATA=$(cat /etc/xray/config.json | grep "^#vl | grep -w "${user}" | awk '{print $2}')
+if [[ "${DATA}" != '' ]]; then
+  sed -i "/\b${user}\b/d" /etc/xray/config.json
 fi
-echo "#vl# ${user} ${exp} ${uuid} ${Quota}" >>/etc/vless/.vless.db
+echo "^#vl ${user} ${exp} ${uuid} ${Quota}" >>/etc/xray/config.json
 clear
 cat >/var/www/html/vless-$user.txt <<-END
 
