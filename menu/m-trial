@@ -180,8 +180,8 @@ m-trial
 }
 clear
 function xlord-tr(){
-ISP=$(cat /etc/lokasi/isp)
-CITY=$(cat /etc/lokasi/city)
+#ISP=$(cat /etc/lokasi/isp)
+#CITY=$(cat /etc/lokasi/city)
 domain=$(cat /etc/xray/domain)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
@@ -273,7 +273,7 @@ m-trial
 clear
 function xlord-vl(){
 #ISP=$(cat /etc/lokasi/isp)
-$CITY=$(cat /etc/lokasi/city)
+#CITY=$(cat /etc/lokasi/city)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
@@ -366,8 +366,8 @@ m-trial
 }
 clear
 function xlord-vm(){
-ISP=$(cat /etc/lokasi/isp)
-CITY=$(cat /etc/lokasi/city)
+#ISP=$(cat /etc/lokasi/isp)
+#CITY=$(cat /etc/lokasi/city)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
