@@ -120,7 +120,7 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks        : ${user}"
 echo -e "Host           : ${domain}"
 echo -e "Location       : $CITY"
-echo -e "User Quota     : ${Quota} GB"
+#echo -e "User Quota     : ${Quota} GB"
 echo -e "Port WS(TLS)   : 443"
 echo -e "Port  gRPC     : 443"
 echo -e "User ID        : ${uuid}"
