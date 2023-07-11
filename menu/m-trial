@@ -84,7 +84,7 @@ case $menu in
     trial
     ;;
 2)
-    trialtr
+    trial-trojan
     ;;
 3)
     trialvl
