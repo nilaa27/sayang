@@ -82,12 +82,12 @@ echo -e "\033[1;93m└───────────────────�
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
-01 | 1) clear ; add-tr ;;
-02 | 2) clear ; trial-trojan ;;
-03 | 3) clear ; renew-tr ;;
-04 | 4) clear ; del-tr ;;
-05 | 5) clear ; cek-tr ;;
-06 | 6) clear ; list-trojan ;;
+01 | 1) clear ; addvm-xlord ;;
+02 | 2) clear ; trialvm ;;
+03 | 3) clear ; renvm-xlord ;;
+04 | 4) clear ; deltr-xlord ;;
+05 | 5) clear ; cekvm-xlord ;;
+06 | 6) clear ; confvm-xlord ;;
 00 | 0) clear ; xlord ;;
 x) clear ; menu ;;
 *) echo "SALAH TEKAN" ; sleep 1 ; xlord ;;
