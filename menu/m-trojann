@@ -12,10 +12,10 @@ WH='\033[1;37m'
 
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/nilaa27/cinta/main/vps > /root/tmp
-    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
+    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}')
     for user in "${data[@]}"
     do
-    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
+    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}')
     d1=(`date -d "$exp" +%s`)
     d2=(`date -d "$biji" +%s`)
     exp2=$(( (d1 - d2) / 86400 ))
