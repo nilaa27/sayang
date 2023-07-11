@@ -165,7 +165,7 @@ echo -e "\033[1;93m————————————————————�
 echo -e "Remarks          : ${user}" 
 echo -e "Host/IP          : ${domain}"
 #echo -e "User Quota       : ${Quota} GB"
-echo -e "port             : 80-8080 
+echo -e "port             : 80-8080" 
 echo -e "Key              : ${uuid}" 
 echo -e "Path             : /trojan-ws" 
 echo -e "ServiceName      : trojan-grpc" 
