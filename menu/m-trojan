@@ -558,37 +558,6 @@ echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━�
     echo ""
     read -n 1 -s -r -p "Press any key to back on menu"
     xlord
-clear
-TEXT="
-<code>◇━━━━━━━━━━━━━━◇</code>
-<b>   XRAY TROJAN RENEW</b>
-<code>◇━━━━━━━━━━━━━━◇</code>
-<b>DOMAIN   :</b> <code>${domain} </code>
-<b>ISP      :</b> <code>$ISP $CITY </code>
-<b>USERNAME :</b> <code>$user </code>
-<b>CERATED  :</b> <code>$harini </code>
-<b>EXPIRED  :</b> <code>$exp4 </code>
-<code>◇━━━━━━━━━━━━━━◇</code>
-<b>  ⚙️BOT XLORD STORE⚙️ </b>
-<code>◇━━━━━━━━━━━━━━◇</code>
-"
-
-curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-
-
-systemctl restart xray > /dev/null 2>&1
-    echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo " Trojan Account Was Successfully Renewed"
-    echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo ""
-    echo " Client Name : $user"
-    echo " Created     : $harini"
-    echo " Expired On  : $exp4"
-    echo ""
-    echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo ""
-    read -n 1 -s -r -p "Press any key to back on menu"
-    xlord
 }
 function del-tr(){
 clear
