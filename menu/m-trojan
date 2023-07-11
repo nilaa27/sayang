@@ -62,7 +62,7 @@ PERMISSION () {
     echo -e "      \033[0;36mTelegram${NC} t.me/xlordeuyy"
     echo -e "      ${GREEN}WhatsApp${NC} wa.me/62881036683241"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    exit
+"
     fi
     BURIQ
 }
