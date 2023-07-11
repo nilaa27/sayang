@@ -87,10 +87,10 @@ case $menu in
     trial-trojan
     ;;
 3)
-    trialvl
+    trial-vless
     ;;
 4)
-    trialvm
+    trial-vmess
     ;;
 0)
     xlord
