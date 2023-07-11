@@ -68,7 +68,6 @@ echo -ne
 else
 red "Permission Denied!"
 exit 0
-fi
 clear
 function add-vmess(){
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
@@ -546,16 +545,14 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#vmg  " "/etc/xray/config.json")
 		echo ""
 		echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 		read -n 1 -s -r -p "Press any key to back on menu"
-        menu
-	fi
-
+        xlord	
 	clear
 	echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo -e "       Delete Vmess Account       "
     echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo "  User       Expired  " 
 	echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-	grep -E "^#vma " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
+	grep -E "^#vmg " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq
     echo ""
     red "tap enter to go back"
     echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -639,7 +636,6 @@ echo -e "\033[1;93m└───────────────────�
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 xlord
-
 }
 function list-vmess(){
 clear
@@ -661,8 +657,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#vmg " "/etc/xray/config.json")
     echo ""
     echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     read -n 1 -s -r -p "Press [ Enter ] to back on menu vmess"
-    vmess
-fi
+    xlord
 
   echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
   echo -e "  \e[1;97;101m        CONFIG VMESS ACCOUNT         \E[0m"
