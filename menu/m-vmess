@@ -358,7 +358,7 @@ sed -i '/#vmess$/a\#vm '"$user $exp"'\
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmessgrpc$/a\#vmg '"$user $exp $uuid"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
-fi
+
 
 c=$(echo "${Quota}" | sed 's/[^0-9]*//g');
 d=$(( ${c} * 1024*1024*1024 ));
