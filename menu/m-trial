@@ -270,8 +270,8 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 m-trial
 }
-function xlord-vl(){
 clear
+function xlord-vm(){
 ISP=$(cat /etc/lokasi/isp)
 CITY=$(cat /etc/lokasi/city)
 TIMES="10"
@@ -363,8 +363,9 @@ echo -e "\033[1;93m————————————————————�
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
 m-trial
-function xlord-vm(){
+}
 clear
+function xlord-vm(){
 ISP=$(cat /etc/lokasi/isp)
 CITY=$(cat /etc/lokasi/city)
 TIMES="10"
