@@ -128,7 +128,7 @@ do
                if [[ ${pakai} -gt ${cekdulu} ]]; then
                   exp=$(grep -w "^#vm $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
                   sed -i "/^#vm $user $exp/,/^},{/d" /etc/xray/config.json
-                  sed -i "/^#vm $user $exp/d" /etc/xray/config.json
+                  sed -i "/^#vmg $user $exp/d" /etc/xray/config.json
                   systemctl restart xray >> /dev/null 2>&1
                   bol=$(cat /etc/limit/vmess/${user});
                   total=$(con ${bol})
