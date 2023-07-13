@@ -136,7 +136,9 @@ wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/logg.sh"
 wget -O sc "https://raw.githubusercontent.com/nilaa27/sayang/main/sc"
 wget -0 gotop "https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
 sudo dpkg -i gotop_3.0.0_linux_amd64.deb"
+wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/limit/limit.sh"
 
+chmod +x limit
 chmod +x enc
 chmod +x gotop
 chmod +x logg
@@ -257,7 +259,7 @@ echo -e "    •> PENAMBAHAN FILE  <•" | lolcat
 
 echo -e "      •> FIX BUG AND ERROR <•" | lolcat
 
-echo -e "     •> TRIMAKASIH TELAH MENGUNAKAN SCRIPT BY XLORD VPN <•" | lolcat
+echo -e "     •> THANK TO MAKE SCRIPT BY XLORD VPN <•" | lolcat
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
