@@ -136,7 +136,7 @@ wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/logg.sh"
 wget -O sc "https://raw.githubusercontent.com/nilaa27/sayang/main/sc"
 wget -0 gotop "https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
 sudo dpkg -i gotop_3.0.0_linux_amd64.deb"
-wget -O logg "https://raw.githubusercontent.com/nilaa27/sayang/main/limit/limit.sh"
+wget -O limit "https://raw.githubusercontent.com/nilaa27/sayang/main/limit/limit.sh"
 
 chmod +x limit
 chmod +x enc
