@@ -86,7 +86,7 @@ function cekvless(){
      done
 }
 function cektrojan(){
-  data=($(cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq))
+  data=($(cat /etc/xray/config.json | grep '^#tr' | cut -d ' ' -f 2 | sort | uniq))
   if [[ ! -e /etc/limit/trojan ]]; then
   mkdir -p /etc/limit/trojan
   fi
@@ -153,7 +153,7 @@ function vless(){
 while true; do
 sleep 30
 cekvless
-data=($(cat /etc/xray/config.json | grep '^#&' | cut -d ' ' -f 2 | sort | uniq))
+data=($(cat /etc/xray/config.json | grep '^#vl' | cut -d ' ' -f 2 | sort | uniq))
 for user in ${data[@]}
 do
    if [ -e /etc/vless/${user} ]; then
@@ -162,9 +162,9 @@ do
           if [ -e /etc/limit/vless/${user} ]; then
              pakai=$(cat /etc/limit/vless/${user});
                if [[ ${pakai} -gt ${cekdulu} ]]; then
-                  exp=$(grep -w "^#& $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
-                  sed -i "/^#& $user $exp/,/^},{/d" /etc/xray/config.json
-                  sed -i "/^#& $user $exp/d" /etc/xray/config.json
+                  exp=$(grep -w "^#vl $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+                  sed -i "/^#vl $user $exp/,/^},{/d" /etc/xray/config.json
+                  sed -i "/^#vlg $user $exp/d" /etc/xray/config.json
                   systemctl restart xray >> /dev/null 2>&1
                   bol=$(cat /etc/limit/vless/${user});
                   total=$(con ${bol})
@@ -189,7 +189,7 @@ function trojan(){
 while true; do
 sleep 30
 cektrojan
-data=($(cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq))
+data=($(cat /etc/xray/config.json | grep '^#tr' | cut -d ' ' -f 2 | sort | uniq))
 for user in ${data[@]}
 do
    if [ -e /etc/trojan/${user} ]; then
@@ -198,9 +198,9 @@ do
           if [ -e /etc/limit/trojan/${user} ]; then
              pakai=$(cat /etc/limit/trojan/${user});
                if [[ ${pakai} -gt ${cekdulu} ]]; then
-                  exp=$(grep -w "^#! $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
-                  sed -i "/^#! $user $exp/,/^},{/d" /etc/xray/config.json
-                  sed -i "/^#! $user $exp/d" /etc/xray/config.json
+                  exp=$(grep -w "^#tr $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
+                  sed -i "/^#tr $user $exp/,/^},{/d" /etc/xray/config.json
+                  sed -i "/^#trg $user $exp/d" /etc/xray/config.json
                   systemctl restart xray >> /dev/null 2>&1
                   bol=$(cat /etc/limit/trojan/${user});
                   total=$(con ${bol})
