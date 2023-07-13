@@ -561,8 +561,13 @@ if [[ -z "$jum" ]]; then
 echo > /dev/null
 else
 jum2=$(cat /tmp/iptrojan.txt | wc -l)
+mt=$(cat /etc/limit/vmess/${akun})
+gb=$(con ${mt})
+log=$(cat /var/log/xray/access.log | grep -w "$akun" | tail -n 500 | cut -d " " -f 2 | tail -1)
 echo -e "$COLOR1${NC} USERNAME : \033[0;33m$akun";
 echo -e "$COLOR1${NC} IP LOGIN : \033[0;33m$jum2";
+echo -e "$COLOR1${NC} USAGE DATA : \033[0;33m$gb";
+echo -e "$COLOR1${NC} WKTU LGIN : \033[0;33m$log";
 echo -e ""
 
 
